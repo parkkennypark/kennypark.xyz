@@ -1,3 +1,4 @@
+import { Route, Switch, Link } from "react-router-dom";
 // import { Helmet } from "react-helmet";
 import Button from "../Button";
 import head from "../../assets/images/Head.png";
@@ -39,9 +40,9 @@ const Home = () => {
       {/* Bottom links */}
       <div id="bottom-links">
         {/* Left side */}
-        <div className="float-left">
-          <a href="/about">about/resume</a>
-        </div>
+        <label className="float-left">
+          <Link to="/about">about/resume</Link>
+        </label>
 
         {/* Right side */}
         <div className="float-right">

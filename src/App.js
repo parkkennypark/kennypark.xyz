@@ -6,9 +6,6 @@ import Games from "./components/pages/Games";
 import About from "./components/pages/About";
 
 function App() {
-  const HomePage = () => <Home />;
-  const GamesPage = () => <Games />;
-  const AboutPage = () => <About />;
   return (
     <Router>
       <div
@@ -16,9 +13,15 @@ function App() {
         style={{ display: "flex", justifyContent: "center" }}
       >
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/Games" component={GamesPage} />
-          <Route exact path="/About" component={AboutPage} />
+          <Route path="/Games">
+            <Games />
+          </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
       </div>
     </Router>
