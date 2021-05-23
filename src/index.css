@@ -1,0 +1,158 @@
+:root {
+  --accent: #da575c;
+}
+
+@font-face {
+  font-family: typoDodamM;
+  font-weight: normal;
+  src: url("/src/assets/fonts/TYPO_DODAMM.TTF");
+}
+
+* {
+  font-family: typoDodamM;
+  line-height: 1.4;
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+
+  /* Disables mobile blue highlight for buttons */
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:link {
+  color: black;
+  text-decoration-thickness: 2px;
+}
+
+a:visited {
+  color: black;
+}
+
+.horizontal-layout {
+  display: flex;
+  flex: 1;
+  /* flex-wrap: wrap; */
+}
+
+.vertical-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.float-left {
+  /* position: relative; */
+  float: left;
+}
+
+.float-right {
+  /* position: relative; */
+  float: right;
+}
+
+.text-big {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.text-normal {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text-small {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.text-red {
+  color: var(--accent);
+}
+
+.background {
+  background-image: url("/src/assets/images/Repeating_Tile.png");
+  background-size: 100px;
+  background-attachment: fixed;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.btn {
+  background: white;
+  color: black;
+  border: 3px solid black;
+  margin: 12pt;
+  height: 65pt;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.btn:active {
+  background: black;
+  color: white;
+}
+
+.container {
+  display: block;
+  background: white;
+  border: 3px solid black;
+  padding: 15px !important;
+  max-width: 710px;
+  /* min-width: 400px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* height: auto; */
+  /* margin: 20px auto; */
+  overflow: auto;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+#back-header {
+  /* margin-bottom: 20px; */
+}
+
+#header {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#button-row {
+  /* margin-top: 20px; */
+}
+
+#bottom-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  /* padding: 15px; */
+}
+
+#head {
+  alt: "PANIC! something went wrong.";
+  /* height: 200px; */
+  height: 70%;
+  width: 70%;
+  /* width: 50%; */
+  transform: scaleX(-1);
+  /* margin: auto; */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#header-text {
+  margin: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
