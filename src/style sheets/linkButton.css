@@ -1,0 +1,28 @@
+.link-btn {
+  background: white;
+  color: black;
+  border: 0.2rem solid black;
+
+  margin: 0.75rem;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  font-size: 1.125rem;
+  letter-spacing: 0.125rem;
+  text-decoration: none;
+}
+
+.link-btn:hover {
+  background: white;
+  color: black;
+}
+
+.link-btn:active {
+  background: black;
+  color: white;
+}

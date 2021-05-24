@@ -1,6 +1,8 @@
+import "../../style sheets/home.css";
+
 import { Route, Switch, Link } from "react-router-dom";
 // import { Helmet } from "react-helmet";
-import Button from "../Button";
+import LinkButton from "../LinkButton";
 import head from "../../assets/images/Head.png";
 
 var twitterHandle = "kennyparkpark";
@@ -13,17 +15,17 @@ const Home = () => {
     <div className="container">
       {/* Head and text */}
       <div id="header" className="horizontal-layout">
-        <img id="head" src={head} alt="PANIC! Someting wong" />
+        <img id="head" src={head} alt="HEAD" />
         <div id="header-text">
-          <p className="text-big">
+          <h1>
             Hi! I'm <span className="text-red">Kenny Park</span>.
-          </p>
-          <p className="text-normal">
+          </h1>
+          <p className="p1">
             I’m a 20 year old game developer, programmer, artist, and all around
             cool guy - though that last point is up for debate.
           </p>
           <br />
-          <p>
+          <p className="p1">
             This website is a collection of my games, art, and other creative
             projects.
           </p>
@@ -32,9 +34,9 @@ const Home = () => {
 
       {/* Button row */}
       <div id="button-row" className="vertical-layout">
-        <Button text="GAMES / APPLICATIONS" />
-        <Button text="RENDERS / 3D WORK" />
-        <Button text="OTHER PROJECTS" />
+        <LinkButton text="GAMES / APPLICATIONS" />
+        <LinkButton text="RENDERS / 3D WORK" />
+        <LinkButton text="OTHER PROJECTS" />
       </div>
 
       {/* Bottom links */}
@@ -53,7 +55,7 @@ const Home = () => {
           >
             twitter
           </a>
-          <label className="text-normal"> | </label>
+          <p1 className="text-normal"> | </p1>
           <a
             href={"https://instagram.com/" + instagramHandle}
             target="_blank"

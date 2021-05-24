@@ -1,8 +1,12 @@
 const BackHeader = () => {
+  function goBack() {
+    window.history.back();
+  }
+
   return (
-    <div id="back-header">
-      <a>back</a>
-    </div>
+    <label id="back-button" onClick={goBack}>
+      back
+    </label>
   );
 };
 

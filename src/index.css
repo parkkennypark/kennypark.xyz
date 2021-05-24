@@ -1,5 +1,6 @@
 :root {
   --accent: #da575c;
+  --max-width: 25rem;
 }
 
 @font-face {
@@ -19,9 +20,44 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 0.625rem;
+  border: 0.125rem solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.625rem;
+  background-color: #ffffff;
+}
+
+#version-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+a {
+  color: black;
+  text-decoration-thickness: 0.125rem;
+  font-size: 1rem;
+}
+
 a:link {
   color: black;
-  text-decoration-thickness: 2px;
 }
 
 a:visited {
@@ -30,7 +66,7 @@ a:visited {
 
 .horizontal-layout {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   /* flex-wrap: wrap; */
 }
 
@@ -49,18 +85,38 @@ a:visited {
   float: right;
 }
 
-.text-big {
-  font-size: 24px;
+.text-center {
+  text-align: center;
+  /* margin: auto; */
+}
+
+h1 {
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
-.text-normal {
-  font-size: 16px;
+h2 {
+  font-size: 1.3rem;
   font-weight: normal;
 }
 
-.text-small {
-  font-size: 12px;
+.p1 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.p2 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.text-pp-header {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.text-pp-normal {
+  font-size: 0.8rem;
   font-weight: normal;
 }
 
@@ -70,7 +126,7 @@ a:visited {
 
 .background {
   background-image: url("/src/assets/images/Repeating_Tile.png");
-  background-size: 100px;
+  background-size: 8rem;
   background-attachment: fixed;
   position: fixed;
   height: 100%;
@@ -78,81 +134,55 @@ a:visited {
   background-position: center;
 }
 
-.btn {
-  background: white;
-  color: black;
-  border: 3px solid black;
-  margin: 12pt;
-  height: 65pt;
-  cursor: pointer;
-  font-size: 18px;
-  font-family: inherit;
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-
-.btn:active {
-  background: black;
-  color: white;
-}
-
 .container {
-  display: block;
   background: white;
-  border: 3px solid black;
-  padding: 15px !important;
-  max-width: 710px;
-  /* min-width: 400px; */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  /* height: auto; */
-  /* margin: 20px auto; */
-  overflow: auto;
+  border: 0.2rem solid black;
+
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+
+  /* box-sizing: border-box; */
+
+  max-width: 42rem;
+
+  /* height: fit-content; */
+  min-height: 0rem;
+  /* max-height: 38rem; */
+
+  padding: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
+  scrollbar-color: rgb(158, 158, 158) white;
 }
 
 .section {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
-#back-header {
+#back-button {
   /* margin-bottom: 20px; */
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  cursor: pointer;
+  width: fit-content;
 }
 
-#header {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
+@media screen and (max-width: 500px) {
+  .horizontal-layout {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.625rem;
+  }
 
-#button-row {
-  /* margin-top: 20px; */
-}
-
-#bottom-links {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  /* padding: 15px; */
-}
-
-#head {
-  alt: "PANIC! something went wrong.";
-  /* height: 200px; */
-  height: 70%;
-  width: 70%;
-  /* width: 50%; */
-  transform: scaleX(-1);
-  /* margin: auto; */
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#header-text {
-  margin: auto;
-  margin-left: 15px;
-  margin-right: 15px;
+  .container {
+    padding: 0.3125rem;
+  }
 }

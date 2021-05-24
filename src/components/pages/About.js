@@ -1,3 +1,5 @@
+import "../../index.css";
+
 import BackHeader from "../BackHeader";
 
 const About = () => {
@@ -32,23 +34,21 @@ const About = () => {
             <br />
             <p>
               I've been thinking up games since elementary school, back when a
-              friend and I put all our lucrative project ideas in a
-              <span className="text-red"> red</span> folder we labeled "TOP
-              SECRET" with a cheap black marker. Since then, I've been working
-              tirelessly on projects, improving my skills with every little
-              idea, abandoned prototype, and rare finished project I've worked
-              on. My <span className="text-red">red</span> folder has long been
-              abandoned, but my passion for making things is still very much
-              alive.
+              friend and I put all our lucrative project ideas in a red folder
+              we labeled "<span className="text-red">TOP SECRET</span>" with a
+              cheap black marker. Since then, I've been working tirelessly on
+              projects, improving my skills with every little idea, abandoned
+              prototype, and rare finished project I've worked on. My red folder
+              has long been abandoned, but my passion for making things is still
+              very much alive.
             </p>
             <br />
             <p>
               I think personality is what shines through in a good project.
               That's why I chose to design this website the way I did; I wanted
               to make something that reflects my tastes and personality, and I
-              knew a sleek, modern template wouldn't be a good representation of
-              me. Art is a reflection of its creator, so hopefully you like what
-              you've seen!
+              knew using a sleek, modern template wouldn't do that. Art is a
+              reflection of its creator, so hopefully you like what you've seen!
             </p>
           </div>
 
