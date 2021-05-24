@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.f2bff0e4.chunk.css",
-    "main.js": "./static/js/main.949e09d4.chunk.js",
-    "main.js.map": "./static/js/main.949e09d4.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.7d37e06b.js",
-    "runtime-main.js.map": "./static/js/runtime-main.7d37e06b.js.map",
-    "static/js/2.80133169.chunk.js": "./static/js/2.80133169.chunk.js",
-    "static/js/2.80133169.chunk.js.map": "./static/js/2.80133169.chunk.js.map",
-    "static/js/3.3e4cd6c4.chunk.js": "./static/js/3.3e4cd6c4.chunk.js",
-    "static/js/3.3e4cd6c4.chunk.js.map": "./static/js/3.3e4cd6c4.chunk.js.map",
+    "main.css": "./static/css/main.68a9cf6f.chunk.css",
+    "main.js": "./static/js/main.95552174.chunk.js",
+    "main.js.map": "./static/js/main.95552174.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.868ee05a.js",
+    "runtime-main.js.map": "./static/js/runtime-main.868ee05a.js.map",
+    "static/js/2.51f739d6.chunk.js": "./static/js/2.51f739d6.chunk.js",
+    "static/js/2.51f739d6.chunk.js.map": "./static/js/2.51f739d6.chunk.js.map",
+    "static/js/3.1efb8299.chunk.js": "./static/js/3.1efb8299.chunk.js",
+    "static/js/3.1efb8299.chunk.js.map": "./static/js/3.1efb8299.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.f2bff0e4.chunk.css.map": "./static/css/main.f2bff0e4.chunk.css.map",
-    "static/js/2.80133169.chunk.js.LICENSE.txt": "./static/js/2.80133169.chunk.js.LICENSE.txt",
-    "static/media/Head.7fbeee20.png": "./static/media/Head.7fbeee20.png",
-    "static/media/index.css": "./static/media/TYPO_DODAMM.949e580b.TTF"
+    "static/css/main.68a9cf6f.chunk.css.map": "./static/css/main.68a9cf6f.chunk.css.map",
+    "static/js/2.51f739d6.chunk.js.LICENSE.txt": "./static/js/2.51f739d6.chunk.js.LICENSE.txt",
+    "static/media/Head.2262f40e.png": "./static/media/Head.2262f40e.png",
+    "static/media/index.css": "./static/media/TYPO_DODAMM.949e580b.TTF",
+    "static/media/Wreck The Halls Icon.680539f7.png": "./static/media/Wreck The Halls Icon.680539f7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d37e06b.js",
-    "static/js/2.80133169.chunk.js",
-    "static/css/main.f2bff0e4.chunk.css",
-    "static/js/main.949e09d4.chunk.js"
+    "static/js/runtime-main.868ee05a.js",
+    "static/js/2.51f739d6.chunk.js",
+    "static/css/main.68a9cf6f.chunk.css",
+    "static/js/main.95552174.chunk.js"
   ]
 }
