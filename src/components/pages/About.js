@@ -1,10 +1,8 @@
-import "../../index.css";
-
 import BackHeader from "../BackHeader";
 
 const About = () => {
   return (
-    <div>
+    <div className="centered-div">
       <div className="container">
         <div className="vertical-layout">
           <BackHeader />

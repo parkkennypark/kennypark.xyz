@@ -1,0 +1,118 @@
+[
+  {
+    "year": 2000,
+    "events": [
+      {
+        "date": "December",
+        "text": "Project launch: Me! Critical reception was overwhelmingly positive, despite the glaring bugs scattered throughout. Many are still present to this day.",
+        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+      }
+    ]
+  },
+  {
+    "year": 2007,
+    "events": [
+      {
+        "date": "At some point",
+        "text": "The first-grade-fun-bench incident."
+      }
+    ]
+  },
+  {
+    "year": 2008,
+    "events": [
+      {
+        "date": "December",
+        "text": "Got my first taste for money and learned the wonders of capitalism. Things were never the same.",
+        "img": "assets/images/timeline/08 Dec MONEY.JPG"
+      }
+    ]
+  },
+  {
+    "year": 2009,
+    "events": [
+      {
+        "date": "March",
+        "text": "Graced the stage as a cat in our second grade production of Peter Rabbit. “Meow, I love rabbit soup!”",
+        "img": "assets/images/timeline/09 Dec CAT.JPG"
+      }
+    ]
+  },
+  {
+    "year": 2011,
+    "events": [
+      {
+        "date": "A glorious day",
+        "text": "Ate my first microwaveable chimichanga. It was incredible.”"
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "events": [
+      {
+        "date": "April",
+        "text": "Project launch: VR Ducks",
+        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "events": [
+      {
+        "date": "July",
+        "text": "Game jam: Research Center for Boxy Physics",
+        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+      },
+      {
+        "date": "August",
+        "text": "Project launch: Duck Warfare",
+        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "events": [
+      {
+        "date": "Halloween",
+        "text": "The Banana Boys rolled into town. I'm in the back.",
+        "img": "assets/images/timeline/18 Nov BANANA.JPG"
+      },
+      {
+        "date": "November",
+        "text": "Started learning guitar."
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "events": [
+      {
+        "date": "March",
+        "text": "Bought my beloved Melona-colored Squier Bullet Telecaster.",
+        "img": "assets/images/timeline/18 Nov BANANA.JPG"
+      },
+      {
+        "date": "August",
+        "text": "Project launch: burrito finance",
+        "img": "assets/images/timeline/19 May FRIENDS.JPG"
+      },
+      {
+        "date": "August",
+        "text": "Started schooling at Purdue University.",
+        "img": "assets/images/timeline/19 May FRIENDS.JPG"
+      },
+      {
+        "date": "September",
+        "text": "Started position as a Unity programmer at Purdue's Envision Center."
+      },
+      {
+        "date": "June",
+        "text": "High school graduation, and senior trip to Lake Tahoe. I haven’t felt at peace ever since.",
+        "img": "assets/images/timeline/19 May FRIENDS.JPG"
+      }
+    ]
+  }
+]

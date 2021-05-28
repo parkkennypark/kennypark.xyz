@@ -19,7 +19,7 @@
   /* Disables mobile blue highlight for buttons */
   -webkit-tap-highlight-color: transparent;
 }
-
+/* 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
 }
@@ -37,7 +37,7 @@
 ::-webkit-scrollbar-track {
   border-radius: 0.625rem;
   background-color: #ffffff;
-}
+} */
 
 a {
   color: black;
@@ -121,9 +121,26 @@ h2 {
   height: 100%;
   width: 100%;
   background-position: center;
+
+  overflow: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) rgb(214, 214, 214);
+  /* padding: 1rem; */
+}
+
+.centered-div {
+  /* padding: 1rem; */
+  margin-top: auto;
+  margin-bottom: auto;
+
+  /* scrollbar-width: thin; */
+  /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
+  /* scrollbar-color: rgb(158, 158, 158) white; */
 }
 
 .container {
+  justify-content: center;
   background: white;
   border: 0.2rem solid black;
 
@@ -132,24 +149,11 @@ h2 {
   /* flex-grow: 1; */
 
   /* box-sizing: border-box; */
-
-  max-width: 42rem;
-
-  /* height: fit-content; */
-  min-height: 0rem;
-  /* max-height: 38rem; */
+  max-width: 44rem;
+  height: fit-content;
 
   padding: 1rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-
-  overflow-x: hidden;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
-  scrollbar-color: rgb(158, 158, 158) white;
+  margin: 1rem;
 }
 
 .section {
@@ -160,7 +164,7 @@ h2 {
   position: absolute;
   left: 0px;
   top: 0px;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: white;
   background-color: rgba(1, 1, 1, 0.5);
   padding: 0.2rem;
@@ -184,5 +188,6 @@ h2 {
 
   .container {
     padding: 0.3125rem;
+    margin: 0.5rem;
   }
 }

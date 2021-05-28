@@ -4,6 +4,8 @@
   border: 0.2rem solid black;
 
   margin: 0.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   height: 5rem;
 
   display: flex;
@@ -12,17 +14,17 @@
 
   cursor: pointer;
 
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   letter-spacing: 0.125rem;
   text-decoration: none;
 }
 
 .link-btn:hover {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 }
 
 .link-btn:active {
-  background: black;
+  background: rgb(116, 116, 116);
   color: white;
 }

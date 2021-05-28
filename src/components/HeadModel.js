@@ -15,7 +15,7 @@ export default function Model(props) {
     rotation: [0, Date.now(), 0],
   };
 
-  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.01));
+  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.005));
 
   return (
     <group ref={mesh} {...props} dispose={null}>

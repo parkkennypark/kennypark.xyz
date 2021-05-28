@@ -7,7 +7,7 @@ import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import About from "./components/pages/About";
 
-var versionNum = "0.1.3";
+var versionNum = "0.1.4";
 
 function App() {
   return (
@@ -26,6 +26,9 @@ function App() {
           </Route>
           <Route path="/About">
             <About />
+          </Route>
+          <Route>
+            <div className="container">PANIC 404 OH NO</div>
           </Route>
         </Switch>
       </div>
