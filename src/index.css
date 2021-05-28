@@ -39,17 +39,6 @@
   background-color: #ffffff;
 }
 
-#version-text {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-size: 0.8rem;
-  color: white;
-  background-color: rgba(1, 1, 1, 0.5);
-  padding: 0.2rem;
-  margin: 0.2rem;
-}
-
 a {
   color: black;
   text-decoration-thickness: 0.125rem;
@@ -165,6 +154,17 @@ h2 {
 
 .section {
   margin-top: 1.25rem;
+}
+
+#version-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 0.2rem;
+  margin: 0.2rem;
 }
 
 #back-button {

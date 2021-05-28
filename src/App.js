@@ -7,11 +7,9 @@ import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import About from "./components/pages/About";
 
-var versionNum = "0.1.2";
+var versionNum = "0.1.3";
 
 function App() {
-  var lastPath;
-
   return (
     <Router>
       <div

@@ -4,6 +4,7 @@ import { Route, Switch, Link } from "react-router-dom";
 // import { Helmet } from "react-helmet";
 import LinkButton from "../LinkButton";
 import head from "../../assets/images/Head.png";
+import Head from "../../components/Head";
 
 var twitterHandle = "kennyparkpark";
 var instagramHandle = "kennypark.png";
@@ -15,7 +16,8 @@ const Home = () => {
     <div className="container">
       {/* Head and text */}
       <div id="header" className="horizontal-layout">
-        <img id="head" src={head} alt="HEAD" />
+        {/* <img id="head" src={head} alt="HEAD" /> */}
+        <Head />
         <div id="header-text">
           <h1>
             Hi! I'm <span className="text-red">Kenny Park</span>.
