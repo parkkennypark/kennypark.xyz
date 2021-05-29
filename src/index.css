@@ -89,6 +89,11 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
 .p1 {
   font-size: 1rem;
   font-weight: normal;
@@ -133,7 +138,6 @@ h2 {
   /* padding: 1rem; */
   margin-top: auto;
   margin-bottom: auto;
-
   /* scrollbar-width: thin; */
   /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
   /* scrollbar-color: rgb(158, 158, 158) white; */
@@ -141,6 +145,7 @@ h2 {
 
 .container {
   justify-content: center;
+
   background: white;
   border: 0.2rem solid black;
 
@@ -183,7 +188,6 @@ h2 {
   .horizontal-layout {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.625rem;
   }
 
   .container {

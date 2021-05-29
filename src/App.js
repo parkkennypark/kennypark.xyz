@@ -6,8 +6,9 @@ import React from "react";
 import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import About from "./components/pages/About";
+import Timeline from "./components/pages/Timeline";
 
-var versionNum = "0.1.4";
+var versionNum = "0.2.1";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/About">
             <About />
+          </Route>
+          <Route path="/Timeline">
+            <Timeline />
           </Route>
           <Route>
             <div className="container">PANIC 404 OH NO</div>

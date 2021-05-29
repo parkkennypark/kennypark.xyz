@@ -1,0 +1,11 @@
+.image {
+  width: 10rem !important;
+  height: auto;
+  border: 0.1rem solid black;
+}
+
+@media screen and (max-width: 500px) {
+  .image {
+    margin: auto;
+  }
+}

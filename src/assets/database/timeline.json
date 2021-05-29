@@ -5,7 +5,7 @@
       {
         "date": "December",
         "text": "Project launch: Me! Critical reception was overwhelmingly positive, despite the glaring bugs scattered throughout. Many are still present to this day.",
-        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+        "img": "/images/timeline/01 Feb BIRTH.JPG"
       }
     ]
   },
@@ -13,7 +13,7 @@
     "year": 2007,
     "events": [
       {
-        "date": "At some point",
+        "date": "At some point in",
         "text": "The first-grade-fun-bench incident."
       }
     ]
@@ -24,7 +24,7 @@
       {
         "date": "December",
         "text": "Got my first taste for money and learned the wonders of capitalism. Things were never the same.",
-        "img": "assets/images/timeline/08 Dec MONEY.JPG"
+        "img": "/images/timeline/08 Dec MONEY.JPG"
       }
     ]
   },
@@ -33,8 +33,8 @@
     "events": [
       {
         "date": "March",
-        "text": "Graced the stage as a cat in our second grade production of Peter Rabbit. “Meow, I love rabbit soup!”",
-        "img": "assets/images/timeline/09 Dec CAT.JPG"
+        "text": "Graced the stage as a cat in our second grade production of Peter Rabbit. I had one line: “Meow, I love rabbit soup!”",
+        "img": "/images/timeline/09 Dec CAT.JPG"
       }
     ]
   },
@@ -42,8 +42,8 @@
     "year": 2011,
     "events": [
       {
-        "date": "A glorious day",
-        "text": "Ate my first microwaveable chimichanga. It was incredible.”"
+        "date": "A glorious day in",
+        "text": "Ate my first microwaveable chimichanga. It was incredible."
       }
     ]
   },
@@ -53,7 +53,7 @@
       {
         "date": "April",
         "text": "Project launch: VR Ducks",
-        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+        "img": "/images/timeline/01 Feb BIRTH.JPG"
       }
     ]
   },
@@ -63,12 +63,12 @@
       {
         "date": "July",
         "text": "Game jam: Research Center for Boxy Physics",
-        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+        "img": "/images/timeline/01 Feb BIRTH.JPG"
       },
       {
         "date": "August",
         "text": "Project launch: Duck Warfare",
-        "img": "assets/images/timeline/01 Feb BIRTH.JPG"
+        "img": "/images/timeline/01 Feb BIRTH.JPG"
       }
     ]
   },
@@ -78,7 +78,7 @@
       {
         "date": "Halloween",
         "text": "The Banana Boys rolled into town. I'm in the back.",
-        "img": "assets/images/timeline/18 Nov BANANA.JPG"
+        "img": "/images/timeline/18 Nov BANANA.JPG"
       },
       {
         "date": "November",
@@ -92,17 +92,17 @@
       {
         "date": "March",
         "text": "Bought my beloved Melona-colored Squier Bullet Telecaster.",
-        "img": "assets/images/timeline/18 Nov BANANA.JPG"
+        "img": "/images/timeline/18 Nov BANANA.JPG"
       },
       {
         "date": "August",
         "text": "Project launch: burrito finance",
-        "img": "assets/images/timeline/19 May FRIENDS.JPG"
+        "img": "/images/timeline/19 May FRIENDS.JPG"
       },
       {
         "date": "August",
         "text": "Started schooling at Purdue University.",
-        "img": "assets/images/timeline/19 May FRIENDS.JPG"
+        "img": "/images/timeline/19 May FRIENDS.JPG"
       },
       {
         "date": "September",
@@ -111,7 +111,16 @@
       {
         "date": "June",
         "text": "High school graduation, and senior trip to Lake Tahoe. I haven’t felt at peace ever since.",
-        "img": "assets/images/timeline/19 May FRIENDS.JPG"
+        "img": "/images/timeline/19 May FRIENDS.JPG"
+      }
+    ]
+  },
+  {
+    "year": 2084,
+    "events": [
+      {
+        "date": "Summer Olympics",
+        "text": "Still alive and kicking, I’m now a five-time gold medalist in the wildly popular Olympic sport Extreme Wheelchair Racing. This year’s performance looks no different as I take an easy lead, but at the last second, I throw the race and give a nod to the rookie in the Argentina roster. He’s like a son to me. It’s your turn, kid. Make me proud."
       }
     ]
   }
