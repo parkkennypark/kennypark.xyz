@@ -1,13 +1,31 @@
 .project-preview {
+  width: 10rem;
   display: flex;
+  margin: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  height: min-content;
+  line-height: 0.5rem;
 }
 
-.project-icon {
-  width: 20%;
-  padding: 0.625rem;
+.project-list-icon {
+  width: 90%;
+  /* padding: 0.625rem; */
   margin: auto;
 }
 
-.text-div {
-  padding: 0.5rem;
+.text-name {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.text-tagline {
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 500px) {
+  .project-preview {
+    width: 10rem;
+  }
 }

@@ -1,11 +1,10 @@
 import "../style sheets/linkButton.css";
 
-import { Route, Switch, Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const LinkButton = ({ text, onClick }) => {
+const LinkButton = ({ text, link }) => {
   return (
-    <Link draggable="false" to="/games" className="link-btn" onClick={onClick}>
+    <Link draggable="false" className="link-btn" to={link}>
       <p className="text-center">{text}</p>
     </Link>
   );

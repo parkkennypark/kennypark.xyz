@@ -1,3 +1,18 @@
-#project-list-title {
+.project-list-title {
   margin: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
 }

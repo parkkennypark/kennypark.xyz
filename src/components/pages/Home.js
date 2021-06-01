@@ -1,15 +1,12 @@
 import "../../style sheets/home.css";
 
-import { Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { Helmet } from "react-helmet";
 import LinkButton from "../LinkButton";
-import head from "../../assets/images/Head.png";
 import Head from "../../components/Head";
 
 var twitterHandle = "kennyparkpark";
 var instagramHandle = "kennypark.png";
-
-const TITLE = "Home";
 
 const Home = () => {
   return (
@@ -37,9 +34,9 @@ const Home = () => {
 
         {/* Button row */}
         <div id="button-row" className="vertical-layout">
-          <LinkButton text="GAMES / APPLICATIONS" />
-          <LinkButton text="RENDERS / 3D WORK" />
-          <LinkButton text="OTHER PROJECTS" />
+          <LinkButton text="GAMES / APPLICATIONS" link="/games" />
+          <LinkButton text="RENDERS / 3D WORK" link="/renders" />
+          <LinkButton text="OTHER PROJECTS" link="/others" />
         </div>
 
         {/* Bottom links */}
@@ -47,9 +44,9 @@ const Home = () => {
           {/* Left side */}
           <label className="float-left">
             <Link to="/about">about/resume</Link>
-            <p1 className="text-normal"> | </p1>
+            {" | "}
             <Link to="/timeline">timeline</Link>
-            <p1 className="text-normal"> | </p1>
+            {" | "}
             <Link to="/site-info">site info</Link>
           </label>
 
@@ -62,7 +59,7 @@ const Home = () => {
             >
               twitter
             </a>
-            <p1 className="text-normal"> | </p1>
+            {" | "}
             <a
               href={"https://instagram.com/" + instagramHandle}
               target="_blank"

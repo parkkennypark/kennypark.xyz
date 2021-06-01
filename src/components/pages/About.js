@@ -1,6 +1,10 @@
 import BackHeader from "../BackHeader";
 
+import { Link, useRouteMatch } from "react-router-dom";
+
 const About = () => {
+  let match = useRouteMatch();
+
   return (
     <div className="centered-div">
       <div className="container">
@@ -62,7 +66,7 @@ const About = () => {
       {/* Second container */}
       <div className="container">
         <p>
-          Resume: <a href="">view</a>
+          Resume: <Link to={match.url + "/resume"}>view</Link>
         </p>
         <p>Email: parkkennypark@gmail.com</p>
       </div>

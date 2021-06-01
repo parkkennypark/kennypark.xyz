@@ -7,35 +7,32 @@ import timeline from "../../assets/database/timeline.json";
 
 const Timeline = () => {
   const events = timeline.map((timelineYear) => {
-    return (
-      /* <h2 className="text-center">{data.year}</h2> */
-      timelineYear.events.map((event) => {
-        return (
-          <div className="timeline-container">
-            <h3 className="text-center">
-              {event.date} <span className="text-red">{timelineYear.year}</span>
-            </h3>
-            <div className="horizontal-layout">
-              <Image
-                className="timeline-image"
-                src={event.img}
-                alt={"Img not found"}
-              />
-              {/* <img className="timeline-image" src={event.img} alt={event.img} /> */}
-              <p className="p2 timeline-text text-center">{event.text}</p>
-            </div>
+    return timelineYear.events.map((event) => {
+      return (
+        <div className="timeline-container">
+          <h3 className="text-center">
+            {event.date} <span className="text-red">{timelineYear.year}</span>
+          </h3>
+          <div className="horizontal-layout">
+            <Image
+              className="timeline-image"
+              src={event.img}
+              alt={"Img not found"}
+            />
+            {/* <img className="timeline-image" src={event.img} alt={event.img} /> */}
+            <p className="p2 timeline-text text-center">{event.text}</p>
           </div>
-        );
-      })
+        </div>
+      );
+    });
 
-      /* <p>{data.events[0].text}</p> */
-    );
+    /* <p>{data.events[0].text}</p> */
   });
 
   return (
     <div className="centered-div">
       <div className="timeline-container">
-        <BackHeader />
+        <BackHeader link="" />
         <h1 className="text-center">TIMELINE</h1>
         <p className="p1 text-center">
           All the important(?) events in my life, to this point and beyond.
@@ -48,5 +45,4 @@ const Timeline = () => {
     </div>
   );
 };
-
 export default Timeline;

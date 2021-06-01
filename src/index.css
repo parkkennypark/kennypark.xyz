@@ -119,7 +119,7 @@ h3 {
 }
 
 .background {
-  background-image: url("/src/assets/images/Repeating_Tile.png");
+  background-image: url("/src/assets/images/Repeating_Tile_Lighter.png");
   background-size: 8rem;
   background-attachment: fixed;
   position: fixed;
@@ -155,6 +155,7 @@ h3 {
 
   /* box-sizing: border-box; */
   max-width: 44rem;
+  /* min-width: 44rem; */
   height: fit-content;
 
   padding: 1rem;
@@ -176,22 +177,19 @@ h3 {
   margin: 0.2rem;
 }
 
-#back-button {
-  /* margin-bottom: 20px; */
-  text-decoration: underline;
-  text-decoration-thickness: 0.125rem;
-  cursor: pointer;
-  width: fit-content;
-}
-
 @media screen and (max-width: 500px) {
   .horizontal-layout {
     display: flex;
     flex-direction: column;
   }
 
+  .centered-div {
+    min-width: 100%;
+  }
+
   .container {
     padding: 0.3125rem;
     margin: 0.5rem;
+    min-width: 0rem;
   }
 }

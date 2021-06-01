@@ -20,7 +20,7 @@ const Head = () => {
         gl.toneMapping = NoToneMapping;
       }}
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={head}>
         <OrbitControls />
         <HeadModel />
       </Suspense>

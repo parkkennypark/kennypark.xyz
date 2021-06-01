@@ -1,0 +1,106 @@
+[
+  {
+    "name": "void chat",
+    "tagline": "Forum App",
+    "iconPath": "/images/void chat/void chat icon.png",
+    "link": "/void-chat",
+
+    "shortDescription": "A forum app made with Java Swing that runs on a dedicated server. \n \n Made for a group final project in an intro Computer Science class.",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "No Monkey Business",
+    "tagline": "Frantic FPS",
+    "iconPath": "/images/No Monkey Business/No Monkey Business icon.png",
+    "link": "/no-monkey-business",
+
+    "shortDescription": "",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "Wreck The Halls",
+    "tagline": "Twin-Stick Shooter",
+    "iconPath": "/images/wreck the halls/Wreck The Halls icon.png",
+    "link": "/wreck-the-halls",
+
+    "shortDescription": "A Christmas (or Halloween?) themed twin-stick shooter about stopping the joy of the holiday season.\n\nMade in 24 hours for Purdue’s IGDC Haloween Game Jam, with post-jam work done later.",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "burrito finance",
+    "tagline": "Personal Finance",
+    "iconPath": "/images/burrito finance/burrito finance icon 512x512.png",
+    "link": "/burrito-finance",
+
+    "shortDescription": "A simple personal spending tracker that tells you how much you’ve spent in burritos.\n\nMade for personal use before entering college.",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "Duck Warfare",
+    "tagline": "Tower Defense",
+    "iconPath": "/images/Duck Warfare/Duck Warfare icon.png",
+    "link": "/duck-warfare",
+
+    "shortDescription": "A tower-defense-type game featuring a large cast of ducks and Newgrounds-era stylings.\n\nMy first major project.",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "R.C.B.P",
+    "tagline": "Game Jam Entry",
+    "iconPath": "/images/RCBP/RCBP icon 512x512.png",
+    "link": "/rcbp",
+
+    "shortDescription": "A simple puzzle game about controlling boxes with your mind.\n\nMade in a week for the GDQ Game Jam.",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "VR Ducks",
+    "tagline": "Mobile VR Game",
+    "iconPath": "/images/VR Ducks/VR Ducks icon 512x512.png",
+    "link": "/vr-ducks",
+
+    "shortDescription": "A carnival shootout game where you fire ducks from a cannon.\n\nMy first published game.",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  },
+  {
+    "name": "Block Turtle",
+    "tagline": "Relic of the Past",
+    "iconPath": "/images/Block Turtle/Block Turtle icon.png",
+    "link": "/block-turtle",
+
+    "shortDescription": "",
+
+    "overviewText": "",
+    "screenshotsPath": "",
+
+    "oldScreenshotsPath": ""
+  }
+]

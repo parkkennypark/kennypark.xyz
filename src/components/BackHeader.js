@@ -1,13 +1,37 @@
-const BackHeader = () => {
+import "../style sheets/backHeader.css";
+
+import { useHistory } from "react-router-dom";
+
+const BackHeader = ({ link, showHome }) => {
+  let history = useHistory();
+
   function goBack() {
-    window.history.back();
+    history.push(link);
+  }
+
+  function goHome() {
+    history.push("/");
   }
 
   return (
-    <label id="back-button" onClick={goBack}>
-      back
-    </label>
+    <div>
+      <label id="back-button" onClick={goBack}>
+        back
+      </label>
+      {!showHome ? (
+        <></>
+      ) : (
+        <label id="home-button" onClick={goHome}>
+          home
+        </label>
+      )}
+    </div>
   );
+};
+
+BackHeader.defaultProps = {
+  link: "",
+  showHome: "false",
 };
 
 export default BackHeader;
