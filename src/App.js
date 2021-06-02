@@ -7,9 +7,9 @@ import Timeline from "./components/pages/Timeline";
 import GamePage from "./components/pages/GamePage";
 import FourOhFour from "./components/pages/FourOhFour";
 
-import gamesAndApps from "./assets/database/games and apps.json";
+import GameList from "./assets/database/GameList";
 
-var versionNum = "0.3.1";
+var versionNum = "0.4.0";
 
 function App() {
   function getGamePage() {
@@ -20,7 +20,7 @@ function App() {
     }
 
     var game;
-    gamesAndApps.forEach((_game) => {
+    GameList.forEach((_game) => {
       if (path === "/games" + _game.link) {
         game = _game;
       }

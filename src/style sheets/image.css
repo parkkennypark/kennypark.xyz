@@ -1,11 +1,23 @@
-.image {
+.timeline-image {
   width: 10rem !important;
   height: auto;
   border: 0.1rem solid black;
 }
 
+.screenshot {
+  height: 18rem !important;
+  width: auto;
+  /* margin-left: 0.25rem; */
+  margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 500px) {
-  .image {
+  .timeline-image {
     margin: auto;
+  }
+
+  .screenshot {
+    /* height: 14rem !important; */
+    height: 13rem !important;
   }
 }

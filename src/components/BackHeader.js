@@ -14,7 +14,7 @@ const BackHeader = ({ link, showHome }) => {
   }
 
   return (
-    <div>
+    <div id="back-header-div">
       <label id="back-button" onClick={goBack}>
         back
       </label>

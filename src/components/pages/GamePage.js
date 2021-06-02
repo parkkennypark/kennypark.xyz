@@ -1,32 +1,41 @@
 import "../../style sheets/gamePage.css";
 
-import gamesAndApps from "../../assets/database/games and apps.json";
-
 import BackHeader from "../BackHeader";
+import Image from "../Image";
+import LinkButton from "../LinkButton";
 
 const GamePage = ({ game }) => {
-  // function findGame() {
-  //   var game;
-  //   gamesAndApps.forEach((_game) => {
-  //     if (name === _game.name) {
-  //       console.log("ye");
-  //       game = _game.name;
-  //     }
-  //   });
-  //   console.log(game);
-  // }
-
   return (
     <div className="centered-div">
       <div className="container">
         <BackHeader link="/games" showHome="true" />
         <div className="project-header horizontal-layout">
-          <img className="project-icon" src={game.iconPath} alt="uh oh" />
+          <img
+            className="project-icon"
+            src={game.projPath + game.icon}
+            alt="uh oh"
+          />
           <div className="project-short-description-div vertical-layout">
-            <h1 className="text-red">{game.name}</h1>
-            <p className="p1">{game.shortDescription}</p>
+            <h1 className="project-title text-red">{game.name}</h1>
+            {game.shortDescription}
           </div>
         </div>
+        <div className="screenshot-div">
+          {game.screenshots ? (
+            game.screenshots.map((imgPath, index) => (
+              <Image
+                key={index}
+                className="screenshot"
+                src={game.projPath + "screenshots/" + imgPath}
+                alt="uh oh"
+              />
+            ))
+          ) : (
+            <></>
+          )}
+        </div>
+        {/* <LinkButton text="OVERVIEW" /> */}
+        <div>{game.body}</div>
       </div>
     </div>
   );

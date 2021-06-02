@@ -2,105 +2,140 @@
   {
     "name": "void chat",
     "tagline": "Forum App",
-    "iconPath": "/images/void chat/void chat icon.png",
+    "projPath": "/images/void chat/",
+    "icon": "void chat icon.png",
     "link": "/void-chat",
 
     "shortDescription": "A forum app made with Java Swing that runs on a dedicated server. \n \n Made for a group final project in an intro Computer Science class.",
 
     "overviewText": "",
-    "screenshotsPath": "",
 
-    "oldScreenshotsPath": ""
+    "screenshots": ["landing menu.png", "main menu.png", "signup menu.png"]
   },
   {
     "name": "No Monkey Business",
     "tagline": "Frantic FPS",
-    "iconPath": "/images/No Monkey Business/No Monkey Business icon.png",
+    "projPath": "/images/No Monkey Business/",
+    "icon": "No Monkey Business icon.png",
     "link": "/no-monkey-business",
 
-    "shortDescription": "",
+    "shortDescription": "A casual, high-paced first person shooter I developed to play with my friends.\n\nWas started three times, but unfortunately never finished. I learned so much that I figured it deserved a spot anyway.",
 
     "overviewText": "",
-    "screenshotsPath": "",
 
-    "oldScreenshotsPath": ""
+    "screenshots": ["Gun selection.png", "Spawn UI.jpg"]
   },
   {
     "name": "Wreck The Halls",
     "tagline": "Twin-Stick Shooter",
-    "iconPath": "/images/wreck the halls/Wreck The Halls icon.png",
+    "projPath": "/images/Wreck The Halls/",
+    "icon": "Wreck The Halls icon.png",
     "link": "/wreck-the-halls",
 
-    "shortDescription": "A Christmas (or Halloween?) themed twin-stick shooter about stopping the joy of the holiday season.\n\nMade in 24 hours for Purdue’s IGDC Haloween Game Jam, with post-jam work done later.",
+    "shortDescription": "A Christmas (or Halloween?) themed twin-stick shooter about stopping the joy of the holiday season.\n\nMade in 24 hours for Purdue’s IGDC Haloween Game Jam, with post-jam work/polishing done later.",
 
-    "overviewText": "",
-    "screenshotsPath": "",
+    "overviewText": "i made this game as my submission in a 24 hour game jam hosted by a game development club at purdue university. everything in the game besides the sound and music was made by me. ​ this is a twin stick shooter where you fight off elves setting up for christmas the day after halloween. it was the first time i had fiddled with different lighting modes and post processing, and the result is a very aesthetically pleasing environment that feels good to navigate. one thing that i'm really happy with is how the shadows of incoming elves appear on the faces of the rocks, which serves to both enhance the mood of the game and communicate to the player where enemies are coming from. ​ i took a couple more days to polish the game as well as add an endless mode and port it to mobile. i worked on optimizing mobile performance without having to reduce the quality of the game's graphics.",
+    "screenshots": [
+      "iPhone 5.52020-01-10_14-19-04.png",
+      "iPhone 5.52020-01-10_14-20-50.png",
+      "iPhone 5.52020-01-10_14-21-14.png",
+      "iPhone 5.52020-01-10_14-22-37.png",
+      "iPhone 5.52020-01-10_14-22-51.png",
+      "iPhone 5.52020-01-10_14-23-10.png"
+    ],
+
+    "content": "wreckTheHallsContent.js",
 
     "oldScreenshotsPath": ""
   },
   {
     "name": "burrito finance",
     "tagline": "Personal Finance",
-    "iconPath": "/images/burrito finance/burrito finance icon 512x512.png",
+    "projPath": "/images/burrito finance/",
+    "icon": "burrito finance icon 512x512.png",
     "link": "/burrito-finance",
 
     "shortDescription": "A simple personal spending tracker that tells you how much you’ve spent in burritos.\n\nMade for personal use before entering college.",
 
     "overviewText": "",
-    "screenshotsPath": "",
 
-    "oldScreenshotsPath": ""
+    "screenshots": [
+      "screenshot 1.jpg",
+      "screenshot 2.jpg",
+      "screenshot 3.jpg",
+      "screenshot 4.jpg",
+      "screenshot 5.jpg"
+    ]
   },
   {
     "name": "Duck Warfare",
     "tagline": "Tower Defense",
-    "iconPath": "/images/Duck Warfare/Duck Warfare icon.png",
+    "projPath": "/images/Duck Warfare/",
+    "icon": "Duck Warfare icon.png",
     "link": "/duck-warfare",
 
     "shortDescription": "A tower-defense-type game featuring a large cast of ducks and Newgrounds-era stylings.\n\nMy first major project.",
 
-    "overviewText": "",
-    "screenshotsPath": "",
+    "overviewText": "Platforms",
 
-    "oldScreenshotsPath": ""
+    "screenshots": [
+      "scrn 1.png",
+      "scrn 2.png",
+      "scrn 3.png",
+      "scrn 4.png",
+      "scrn 5.png",
+      "scrn 6.png"
+    ]
   },
   {
     "name": "R.C.B.P",
     "tagline": "Game Jam Entry",
-    "iconPath": "/images/RCBP/RCBP icon 512x512.png",
+    "projPath": "/images/RCBP/",
+    "icon": "RCBP icon 512x512.png",
     "link": "/rcbp",
 
     "shortDescription": "A simple puzzle game about controlling boxes with your mind.\n\nMade in a week for the GDQ Game Jam.",
 
     "overviewText": "",
-    "screenshotsPath": "",
 
-    "oldScreenshotsPath": ""
+    "screenshots": [
+      "iPhone 5.5 2020-01-19_14-12-43.png",
+      "iPhone 5.5 2020-01-19_14-15-22.png",
+      "iPhone 5.5 2020-01-19_14-16-21.png"
+    ]
   },
   {
     "name": "VR Ducks",
     "tagline": "Mobile VR Game",
-    "iconPath": "/images/VR Ducks/VR Ducks icon 512x512.png",
+    "projPath": "/images/VR Ducks/",
+    "icon": "VR Ducks icon 512x512.png",
     "link": "/vr-ducks",
 
     "shortDescription": "A carnival shootout game where you fire ducks from a cannon.\n\nMy first published game.",
 
     "overviewText": "",
-    "screenshotsPath": "",
 
-    "oldScreenshotsPath": ""
+    "screenshots": [
+      "scrn 1.png",
+      "scrn 2.png",
+      "scrn 3.png",
+      "scrn 4.png",
+      "scrn 5.png",
+      "scrn 6.png",
+      "scrn 7.png"
+    ]
   },
   {
     "name": "Block Turtle",
     "tagline": "Relic of the Past",
-    "iconPath": "/images/Block Turtle/Block Turtle icon.png",
+    "projPath": "/images/Block Turtle/",
+    "icon": "Block Turtle icon.png",
     "link": "/block-turtle",
 
-    "shortDescription": "",
+    "shortDescription": "A prototype I made in fifth grade using Game Maker 8.0 featuring Blocky the Turtle.\n\nOne of the few games that still exist from my early days of game development.",
 
     "overviewText": "",
-    "screenshotsPath": "",
 
-    "oldScreenshotsPath": ""
+    "screenshots": []
   }
 ]

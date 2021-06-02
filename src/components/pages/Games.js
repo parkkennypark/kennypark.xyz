@@ -4,19 +4,20 @@ import BackHeader from "../BackHeader";
 import ProjectPreview from "../ProjectPreview";
 import LinkButton from "../LinkButton";
 
-import gamesAndApps from "../../assets/database/games and apps.json";
+import GameList from "../../assets/database/GameList";
 
 const Games = () => {
-  const games = gamesAndApps.map((game) => {
+  const games = GameList.map((game) => {
     return (
       <ProjectPreview
         name={game.name}
         tagline={game.tagline}
-        icon={game.iconPath}
+        icon={game.projPath + game.icon}
         link={game.link}
       />
     );
   });
+
   return (
     <div className="centered-div">
       <div className="container">

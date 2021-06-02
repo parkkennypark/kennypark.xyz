@@ -1,9 +1,9 @@
 import "../style sheets/image.css";
 
-const Image = ({ src, alt }) => {
+const Image = ({ className, src, alt, expandable }) => {
   if (!src) return <></>;
 
-  return <img className="image" src={src} alt={alt} />;
+  return <img className={className} src={src} alt={alt} />;
 };
 
 export default Image;

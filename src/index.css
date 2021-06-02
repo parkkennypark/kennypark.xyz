@@ -19,25 +19,30 @@
   /* Disables mobile blue highlight for buttons */
   -webkit-tap-highlight-color: transparent;
 }
-/* 
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar:vertical {
-  width: 0.5rem;
+  /* width: 0.5rem; */
+}
+
+::-webkit-scrollbar:horizontal {
+  width: 2rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--accent);
-  border-radius: 0.625rem;
+  width: 0.5rem;
+  border-radius: 1.625rem;
   border: 0.125rem solid #ffffff;
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 0.625rem;
   background-color: #ffffff;
-} */
+}
 
 a {
   color: black;
@@ -51,6 +56,14 @@ a:link {
 
 a:visited {
   color: black;
+}
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .horizontal-layout {

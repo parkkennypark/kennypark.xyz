@@ -4,9 +4,42 @@
 
 .project-icon {
   width: 12rem;
+  margin: auto;
+}
+
+.project-title {
 }
 
 .project-short-description-div {
-  padding: 0.5rem;
-  padding-left: 1rem;
+  margin: 1rem;
+  /* padding-left: 1rem; */
+}
+
+.screenshot-div {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  overflow: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) rgb(214, 214, 214);
+}
+
+.section-buttons-div {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .project-icon {
+    width: 60%;
+  }
+
+  .project-short-description-div {
+    margin: 0.5rem;
+  }
+
+  .screenshot-div {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
