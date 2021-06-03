@@ -1,9 +1,9 @@
-import Project from "../Project";
+import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 
 const name = "Wreck The Halls";
 const link = "/wreck-the-halls";
-const projPath = "/images/Wreck The Halls/";
+const projPath = "/images/games/Wreck The Halls";
 const icon = "Wreck The Halls icon.png";
 const screenshots = [
   "iPhone 5.52020-01-10_14-19-04.png",
@@ -27,6 +27,16 @@ const body = (
   <div>
     <ProjectProperty property="Release Date" value="October 2019" />
     <ProjectProperty
+      property="Development Time"
+      value="24 hours, plus
+      post-jam work"
+    />
+    <ProjectProperty
+      property="Programs"
+      value="Unity, Adobe Illustrator,
+      Blender"
+    />
+    <ProjectProperty
       property="Platforms"
       value={
         <>
@@ -36,30 +46,21 @@ const body = (
         </>
       }
     />
-    <ProjectProperty
-      property="Programs"
-      value="Unity, Adobe Illustrator,
-      Blender"
-    />
-    <ProjectProperty
-      property="Development Time"
-      value="24 hours, plus
-      post-jam work"
-    />
+
     <pre>
       {"\n"}I made this game as my submission for a 24-hour game jam hosted by a
       game development club at Purdue university. I made everything in the game,
       save the sfx and music. It won first place (of four projects), netting me
       a king-sized Kit Kat. I love Kit Kats, so I was pretty ecstatic.
       {"\n\n"}A couple months down the road, I took a some time to polish the
-      game as well as add an endless mode and port it to mobile. I worked on
-      optimizing mobile performance without having to reduce the quality of the
-      game's graphics.
+      game as well as to add achievements and an endless mode before porting it
+      to mobile. I tried my best to maintain the game's graphical fidelity while
+      still handling well on mobile devices.
     </pre>
   </div>
 );
 
-export default new Project(
+export default new Game(
   name,
   link,
   projPath,

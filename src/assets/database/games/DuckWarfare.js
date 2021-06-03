@@ -1,9 +1,9 @@
-import Project from "../Project";
+import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 
 const name = "Duck Warfare";
 const link = "/duck-warfare";
-const projPath = "/images/Duck Warfare/";
+const projPath = "/images/games/Duck Warfare";
 const icon = "Duck Warfare icon.png";
 const screenshots = [
   "scrn 1.png",
@@ -26,6 +26,15 @@ const body = (
   <div>
     <ProjectProperty property="Release Date" value="August 2017" />
     <ProjectProperty
+      property="Development Time"
+      value="One year and three months"
+    />
+    <ProjectProperty
+      property="Programs"
+      value="Unity, Adobe Illustrator,
+    Blender"
+    />
+    <ProjectProperty
       property="Platforms"
       value={
         <>
@@ -35,15 +44,7 @@ const body = (
         </>
       }
     />
-    <ProjectProperty
-      property="Programs"
-      value="Unity, Adobe Illustrator,
-      Blender"
-    />
-    <ProjectProperty
-      property="Development Time"
-      value="One year and three months"
-    />
+
     <pre>
       {"\n"}Duck Warfare was my first major project. My goal for this game was
       to make a short, casual experience full of charm and quirks. I worked on
@@ -58,7 +59,7 @@ const body = (
   </div>
 );
 
-export default new Project(
+export default new Game(
   name,
   link,
   projPath,

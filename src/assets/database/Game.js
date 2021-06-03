@@ -1,4 +1,4 @@
-export default class Project {
+export default class Game {
   constructor(
     name,
     link,

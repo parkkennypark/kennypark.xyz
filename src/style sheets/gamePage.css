@@ -12,10 +12,15 @@
 
 .project-short-description-div {
   margin: 1rem;
-  /* padding-left: 1rem; */
+}
+
+.project-description-div {
+  margin: 0rem;
 }
 
 .screenshot-div {
+  margin-left: 0rem;
+  margin-right: 0rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -35,6 +40,10 @@
   }
 
   .project-short-description-div {
+    margin: 0.5rem;
+  }
+
+  .project-description-div {
     margin: 0.5rem;
   }
 

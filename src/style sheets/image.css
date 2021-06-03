@@ -11,6 +11,12 @@
   margin-right: 0.5rem;
 }
 
+.render-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 500px) {
   .timeline-image {
     margin: auto;

@@ -12,7 +12,7 @@ const GamePage = ({ game }) => {
         <div className="project-header horizontal-layout">
           <img
             className="project-icon"
-            src={game.projPath + game.icon}
+            src={game.projPath + "/" + game.icon}
             alt="uh oh"
           />
           <div className="project-short-description-div vertical-layout">
@@ -21,21 +21,16 @@ const GamePage = ({ game }) => {
           </div>
         </div>
         <div className="screenshot-div">
-          {game.screenshots ? (
-            game.screenshots.map((imgPath, index) => (
-              <Image
-                key={index}
-                className="screenshot"
-                src={game.projPath + "screenshots/" + imgPath}
-                alt="uh oh"
-              />
-            ))
-          ) : (
-            <></>
-          )}
+          {game.screenshots.map((imgPath, index) => (
+            <Image
+              key={index}
+              className="screenshot"
+              src={game.projPath + "/screenshots/" + imgPath}
+              alt="uh oh"
+            />
+          ))}
         </div>
-        {/* <LinkButton text="OVERVIEW" /> */}
-        <div>{game.body}</div>
+        <div className="project-description-div">{game.body}</div>
       </div>
     </div>
   );

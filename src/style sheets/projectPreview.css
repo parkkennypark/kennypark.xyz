@@ -14,6 +14,17 @@
   margin: auto;
 }
 
+.render-preview {
+  width: 30rem;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.render-preview-image {
+  width: 100%;
+  height: auto;
+}
+
 .text-name {
   margin-top: 0.5rem;
   font-size: 1rem;

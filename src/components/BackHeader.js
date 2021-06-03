@@ -18,7 +18,7 @@ const BackHeader = ({ link, showHome }) => {
       <label id="back-button" onClick={goBack}>
         back
       </label>
-      {!showHome ? (
+      {showHome === "false" ? (
         <></>
       ) : (
         <label id="home-button" onClick={goHome}>

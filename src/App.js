@@ -2,14 +2,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
+import Renders from "./components/pages/Renders";
 import About from "./components/pages/About";
 import Timeline from "./components/pages/Timeline";
 import GamePage from "./components/pages/GamePage";
+import RenderPage from "./components/pages/RenderPage";
 import FourOhFour from "./components/pages/FourOhFour";
 
 import GameList from "./assets/database/GameList";
+import RenderList from "./assets/database/RenderList";
 
-var versionNum = "0.4.0";
+var versionNum = "0.5.0";
 
 function App() {
   function getGamePage() {
@@ -33,6 +36,27 @@ function App() {
     }
   }
 
+  function getRenderPage() {
+    var path = window.location.pathname;
+
+    if (path === "/renders") {
+      return <Renders />;
+    }
+
+    var render;
+    RenderList.forEach((_render) => {
+      if (path === "/renders" + _render.link) {
+        render = _render;
+      }
+    });
+
+    if (render) {
+      return <RenderPage render={render} />;
+    } else {
+      return <FourOhFour />;
+    }
+  }
+
   return (
     <Router>
       <div
@@ -48,6 +72,7 @@ function App() {
             <GamePage />
           </Route>
           <Route path="/games">{getGamePage}</Route>
+          <Route path="/renders">{getRenderPage}</Route>
           <Route path="/about">
             <About />
           </Route>
