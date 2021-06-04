@@ -12,7 +12,7 @@ import FourOhFour from "./components/pages/FourOhFour";
 import GameList from "./assets/database/GameList";
 import RenderList from "./assets/database/RenderList";
 
-var versionNum = "0.5.0";
+var versionNum = "0.5.1";
 
 function App() {
   function getGamePage() {

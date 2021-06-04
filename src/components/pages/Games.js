@@ -27,7 +27,7 @@ const Games = () => {
             GAMES / APPLICATIONS
           </h2>
         </div>
-        <div className="grid-container">{games}</div>
+        <div className="game-grid-container">{games}</div>
         {/* <LinkButton text="Virtual Labs" link="/virtual-labs" /> */}
       </div>
     </div>

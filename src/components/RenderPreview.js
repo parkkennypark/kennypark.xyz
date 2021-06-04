@@ -9,7 +9,7 @@ const RenderPreview = ({ name, year, previewImage, link }) => {
       <div className="vertical-layout text-div">
         <img className="render-preview-image" src={previewImage} alt="uh oh" />
         <p>
-          <span className="text-name">{name}</span>, {year}
+          <span className="text-name text-red">{name}</span> ({year})
         </p>
       </div>
     </Link>

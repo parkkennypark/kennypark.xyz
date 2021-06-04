@@ -201,7 +201,7 @@ h3 {
   }
 
   .container {
-    padding: 0.3125rem;
+    /* padding: 0.3125rem; */
     margin: 0.5rem;
     min-width: 0rem;
   }

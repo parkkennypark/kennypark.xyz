@@ -4,6 +4,8 @@
 }
 
 #button-row {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   /* margin-top: 20px; */
 }
 
@@ -24,8 +26,8 @@
 
 #header-text {
   margin: auto;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -38,8 +40,12 @@
     margin-bottom: 0.3125rem;
   }
 
+  #button-row {
+    margin: 0rem;
+  }
+
   #bottom-links {
-    margin: 0.3125rem;
+    /* margin: 0.3125rem; */
     margin-top: 0.625rem;
     margin-bottom: 0.625rem;
     /* padding-bottom: 0.625rem; */

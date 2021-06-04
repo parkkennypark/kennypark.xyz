@@ -26,7 +26,7 @@ const Renders = () => {
         <div className="">
           <h2 className="project-list-title text-center">RENDERS / 3D WORK</h2>
         </div>
-        <div className="">{renders}</div>
+        <div className="render-grid-container">{renders}</div>
         {/* <LinkButton text="Virtual Labs" link="/virtual-labs" /> */}
       </div>
     </div>

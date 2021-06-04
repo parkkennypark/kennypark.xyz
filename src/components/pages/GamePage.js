@@ -30,7 +30,7 @@ const GamePage = ({ game }) => {
             />
           ))}
         </div>
-        <div className="project-description-div">{game.body}</div>
+        {game.body}
       </div>
     </div>
   );

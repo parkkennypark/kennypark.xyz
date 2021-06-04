@@ -2,7 +2,7 @@
   margin: 1rem;
 }
 
-.grid-container {
+.game-grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
@@ -11,8 +11,20 @@
   align-items: center;
 }
 
+.render-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
 @media screen and (max-width: 500px) {
-  .grid-container {
+  .game-grid-container {
     grid-template-columns: auto auto;
+  }
+
+  .render-grid-container {
   }
 }

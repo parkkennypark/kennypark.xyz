@@ -9,8 +9,9 @@ const RenderPage = ({ render }) => {
       <div className="container">
         <BackHeader link="/renders" showHome="true" />
         <div className="render-page-title">
-          <span className="text-red">{render.name}</span> ({render.year})
-          <br />
+          <h1>
+            <span className="text-red">{render.name}</span> ({render.year})
+          </h1>
           {render.description}
         </div>
         <div className="render-page-images">

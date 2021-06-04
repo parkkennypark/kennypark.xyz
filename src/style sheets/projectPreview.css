@@ -15,9 +15,13 @@
 }
 
 .render-preview {
-  width: 30rem;
-  margin: 0.5rem;
+  /* width: 98%; */
+  width: 22rem;
+  margin: 0.25rem;
+  /* height: 50%; */
+  /* margin-right: 0.5rem; */
   text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 .render-preview-image {
@@ -38,5 +42,9 @@
 @media screen and (max-width: 500px) {
   .project-preview {
     width: 10rem;
+  }
+
+  .render-preview {
+    width: 13rem;
   }
 }

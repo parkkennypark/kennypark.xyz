@@ -7,15 +7,8 @@
   margin: auto;
 }
 
-.project-title {
-}
-
 .project-short-description-div {
   margin: 1rem;
-}
-
-.project-description-div {
-  margin: 0rem;
 }
 
 .screenshot-div {
@@ -40,15 +33,6 @@
   }
 
   .project-short-description-div {
-    margin: 0.5rem;
-  }
-
-  .project-description-div {
-    margin: 0.5rem;
-  }
-
-  .screenshot-div {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0rem;
   }
 }
