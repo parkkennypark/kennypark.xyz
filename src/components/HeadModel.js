@@ -11,7 +11,7 @@ export default function Model(props) {
   const mesh = useRef();
   const { nodes, materials } = useGLTF("/head.glb");
 
-  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.005));
+  // useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.005));
 
   return (
     <group ref={mesh} {...props} dispose={null}>

@@ -1,4 +1,8 @@
 import Render from "../Render";
+import ExternalLink from "../../../components/ExternalLink";
+
+const illustLink =
+  "https://twitter.com/ArsXC/status/1282684359972130818/photo/3";
 
 const name = "Japanese Room";
 const link = "/japanese-room";
@@ -8,8 +12,10 @@ const images = ["Still.png", "Safe Final.png", "Clean Final.png"];
 const year = 2021;
 const description = (
   <pre>
-    Modeled, lit, and rendered in Blender. Composited in Photoshop.
-    {"\n"}All models by me. Textures provided from CC0Textures.
+    Modeled, lit, and rendered in Blender.
+    {"\n\n"}This was a project for a modeling class. All models are by me.
+    Textures are from CC0Textures.com. Based on an{" "}
+    <ExternalLink link={illustLink} text="illustration" />.
   </pre>
 );
 

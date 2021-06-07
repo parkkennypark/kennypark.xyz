@@ -131,6 +131,11 @@ h3 {
   color: var(--accent);
 }
 
+.page-title {
+  margin: 1rem;
+  text-align: center;
+}
+
 .background {
   background-image: url("/src/assets/images/Repeating_Tile_Lighter.png");
   background-size: 8rem;

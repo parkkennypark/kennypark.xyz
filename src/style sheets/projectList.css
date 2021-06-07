@@ -1,28 +1,24 @@
-.project-list-title {
-  margin: 1rem;
-}
-
 .game-grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .render-grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
 }
 
 @media screen and (max-width: 500px) {
   .game-grid-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   .render-grid-container {

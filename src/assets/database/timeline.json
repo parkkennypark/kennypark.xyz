@@ -4,7 +4,7 @@
     "events": [
       {
         "date": "December",
-        "text": "Project launch: Me! Critical reception was overwhelmingly positive, despite the glaring bugs scattered throughout. Many are still present to this day.",
+        "text": "Project launch: Me! Critical reception was overwhelmingly positive, despite the glaring bugs scattered throughout. \"Is it supposed to poop this much?\"",
         "img": "/images/timeline/01 Feb BIRTH.JPG"
       }
     ]
@@ -23,7 +23,7 @@
     "events": [
       {
         "date": "December",
-        "text": "Got my first taste for money and learned the wonders of capitalism. Things were never the same.",
+        "text": "I got my first taste for money. I've been told I changed after that day.",
         "img": "/images/timeline/08 Dec MONEY.JPG"
       }
     ]
@@ -33,8 +33,16 @@
     "events": [
       {
         "date": "March",
-        "text": "Graced the stage as a cat in our second grade production of Peter Rabbit. I had one line: “Meow, I love rabbit soup!”",
+        "text": "I graced the stage as a cat in our second grade production of Peter Rabbit. I had one line: “Meow, I love rabbit soup!”",
         "img": "/images/timeline/09 Dec CAT.JPG"
+      },
+      {
+        "date": "A momentous day in",
+        "text": "My parents bought me a Nintendo DS Lite. I credit this system for getting me into game development, shaping my tastes, and familiarizing myself with computers. A 10/10 console."
+      },
+      {
+        "date": "A fateful day in",
+        "text": "I downloaded Game Maker, and made a bunch of dumb games. Thus began my obsession with game development."
       }
     ]
   },
@@ -43,7 +51,11 @@
     "events": [
       {
         "date": "A glorious day in",
-        "text": "Ate my first microwaveable chimichanga. It was incredible."
+        "text": "My parents made the mistake of introducing me to microwavable chimichangas. What a summer that was."
+      },
+      {
+        "date": "A prophetic day in",
+        "text": "I temporarily ascended from my mortal form and caught a Nerf bullet that my brother shot at me with my teeth. "
       }
     ]
   },
@@ -52,8 +64,8 @@
     "events": [
       {
         "date": "April",
-        "text": "Project launch: VR Ducks",
-        "img": "/images/timeline/01 Feb BIRTH.JPG"
+        "text": "After a friend thought it would be funny to make a game about shooting ducks from a cannon, I finally followed through and published my first game to the Google Play Store, \"VR Ducks.\"",
+        "img": "/images/games/VR Ducks/VR Ducks icon 512x512.png"
       }
     ]
   },
@@ -62,13 +74,13 @@
     "events": [
       {
         "date": "July",
-        "text": "Game jam: Research Center for Boxy Physics",
-        "img": "/images/timeline/01 Feb BIRTH.JPG"
+        "text": "Participated in my first game jam, producing \"The Research Center for Boxy Physics\"",
+        "img": "/images/games/RCBP/RCBP icon 512x512.png"
       },
       {
         "date": "August",
-        "text": "Project launch: Duck Warfare",
-        "img": "/images/timeline/01 Feb BIRTH.JPG"
+        "text": "After dedicating a year and three months of my life to ducks, \"Duck Warfare\" was released on the mobile app stores.",
+        "img": "/images/games/Duck Warfare/Duck Warfare icon.png"
       }
     ]
   },
@@ -77,12 +89,8 @@
     "events": [
       {
         "date": "Halloween",
-        "text": "The Banana Boys rolled into town. I'm in the back.",
-        "img": "/images/timeline/18 Nov BANANA.JPG"
-      },
-      {
-        "date": "November",
-        "text": "Started learning guitar."
+        "text": "The Banana Boys rolled into town, terrifying the locals. The value of real estate in the area plummeted.",
+        "img": "/images/timeline/18 Nov BANANA.jpg"
       }
     ]
   },
@@ -91,27 +99,26 @@
     "events": [
       {
         "date": "March",
-        "text": "Bought my beloved Melona-colored Squier Bullet Telecaster.",
-        "img": "/images/timeline/18 Nov BANANA.JPG"
-      },
-      {
-        "date": "August",
-        "text": "Project launch: burrito finance",
-        "img": "/images/timeline/19 May FRIENDS.JPG"
-      },
-      {
-        "date": "August",
-        "text": "Started schooling at Purdue University.",
-        "img": "/images/timeline/19 May FRIENDS.JPG"
-      },
-      {
-        "date": "September",
-        "text": "Started position as a Unity programmer at Purdue's Envision Center."
+        "text": "My beloved Melona-colored Squier Bullet Telecaster came home with me from a Guitar Center.",
+        "img": "/images/timeline/19 Mar GUITAR.jpg"
       },
       {
         "date": "June",
-        "text": "High school graduation, and senior trip to Lake Tahoe. I haven’t felt at peace ever since.",
+        "text": "I graduated high school, and went to Lake Tahoe on a senior trip. I comparatively haven't felt at peace ever since.",
         "img": "/images/timeline/19 May FRIENDS.JPG"
+      },
+      {
+        "date": "August",
+        "text": "Deciding to find an end to my years of crippling debt, \"burrito finance\" was developed and released to keep track of my spending.",
+        "img": "/images/games/burrito finance/burrito finance icon 512x512.png"
+      },
+      {
+        "date": "August",
+        "text": "I evolved into a train, braced for the cold, and started studying game design at Purdue University."
+      },
+      {
+        "date": "September",
+        "text": "A nervous freshman, I applied for and got accepted to a job as a Unity programmer at Purdue's Envision Center, where I currently work."
       }
     ]
   },
@@ -120,7 +127,7 @@
     "events": [
       {
         "date": "Summer Olympics",
-        "text": "Still alive and kicking, I’m now a five-time gold medalist in the wildly popular Olympic sport Extreme Wheelchair Racing. This year’s performance looks no different as I take an easy lead, but at the last second, I throw the race and give a nod to the rookie in the Argentina roster. He’s like a son to me. It’s your turn, kid. Make me proud."
+        "text": "Still alive and kicking, I’m now a five-time gold medalist in the wildly popular Olympic sport Extreme Wheelchair Racing. My performance this year looks like it will end in another easy gold, but at the last second, I throw the race and give a nod to the rookie in the Argentina roster. He’s like a son to me. It’s your turn, kid. Make me proud."
       }
     ]
   }

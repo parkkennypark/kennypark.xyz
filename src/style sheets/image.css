@@ -1,7 +1,7 @@
 .timeline-image {
   width: 10rem !important;
   height: auto;
-  border: 0.1rem solid black;
+  /* border: 0.1rem solid black; */
 }
 
 .screenshot {

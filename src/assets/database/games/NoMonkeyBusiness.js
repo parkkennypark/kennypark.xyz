@@ -18,7 +18,7 @@ const shortDescription = (
     friends.
     {"\n\n"}
     Was started three times, but unfortunately never finished. I learned so much
-    that I figured it deserved a spot anyway.
+    that I figured I'd show it off anyway.
   </pre>
 );
 const body = (
@@ -39,8 +39,8 @@ const body = (
       twist on juggernaut) and 'Capture the Rotisserie Chicken' (capture the
       flag meets control points).
       {"\n\n"}I learned a lot working solo on this project, including networking
-      code, unity events, modeling and rigging, and level and UI design. While
-      it was certainly a challenge, I had a blast doing it all.
+      code, Unity events/listeners, modeling and rigging, and level and UI
+      design. While it was certainly a challenge, I had a blast doing it all.
       {"\n\n"}The game is currently in a playable state featuring a roster of
       unique weapons and endless free-for-all gameplay. Having played with some
       friends, I'm happy to say it is a lot of fun.

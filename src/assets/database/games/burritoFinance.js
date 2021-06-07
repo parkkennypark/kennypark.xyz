@@ -1,5 +1,10 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const androidLink =
+  "https://play.google.com/store/apps/details?id=com.KennyPark.money";
+const iOSLink = "https://apps.apple.com/us/app/burrito-finance/id1476182873";
 
 const name = "burrito finance";
 const link = "/burrito-finance";
@@ -31,8 +36,8 @@ const body = (
       property="Platforms"
       value={
         <>
-          <a href="https://google.com">Android</a>,{" "}
-          <a href="https://google.com">IOS</a>,{" "}
+          <ExternalLink link={androidLink} text="Android" />,{" "}
+          <ExternalLink link={iOSLink} text="iOS" />,{" "}
         </>
       }
     />

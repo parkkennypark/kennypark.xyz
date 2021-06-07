@@ -1,11 +1,14 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const sourceLink = "";
 
 const name = "VOID";
 const link = "/void";
 const projPath = "/images/games/void chat";
 const icon = "void chat icon.png";
-const screenshots = ["landing menu.png", "main menu.png", "signup menu.png"];
+const screenshots = ["landing menu.png", "signup menu.png", "main menu.png"];
 const tagline = "Forum Program";
 const shortDescription = (
   <pre>

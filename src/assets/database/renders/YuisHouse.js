@@ -14,7 +14,8 @@ const year = 2021;
 const description = (
   <pre>
     Modeled, lit, and rendered in Blender. Composited in Photoshop.
-    {"\n"}Credits
+    {"\n\n"}This was a lighting project for a class. The house if from one of my
+    favorite anime, "K-On!" Credits are below.
   </pre>
 );
 

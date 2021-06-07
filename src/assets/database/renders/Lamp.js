@@ -8,10 +8,9 @@ const images = ["Lamp Edited.png", "Lamp Trip.png", "Wireframe.png"];
 const year = 2020;
 const description = (
   <pre>
-    I modeled the lamp following a professor's tutorial. The rest of the scene
-    as well as the texturing and lighting was done independently.
-    {"\n\n"}Modeled, textured, lit, and rendered in Blender. Composited in
-    Photoshop.
+    Modeled, textured, lit, and rendered in Blender. Composited in Photoshop.
+    {"\n\n"}I modeled the lamp following a professor's tutorial. The rest of the
+    scene as well as the texturing and lighting was done independently by me.
   </pre>
 );
 

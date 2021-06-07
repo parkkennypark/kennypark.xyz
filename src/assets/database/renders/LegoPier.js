@@ -15,7 +15,8 @@ const year = 2020;
 const description = (
   <pre>
     Modeled, textured, lit, and rendered in Blender. Composited in Photoshop.
-    {"\n"}All models by me.
+    {"\n\n"}This was a project for a modelling class. All models and textures
+    were made by me. The Lego figures are based on official Lego sets.
   </pre>
 );
 

@@ -1,11 +1,14 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const gameLink = "https://kennythepea.weebly.com/";
 
 const name = "Block Turtle";
 const link = "/block-turtle";
 const projPath = "/images/games/Block Turtle";
 const icon = "Block Turtle icon.png";
-const screenshots = [];
+const screenshots = ["Fire.png", "Rocket.png", "Instructions.png"];
 const tagline = "Relic of the Past";
 const shortDescription = (
   <pre>
@@ -27,13 +30,11 @@ const body = (
     <ProjectProperty
       property="Platforms"
       value={
-        <div>
-          <a href="https://google.com">Windows</a> (this will take you to my old
-          site!)
-        </div>
+        <>
+          <ExternalLink link={gameLink} text="PC" /> (on my old website)
+        </>
       }
     />
-
     <pre>
       {"\n"}I have a lot of fond memories associated with this little game and
       its little blocky protagonist. My late elementary school days were filled

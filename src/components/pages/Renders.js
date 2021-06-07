@@ -24,7 +24,7 @@ const Renders = () => {
       <div className="container">
         <BackHeader link="/" />
         <div className="">
-          <h2 className="project-list-title text-center">RENDERS / 3D WORK</h2>
+          <h2 className="page-title">RENDERS / 3D WORK</h2>
         </div>
         <div className="render-grid-container">{renders}</div>
         {/* <LinkButton text="Virtual Labs" link="/virtual-labs" /> */}

@@ -5,6 +5,7 @@ import Games from "./components/pages/Games";
 import Renders from "./components/pages/Renders";
 import About from "./components/pages/About";
 import Timeline from "./components/pages/Timeline";
+import SiteInfo from "./components/pages/SiteInfo";
 import GamePage from "./components/pages/GamePage";
 import RenderPage from "./components/pages/RenderPage";
 import FourOhFour from "./components/pages/FourOhFour";
@@ -12,11 +13,11 @@ import FourOhFour from "./components/pages/FourOhFour";
 import GameList from "./assets/database/GameList";
 import RenderList from "./assets/database/RenderList";
 
-var versionNum = "0.5.1";
+const versionNum = "0.5.1";
 
 function App() {
   function getGamePage() {
-    var path = window.location.pathname;
+    const path = window.location.pathname;
 
     if (path === "/games") {
       return <Games />;
@@ -37,7 +38,7 @@ function App() {
   }
 
   function getRenderPage() {
-    var path = window.location.pathname;
+    const path = window.location.pathname;
 
     if (path === "/renders") {
       return <Renders />;
@@ -78,6 +79,9 @@ function App() {
           </Route>
           <Route path="/timeline">
             <Timeline />
+          </Route>
+          <Route path="/site-info">
+            <SiteInfo />
           </Route>
           <Route>
             <FourOhFour />

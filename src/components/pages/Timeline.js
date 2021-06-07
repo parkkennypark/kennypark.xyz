@@ -7,9 +7,9 @@ import timeline from "../../assets/database/timeline.json";
 
 const Timeline = () => {
   const events = timeline.map((timelineYear) => {
-    return timelineYear.events.map((event) => {
+    return timelineYear.events.map((event, index) => {
       return (
-        <div className="timeline-container">
+        <div key={index} className="timeline-container">
           <h3 className="text-center">
             {event.date} <span className="text-red">{timelineYear.year}</span>
           </h3>

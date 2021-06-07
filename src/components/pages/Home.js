@@ -1,12 +1,13 @@
 import "../../style sheets/home.css";
 
 import { Link } from "react-router-dom";
-// import { Helmet } from "react-helmet";
+
 import LinkButton from "../LinkButton";
 import Head from "../../components/Head";
+import ExternalLink from "../ExternalLink";
 
-var twitterHandle = "kennyparkpark";
-var instagramHandle = "kennypark.png";
+const twitterHandle = "kennyparkpark";
+const instagramHandle = "kennypark.png";
 
 const Home = () => {
   return (
@@ -43,7 +44,7 @@ const Home = () => {
         <div id="bottom-links">
           {/* Left side */}
           <label className="float-left">
-            <Link to="/about">about/resume</Link>
+            <Link to="/about">about/contact</Link>
             {" | "}
             <Link to="/timeline">timeline</Link>
             {" | "}
@@ -52,21 +53,15 @@ const Home = () => {
 
           {/* Right side */}
           <div className="float-right">
-            <a
-              href={"https://twitter.com/" + twitterHandle}
-              target="_blank"
-              rel="noreferrer"
-            >
-              twitter
-            </a>
+            <ExternalLink
+              link={"https://twitter.com/" + twitterHandle}
+              text="twitter"
+            />
             {" | "}
-            <a
-              href={"https://instagram.com/" + instagramHandle}
-              target="_blank"
-              rel="noreferrer"
-            >
-              instagram
-            </a>
+            <ExternalLink
+              link={"https://instagram.com/" + instagramHandle}
+              text="instagram"
+            />
           </div>
         </div>
       </div>

@@ -1,5 +1,10 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const androidLink =
+  "https://play.google.com/store/apps/details?id=com.lonelybench.DuckWarfare";
+const iOSLink = "https://apps.apple.com/us/app/duck-warfare/id1269957119";
 
 const name = "Duck Warfare";
 const link = "/duck-warfare";
@@ -13,7 +18,7 @@ const screenshots = [
   "scrn 5.png",
   "scrn 6.png",
 ];
-const tagline = "Tower Defense";
+const tagline = "Quirky Tower Defense";
 const shortDescription = (
   <pre>
     A tower-defense-type game featuring a large cast of ducks and Newgrounds-era
@@ -38,9 +43,8 @@ const body = (
       property="Platforms"
       value={
         <>
-          <a href="https://google.com">Android</a>,{" "}
-          <a href="https://google.com">IOS</a>,{" "}
-          <a href="https://google.com">Browser</a>
+          <ExternalLink link={androidLink} text="Android" />,{" "}
+          <ExternalLink link={iOSLink} text="iOS" />,{" "}
         </>
       }
     />

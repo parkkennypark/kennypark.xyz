@@ -1,5 +1,13 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const androidLink =
+  "https://play.google.com/store/apps/details?id=com.lonelybench.RCBP";
+const iOSLink =
+  "https://apps.apple.com/us/app/boxy-physics-research-center/id1412305838?ls=1";
+const browserLink =
+  "https://parkkennypark.itch.io/the-research-center-for-boxy-physics";
 
 const name = "R.C.B.P";
 const link = "/rcbp";
@@ -27,16 +35,17 @@ const body = (
       property="Platforms"
       value={
         <>
-          <a href="https://google.com">Android</a>,{" "}
-          <a href="https://google.com">IOS</a>,{" "}
-          <a href="https://google.com">Browser</a>,{" "}
+          <ExternalLink link={androidLink} text="Android" />,{" "}
+          <ExternalLink link={iOSLink} text="iOS" />,{" "}
+          <ExternalLink link={browserLink} text="Browser" />
         </>
       }
     />
 
     <pre>
       {"\n"}This was my first time participating in a game jam, and I'm really
-      happy with the end result. I've never designed puzzles for a game before,
+      happy with the end result. The jam was completely open ended - no themes,
+      rules, or any restrictions. I've never designed puzzles for a game before,
       and though there aren't many in the game, I was able to produce novel ways
       to play on the core mechanic.
       {"\n\n"}The game was ported to mobile post-jam.

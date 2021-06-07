@@ -8,8 +8,8 @@ const RenderPreview = ({ name, year, previewImage, link }) => {
     <Link to={match.url + link} className="render-preview">
       <div className="vertical-layout text-div">
         <img className="render-preview-image" src={previewImage} alt="uh oh" />
-        <p>
-          <span className="text-name text-red">{name}</span> ({year})
+        <p className="p1">
+          <span className="text-red">{name}</span> ({year})
         </p>
       </div>
     </Link>

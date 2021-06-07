@@ -1,5 +1,12 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const androidLink =
+  "https://play.google.com/store/apps/details?id=com.KennyPark.WrecktheHalls";
+const iOSLink =
+  "https://apps.apple.com/us/app/wreck-the-halls/id1493863302?ls=1";
+const browserLink = "https://parkkennypark.itch.io/wreck-the-halls";
 
 const name = "Wreck The Halls";
 const link = "/wreck-the-halls";
@@ -40,18 +47,19 @@ const body = (
       property="Platforms"
       value={
         <>
-          <a href="https://google.com">Android</a>,{" "}
-          <a href="https://google.com">IOS</a>,{" "}
-          <a href="https://google.com">Browser</a>
+          <ExternalLink link={androidLink} text="Android" />,{" "}
+          <ExternalLink link={iOSLink} text="iOS" />,{" "}
+          <ExternalLink link={browserLink} text="Browser" /> (original jam ver.)
         </>
       }
     />
 
     <pre>
       {"\n"}I made this game as my submission for a 24-hour game jam hosted by a
-      game development club at Purdue university. I made everything in the game,
-      save the sfx and music. It won first place (of four projects), netting me
-      a king-sized Kit Kat. I love Kit Kats, so I was pretty ecstatic.
+      game development club at Purdue university. The theme was very broad:
+      "Halloween." I made everything in the game, save the sfx and music. It won
+      first place (of four projects), netting me a king-sized Kit Kat. I love
+      Kit Kats, so I was pretty ecstatic.
       {"\n\n"}A couple months down the road, I took a some time to polish the
       game as well as to add achievements and an endless mode before porting it
       to mobile. I tried my best to maintain the game's graphical fidelity while

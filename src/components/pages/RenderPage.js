@@ -15,8 +15,9 @@ const RenderPage = ({ render }) => {
           {render.description}
         </div>
         <div className="render-page-images">
-          {render.images.map((imgPath) => (
+          {render.images.map((imgPath, index) => (
             <Image
+              key={index}
               className="render-image"
               src={render.projPath + "/" + imgPath}
               alt={render.projPath + "/" + imgPath}

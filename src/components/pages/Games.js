@@ -7,9 +7,10 @@ import LinkButton from "../LinkButton";
 import GameList from "../../assets/database/GameList";
 
 const Games = () => {
-  const games = GameList.map((game) => {
+  const games = GameList.map((game, index) => {
     return (
       <GamePreview
+        key={index}
         name={game.name}
         tagline={game.tagline}
         icon={game.projPath + "/" + game.icon}
@@ -23,9 +24,7 @@ const Games = () => {
       <div className="container">
         <BackHeader link="/" />
         <div className="">
-          <h2 className="project-list-title text-center">
-            GAMES / APPLICATIONS
-          </h2>
+          <h2 className="page-title">GAMES / APPLICATIONS</h2>
         </div>
         <div className="game-grid-container">{games}</div>
         {/* <LinkButton text="Virtual Labs" link="/virtual-labs" /> */}

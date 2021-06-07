@@ -1,5 +1,9 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import ExternalLink from "../../../components/ExternalLink";
+
+const androidLink =
+  "https://play.google.com/store/apps/details?id=com.Lonely_Bench.VR_Ducks";
 
 const name = "VR Ducks";
 const link = "/vr-ducks";
@@ -34,11 +38,7 @@ const body = (
     />
     <ProjectProperty
       property="Platforms"
-      value={
-        <>
-          <a href="https://google.com">Android</a>,{" "}
-        </>
-      }
+      value={<ExternalLink link={androidLink} text="Android" />}
     />
 
     <pre>

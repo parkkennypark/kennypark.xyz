@@ -11,7 +11,7 @@ const About = () => {
         <div className="vertical-layout">
           <BackHeader />
 
-          {/* Title */}
+          {/* Title
           <div className="section">
             <p className="text-big">
               Hi! I'm <span className="text-normal">-</span>
@@ -25,8 +25,9 @@ const About = () => {
               <span className="text-red">Kenny Park</span>.
               <span className="text-small"> Nailed it.</span>
             </p>
-          </div>
+          </div> */}
 
+          <h1 className="page-title">ABOUT</h1>
           {/* Body */}
           <div>
             <p>
@@ -52,23 +53,16 @@ const About = () => {
               knew using a sleek, modern template wouldn't do that. Art is a
               reflection of its creator, so hopefully you like what you've seen!
             </p>
-          </div>
-
-          {/* Info */}
-          <div className="section">
-            <p className="text-small">
-              This site was made from scratch with ReactJS.
-            </p>
+            <br />
+            <Link to={match.url + "/resume"}>Resume</Link>
           </div>
         </div>
       </div>
 
       {/* Second container */}
       <div className="container">
-        <p>
-          Resume: <Link to={match.url + "/resume"}>view</Link>
-        </p>
         <p>Email: parkkennypark@gmail.com</p>
+        <p>Discord: Kenny Park, #6479</p>
       </div>
     </div>
   );
