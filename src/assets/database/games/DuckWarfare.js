@@ -9,7 +9,7 @@ const iOSLink = "https://apps.apple.com/us/app/duck-warfare/id1269957119";
 const name = "Duck Warfare";
 const link = "/duck-warfare";
 const projPath = "/images/games/Duck Warfare";
-const icon = "Duck Warfare icon.png";
+const icon = "Duck Warfare icon 256x256.png";
 const screenshots = [
   "scrn 1.png",
   "scrn 2.png",

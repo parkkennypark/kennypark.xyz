@@ -8,7 +8,7 @@ const androidLink =
 const name = "VR Ducks";
 const link = "/vr-ducks";
 const projPath = "/images/games/VR Ducks";
-const icon = "VR Ducks icon 512x512.png";
+const icon = "VR Ducks icon 256x256.png";
 const screenshots = [
   "scrn 1.png",
   "scrn 2.png",

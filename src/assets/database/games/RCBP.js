@@ -12,7 +12,7 @@ const browserLink =
 const name = "R.C.B.P";
 const link = "/rcbp";
 const projPath = "/images/games/RCBP";
-const icon = "RCBP icon 512x512.png";
+const icon = "RCBP icon 256x256.png";
 const screenshots = [
   "iPhone 5.5 2020-01-19_14-12-43.png",
   "iPhone 5.5 2020-01-19_14-15-22.png",

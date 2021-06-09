@@ -47,7 +47,7 @@
 a {
   color: black;
   text-decoration-thickness: 0.125rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 a:link {

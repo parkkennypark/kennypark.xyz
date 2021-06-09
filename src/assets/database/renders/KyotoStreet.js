@@ -9,10 +9,11 @@ const teemuLink = "https://teemusphoto.com/work/japan/";
 const name = "Kyoto Street";
 const link = "/kyoto-street";
 const projPath = "/images/renders/Kyoto Street";
-const previewImage = "preview.png";
+const previewImage = "Kyoto Street thumbnail.png";
 const images = [
   "main shot, 128 samples [final].png",
   "cutout shot, 128 samples [final].png",
+  "viewport render.jpg",
 ];
 const year = 2021;
 const description = (

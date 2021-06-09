@@ -10,6 +10,7 @@
 
 .project-list-icon {
   width: 90%;
+  width: 90%;
   /* padding: 0.625rem; */
   margin: auto;
 }
@@ -26,7 +27,8 @@
 
 .render-preview-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  /* height: auto; */
 }
 
 .text-name {

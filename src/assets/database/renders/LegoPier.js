@@ -3,7 +3,7 @@ import Render from "../Render";
 const name = "Lego Pier";
 const link = "/lego-pier";
 const projPath = "/images/renders/Lego Pier";
-const previewImage = "Edited Render.png";
+const previewImage = "Lego Pier thumbnail.png";
 const images = [
   "Mockup Final.png",
   "Edited Render.png",

@@ -4,4 +4,5 @@
 
 .render-page-images {
   margin-top: 0.5rem;
+  height: min-content;
 }

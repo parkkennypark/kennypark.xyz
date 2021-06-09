@@ -7,8 +7,8 @@ const illustLink =
 const name = "Japanese Room";
 const link = "/japanese-room";
 const projPath = "/images/renders/Japanese Room";
-const previewImage = "Still 16-9.png";
-const images = ["Still.png", "Safe Final.png", "Clean Final.png"];
+const previewImage = "Japanese Room thumbnail.png";
+const images = ["Interior.mp4", "Still.png"];
 const year = 2021;
 const description = (
   <pre>

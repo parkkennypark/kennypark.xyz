@@ -11,7 +11,7 @@ const browserLink = "https://parkkennypark.itch.io/wreck-the-halls";
 const name = "Wreck The Halls";
 const link = "/wreck-the-halls";
 const projPath = "/images/games/Wreck The Halls";
-const icon = "Wreck The Halls icon.png";
+const icon = "Wreck The Halls icon 256x256.png";
 const screenshots = [
   "iPhone 5.52020-01-10_14-19-04.png",
   "iPhone 5.52020-01-10_14-20-50.png",

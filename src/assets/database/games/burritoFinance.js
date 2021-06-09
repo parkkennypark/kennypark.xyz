@@ -9,7 +9,7 @@ const iOSLink = "https://apps.apple.com/us/app/burrito-finance/id1476182873";
 const name = "burrito finance";
 const link = "/burrito-finance";
 const projPath = "/images/games/burrito finance";
-const icon = "burrito finance icon 512x512.png";
+const icon = "burrito finance icon 256x256.png";
 const screenshots = [
   "screenshot 1.jpg",
   "screenshot 2.jpg",
