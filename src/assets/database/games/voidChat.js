@@ -2,7 +2,7 @@ import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 import ExternalLink from "../../../components/ExternalLink";
 
-const sourceLink = "";
+const sourceLink = "https://github.com/parkkennypark/CS180-Final-Project";
 
 const name = "VOID";
 const link = "/void";
@@ -21,20 +21,14 @@ const body = (
   <div>
     <ProjectProperty property="Project Date" value="May 2021" />
     <ProjectProperty property="Development Time" value="Three weeks" />
-    {/* <ProjectProperty
-      property="Platforms"
-      value={
-        <>
-          <a href="https://google.com">Windows</a>,{" "}
-          <a href="https://google.com">MacOS</a>,{" "}
-        </>
-      }
-    /> */}
     <ProjectProperty
       property="Language"
       value="Java (Swing framework for GUI)"
     />
-    <ProjectProperty property="Programs" value="IntelliJ" />
+    <ProjectProperty
+      property="Source code"
+      value={<ExternalLink link={sourceLink} text={"Github"} />}
+    />
     <pre>
       {"\n"}For this project, we were prompted to make a social media program
       that implements profiles, posts, and comments that would all be sent to

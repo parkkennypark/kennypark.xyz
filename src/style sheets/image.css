@@ -9,12 +9,14 @@
   width: auto;
   /* margin-left: 0.25rem; */
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 .render-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin-top: 0.5rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {

@@ -21,11 +21,7 @@ const shortDescription = (
 );
 const body = (
   <div>
-    <ProjectProperty property="Release Date" value="August 2017" />
-    <ProjectProperty
-      property="Development Time"
-      value="One year and three months"
-    />
+    {/* <ProjectProperty property="Development" value="August 2017" /> */}
     <ProjectProperty property="Programs" value="Game Maker 8.0" />
     <ProjectProperty
       property="Platforms"

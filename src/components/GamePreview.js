@@ -1,7 +1,6 @@
 import "../style sheets/projectPreview.css";
 
 import { Link, useRouteMatch } from "react-router-dom";
-import GamePage from "./pages/GamePage";
 
 const GamePreview = ({ name, tagline, icon, link }) => {
   let match = useRouteMatch();
