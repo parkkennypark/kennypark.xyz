@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./components/pages/Home";
 import Games from "./components/pages/Games";
 import Renders from "./components/pages/Renders";
+import OtherProjects from "./components/pages/OtherProjects";
 import About from "./components/pages/About";
 import Timeline from "./components/pages/Timeline";
 import SiteInfo from "./components/pages/SiteInfo";
@@ -18,44 +19,22 @@ const versionNum = "0.5.2";
 function App() {
   function getGamePage() {
     const path = window.location.pathname;
-
     if (path === "/games") {
       return <Games />;
     }
 
-    var game;
-    GameList.forEach((_game) => {
-      if (path === "/games" + _game.link) {
-        game = _game;
-      }
-    });
-
-    if (game) {
-      return <GamePage game={game} />;
-    } else {
-      return <FourOhFour />;
-    }
+    var gameStr = path.substr(6);
+    return <GamePage gameStr={gameStr} />;
   }
 
   function getRenderPage() {
     const path = window.location.pathname;
-
     if (path === "/renders") {
       return <Renders />;
     }
 
-    var render;
-    RenderList.forEach((_render) => {
-      if (path === "/renders" + _render.link) {
-        render = _render;
-      }
-    });
-
-    if (render) {
-      return <RenderPage render={render} />;
-    } else {
-      return <FourOhFour />;
-    }
+    var renderStr = path.substr(8);
+    return <RenderPage renderStr={renderStr} />;
   }
 
   return (
@@ -64,28 +43,17 @@ function App() {
         className="background"
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <p id="version-text">{"ver " + versionNum}</p>
+        {/* <p id="version-text">{"ver " + versionNum}</p> */}
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/games/test">
-            <GamePage />
-          </Route>
-          <Route path="/games">{getGamePage}</Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/games" component={Games} />
+          <Route path="/games/:gameStr" component={GamePage} />
           <Route path="/renders">{getRenderPage}</Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/timeline">
-            <Timeline />
-          </Route>
-          <Route path="/site-info">
-            <SiteInfo />
-          </Route>
-          <Route>
-            <FourOhFour />
-          </Route>
+          <Route path="/other-projects" component={OtherProjects} />
+          <Route path="/about" component={About} />
+          <Route path="/timeline" component={Timeline} />
+          <Route path="/site-info" component={SiteInfo} />
+          <Route component={FourOhFour} />
         </Switch>
       </div>
     </Router>

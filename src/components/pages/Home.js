@@ -37,7 +37,7 @@ const Home = () => {
         <div id="button-row" className="vertical-layout">
           <LinkButton text="GAMES / APPLICATIONS" link="/games" />
           <LinkButton text="RENDERS / 3D WORK" link="/renders" />
-          <LinkButton text="OTHER PROJECTS" link="/others" />
+          <LinkButton text="OTHER PROJECTS" link="/other-projects" />
         </div>
 
         {/* Bottom links */}

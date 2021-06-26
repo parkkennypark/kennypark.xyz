@@ -15,8 +15,11 @@ const SiteInfo = () => {
         <div style={{ textAlign: "center" }}>
           <p>
             This site was made by me with{" "}
-            <span className="text-red">React</span>. It is hosted using Github
-            Pages.
+            <span className="text-red">React</span>. It is hosted on
+            NearlyFreeSpeech.
+          </p>
+          <p className="p2">
+            Brother Park gave me a lot of help since this was my first site.
           </p>
           <br />
           <p>
@@ -43,6 +46,7 @@ const SiteInfo = () => {
             {" | "}
             <ExternalLink link={brotherLink} text="Brother Park" />
           </p>
+          <br />
         </div>
       </div>
     </div>

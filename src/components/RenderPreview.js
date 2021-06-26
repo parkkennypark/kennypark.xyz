@@ -5,7 +5,7 @@ import { Link, useRouteMatch } from "react-router-dom";
 const RenderPreview = ({ name, year, previewImage, link }) => {
   let match = useRouteMatch();
   return (
-    <Link to={match.url + link} className="render-preview">
+    <Link to={"renders/" + link} className="render-preview">
       <div className="vertical-layout text-div">
         <img
           className="render-preview-image"

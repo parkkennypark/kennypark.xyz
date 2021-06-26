@@ -65,7 +65,7 @@
       {
         "date": "April",
         "text": "After a friend thought it would be funny to make a game about shooting ducks from a cannon, I finally followed through and published my first game to the Google Play Store, \"VR Ducks.\"",
-        "img": "/images/games/VR Ducks/VR Ducks icon 512x512.png"
+        "img": "/images/games/VR Ducks/VR Ducks icon 256x256.png"
       }
     ]
   },
@@ -75,7 +75,7 @@
       {
         "date": "July",
         "text": "I participated in my first game jam, producing \"The Research Center for Boxy Physics\"",
-        "img": "/images/games/RCBP/RCBP icon 512x512.png"
+        "img": "/images/games/RCBP/RCBP icon 256x256.png"
       },
       {
         "date": "August",
@@ -110,7 +110,7 @@
       {
         "date": "August",
         "text": "Deciding to find an end to my years of crippling debt, \"burrito finance\" was developed and released to keep track of my spending.",
-        "img": "/images/games/burrito finance/burrito finance icon 512x512.png"
+        "img": "/images/games/burrito finance/burrito finance icon 256x256.png"
       },
       {
         "date": "August",
@@ -119,6 +119,15 @@
       {
         "date": "September",
         "text": "A nervous freshman, I applied for and got accepted to a job as a Unity programmer at Purdue's Envision Center, where I currently work."
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "events": [
+      {
+        "date": "June",
+        "text": "This website was launched!"
       }
     ]
   },

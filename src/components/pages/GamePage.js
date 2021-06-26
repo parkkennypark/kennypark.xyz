@@ -5,12 +5,25 @@ import { useState } from "react";
 
 import BackHeader from "../BackHeader";
 import Image from "../Image";
-import LinkButton from "../LinkButton";
 import PhotosModal from "../PhotosModal";
+import GameList from "../../assets/database/GameList";
+import FourOhFour from "./FourOhFour";
+import { useParams } from "react-router";
 
-const GamePage = ({ game }) => {
+const GamePage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentModalIndex, setCurrentModelIndex] = useState(0);
+
+  let { gameStr } = useParams();
+
+  console.log(gameStr);
+
+  if (!(gameStr in GameList)) {
+    console.log("Can't find gameStr ", gameStr);
+    return <FourOhFour />;
+  }
+
+  const game = GameList[gameStr];
 
   function openModal(open, index = -1) {
     setModalIsOpen(open);
@@ -21,14 +34,12 @@ const GamePage = ({ game }) => {
     var newIndex = currentModalIndex - 1;
     if (newIndex < 0) newIndex = game.screenshots.length - 1;
     setCurrentModelIndex(newIndex);
-    console.log(newIndex, " ", game.screenshots.length);
   }
 
   function nextImg() {
     var newIndex = currentModalIndex + 1;
     if (newIndex >= game.screenshots.length) newIndex = 0;
     setCurrentModelIndex(newIndex);
-    console.log(newIndex, " ", game.screenshots.length);
   }
 
   return (

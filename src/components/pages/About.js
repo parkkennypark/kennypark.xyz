@@ -1,10 +1,6 @@
 import BackHeader from "../BackHeader";
 
-import { Link, useRouteMatch } from "react-router-dom";
-
 const About = () => {
-  let match = useRouteMatch();
-
   return (
     <div className="centered-div">
       <div className="container">
@@ -54,7 +50,12 @@ const About = () => {
               reflection of its creator, so hopefully you like what you've seen!
             </p>
             <br />
-            <Link to={match.url + "/resume"}>Resume</Link>
+            <div className="float-left">
+              <a href="Resume 21-03-29.pdf">resume</a>
+            </div>
+            <div className="float-right">
+              <a href="favorites.txt">my favorite stuff</a>
+            </div>
           </div>
         </div>
       </div>

@@ -7,15 +7,15 @@ import RCBP from "./games/RCBP";
 import VRDucks from "./games/VRDucks";
 import BlockTurtle from "./games/BlockTurtle";
 
-let GameList = [
-  voidChat,
-  NoMonkeyBusiness,
-  WreckTheHalls,
-  burritoFinance,
-  DuckWarfare,
-  RCBP,
-  VRDucks,
-  BlockTurtle,
-];
+let GameList = {
+  "void-chat": voidChat,
+  "no-monkey-business": NoMonkeyBusiness,
+  "wreck-the-halls": WreckTheHalls,
+  "burrito-finance": burritoFinance,
+  "duck-warfare": DuckWarfare,
+  rcbp: RCBP,
+  "vr-ducks": VRDucks,
+  "block-turtle": BlockTurtle,
+};
 
 export default GameList;

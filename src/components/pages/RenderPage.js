@@ -5,10 +5,18 @@ import { useState } from "react";
 import BackHeader from "../BackHeader";
 import Image from "../Image";
 import PhotosModal from "../PhotosModal";
+import RenderList from "../../assets/database/RenderList";
+import FourOhFour from "./FourOhFour";
 
-const RenderPage = ({ render }) => {
+const RenderPage = ({ renderStr }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentModalIndex, setCurrentModelIndex] = useState(0);
+
+  if (!(renderStr in RenderList)) {
+    return <FourOhFour />;
+  }
+
+  const render = RenderList[renderStr];
 
   function openModal(open, index = -1) {
     setModalIsOpen(open);
@@ -19,14 +27,12 @@ const RenderPage = ({ render }) => {
     var newIndex = currentModalIndex - 1;
     if (newIndex < 0) newIndex = render.images.length - 1;
     setCurrentModelIndex(newIndex);
-    console.log(newIndex, " ", render.images.length);
   }
 
   function nextImg() {
     var newIndex = currentModalIndex + 1;
     if (newIndex >= render.images.length) newIndex = 0;
     setCurrentModelIndex(newIndex);
-    console.log(newIndex, " ", render.images.length);
   }
   return (
     <div className="centered-div">
