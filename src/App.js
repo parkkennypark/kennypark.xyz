@@ -47,12 +47,14 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/games" component={Games} />
-          <Route path="/games/:gameStr" component={GamePage} />
-          <Route path="/renders">{getRenderPage}</Route>
-          <Route path="/other-projects" component={OtherProjects} />
-          <Route path="/about" component={About} />
-          <Route path="/timeline" component={Timeline} />
-          <Route path="/site-info" component={SiteInfo} />
+          <Route exact path="/games/:gameStr" component={GamePage} />
+          <Route exact path="/renders">
+            {getRenderPage}
+          </Route>
+          <Route exact path="/other-projects" component={OtherProjects} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/timeline" component={Timeline} />
+          <Route exact path="/site-info" component={SiteInfo} />
           <Route component={FourOhFour} />
         </Switch>
       </div>

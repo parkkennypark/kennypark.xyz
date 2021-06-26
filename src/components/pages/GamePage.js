@@ -10,13 +10,11 @@ import GameList from "../../assets/database/GameList";
 import FourOhFour from "./FourOhFour";
 import { useParams } from "react-router";
 
-const GamePage = () => {
+const GamePage = ({ match }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentModalIndex, setCurrentModelIndex] = useState(0);
 
-  let { gameStr } = useParams();
-
-  console.log(gameStr);
+  const gameStr = match.params.gameStr;
 
   if (!(gameStr in GameList)) {
     console.log("Can't find gameStr ", gameStr);
