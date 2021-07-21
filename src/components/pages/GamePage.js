@@ -2,19 +2,21 @@ import "../../style sheets/gamePage.css";
 import "../../style sheets/modal.css";
 
 import { useState } from "react";
+import { useParams } from "react-router";
 
 import BackHeader from "../BackHeader";
 import Image from "../Image";
 import PhotosModal from "../PhotosModal";
 import GameList from "../../assets/database/GameList";
 import FourOhFour from "./FourOhFour";
-import { useParams } from "react-router";
 
-const GamePage = ({ match }) => {
+const GamePage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentModalIndex, setCurrentModelIndex] = useState(0);
 
-  const gameStr = match.params.gameStr;
+  let { gameStr } = useParams();
+
+  console.log(gameStr);
 
   if (!(gameStr in GameList)) {
     console.log("Can't find gameStr ", gameStr);

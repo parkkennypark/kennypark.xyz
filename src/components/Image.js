@@ -6,12 +6,12 @@ const Image = ({ className, src, alt, onClick }) => {
   const fileType = src.split(".").pop();
   if (fileType === "mp4")
     return (
-      <video className={className} autoPlay loop disableRemotePlayback>
+      <video className={className} onClick={onClick} autoPlay loop disableRemotePlayback>
         <source src={src} type="video/mp4" />
       </video>
     );
 
-  return <img className={className} src={src} alt={alt} onClick={onClick} />;
+  return <img className={className} loading="lazy" src={src} alt={alt} onClick={onClick} />;
 };
 
 export default Image;

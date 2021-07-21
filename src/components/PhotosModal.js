@@ -23,17 +23,31 @@ const PhotosModal = ({
     onNextClick();
   }
 
+  function isVideo()
+  {
+    var fileType = images[index].split(".").pop();
+    return fileType === "mp4"
+  } 
+
   if (open === false) {
     return <></>;
   }
+
   return (
     <div className="modal-backing" onClick={backingOnClick}>
-      <img
-        onClick={handleChildClick}
-        className="modal-image"
-        src={srcPath + images[index]}
-        alt={images[index]}
-      />
+      
+      {isVideo() ? 
+        <video className={"modal-image"} onClick={handleChildClick} autoPlay loop disableRemotePlayback>
+          <source src={srcPath + images[index]} type="video/mp4" />
+        </video>
+        : 
+        <img
+          onClick={handleChildClick}
+          className="modal-image"
+          src={srcPath + images[index]}
+          alt={images[index]}
+        />}
+      
       <h2 className="modal-navbar disable-select">
         <p onClick={handlePrevImg} className="modal-navbar-prev-button">
           {"< "}

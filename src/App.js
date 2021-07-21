@@ -11,32 +11,9 @@ import GamePage from "./components/pages/GamePage";
 import RenderPage from "./components/pages/RenderPage";
 import FourOhFour from "./components/pages/FourOhFour";
 
-import GameList from "./assets/database/GameList";
-import RenderList from "./assets/database/RenderList";
-
-const versionNum = "0.5.2";
+const versionNum = "0.5.3";
 
 function App() {
-  function getGamePage() {
-    const path = window.location.pathname;
-    if (path === "/games") {
-      return <Games />;
-    }
-
-    var gameStr = path.substr(6);
-    return <GamePage gameStr={gameStr} />;
-  }
-
-  function getRenderPage() {
-    const path = window.location.pathname;
-    if (path === "/renders") {
-      return <Renders />;
-    }
-
-    var renderStr = path.substr(8);
-    return <RenderPage renderStr={renderStr} />;
-  }
-
   return (
     <Router>
       <div
@@ -48,9 +25,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/games" component={Games} />
           <Route exact path="/games/:gameStr" component={GamePage} />
-          <Route exact path="/renders">
-            {getRenderPage}
-          </Route>
+          <Route exact path="/renders" component={Renders} />
+          <Route exact path="/renders/:renderStr" component={RenderPage} />
           <Route exact path="/other-projects" component={OtherProjects} />
           <Route exact path="/about" component={About} />
           <Route exact path="/timeline" component={Timeline} />

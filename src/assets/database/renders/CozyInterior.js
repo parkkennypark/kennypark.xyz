@@ -43,7 +43,7 @@ const description = (
   <pre>
     Lit and rendered in Blender. Composited in Photoshop.
     {"\n\n"}This was a lighting project for a class. Most of the models were
-    downloaded from Sketchfab, and was laid out based on an illustration -
+    downloaded from Sketchfab, and they were laid out based on an illustration -
     credits are below.
   </pre>
 );

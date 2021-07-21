@@ -1,223 +1,222 @@
 :root {
-  --accent: #da575c;
-  --max-width: 25rem;
+    --accent: #da575c;
+    --max-width: 25rem;
 }
 
 @font-face {
-  font-family: typoDodamM;
-  font-weight: normal;
-  src: url("/src/assets/fonts/TYPO_DODAMM.TTF");
+    font-family: typoDodamM;
+    font-weight: normal;
+    src: url("/src/assets/fonts/TYPO_DODAMM.TTF");
 }
 
 * {
-  font-family: typoDodamM;
-  line-height: 1.4;
-  /* box-sizing: border-box; */
-  margin: 0;
-  padding: 0;
+    font-family: typoDodamM;
+    line-height: 1.4;
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
 
-  /* Disables mobile blue highlight for buttons */
-  -webkit-tap-highlight-color: transparent;
+    /* Disables mobile blue highlight for buttons */
+    -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
+    width: 0rem;
+    height: 0.8rem;
 }
 
 ::-webkit-scrollbar:vertical {
-  /* width: 0.5rem; */
+    /* width: 0.5rem; */
 }
 
 ::-webkit-scrollbar:horizontal {
-  width: 2rem;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent);
-  width: 0.5rem;
-  border-radius: 1.625rem;
-  border: 0.125rem solid #ffffff;
+    background-color: var(--accent);
+    width: 0.2rem;
+    border: 0.125rem solid #ffffff;
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 0.625rem;
-  background-color: #ffffff;
+    border-radius: 0.625rem;
+    background-color: #ffffff;
 }
 
 a {
-  color: black;
-  text-decoration-thickness: 0.125rem;
-  /* font-size: 1rem; */
+    color: black;
+    text-decoration-thickness: 0.125rem;
+    /* font-size: 1rem; */
 }
 
 a:link {
-  color: black;
+    color: black;
 }
 
 a:visited {
-  color: black;
+    color: black;
 }
 
 pre {
-  white-space: pre-wrap; /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-  white-space: -pre-wrap; /* Opera 4-6 */
-  white-space: -o-pre-wrap; /* Opera 7 */
-  word-wrap: break-word; /* Internet Explorer 5.5+ */
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .disable-select {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
 .horizontal-layout {
-  display: flex;
-  /* flex: 1; */
-  /* flex-wrap: wrap; */
+    display: flex;
+    /* flex: 1; */
+    /* flex-wrap: wrap; */
 }
 
 .vertical-layout {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .float-left {
-  /* position: relative; */
-  float: left;
+    /* position: relative; */
+    float: left;
 }
 
 .float-right {
-  /* position: relative; */
-  float: right;
+    /* position: relative; */
+    float: right;
 }
 
 .text-center {
-  text-align: center;
-  /* margin: auto; */
+    text-align: center;
+    /* margin: auto; */
 }
 
 h1 {
-  font-size: 1.5rem;
-  font-weight: normal;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 h2 {
-  font-size: 1.3rem;
-  font-weight: normal;
+    font-size: 1.3rem;
+    font-weight: normal;
 }
 
 h3 {
-  font-size: 1.1rem;
-  font-weight: normal;
+    font-size: 1.1rem;
+    font-weight: normal;
 }
 
 .p1 {
-  font-size: 1rem;
-  font-weight: normal;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .p2 {
-  font-size: 0.8rem;
-  font-weight: normal;
+    font-size: 0.8rem;
+    font-weight: normal;
 }
 
 .text-pp-header {
-  font-size: 1.3rem;
-  font-weight: normal;
+    font-size: 1.3rem;
+    font-weight: normal;
 }
 
 .text-pp-normal {
-  font-size: 0.8rem;
-  font-weight: normal;
+    font-size: 0.8rem;
+    font-weight: normal;
 }
 
 .text-red {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .page-title {
-  margin: 1rem;
-  text-align: center;
+    margin: 1rem;
+    text-align: center;
 }
 
 .background {
-  background-image: url("/src/assets/images/Repeating_Tile_Lighter.png");
-  background-size: 8rem;
-  background-attachment: fixed;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-position: center;
+    background-image: url("/src/assets/images/Repeating_Tile_Lighter.png");
+    background-size: 8rem;
+    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
 
-  overflow: auto;
+    overflow: auto;
 
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent) rgb(214, 214, 214);
-  /* padding: 1rem; */
+    /* overflow: hidden; */
 }
 
 .centered-div {
-  /* padding: 1rem; */
-  margin-top: auto;
-  margin-bottom: auto;
-  /* scrollbar-width: thin; */
-  /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
-  /* scrollbar-color: rgb(158, 158, 158) white; */
+    /* padding: 1rem; */
+    margin-top: auto;
+    margin-bottom: auto;
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
+    /* scrollbar-color: rgb(158, 158, 158) white; */
 }
 
 .container {
-  justify-content: center;
+    justify-content: center;
 
-  background: white;
-  border: 0.2rem solid black;
+    background: white;
+    border: 0.2rem solid black;
 
-  display: flex;
-  flex-direction: column;
-  /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
 
-  /* box-sizing: border-box; */
-  max-width: 44rem;
-  /* min-width: 44rem; */
-  height: fit-content;
+    /* box-sizing: border-box; */
+    max-width: 44rem;
+    /* min-width: 44rem; */
+    height: fit-content;
 
-  padding: 1rem;
-  margin: 1rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .section {
-  margin-top: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 #version-text {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  font-size: 0.6rem;
-  color: white;
-  background-color: rgba(1, 1, 1, 0.5);
-  padding: 0.2rem;
-  margin: 0.2rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 0.6rem;
+    color: white;
+    background-color: rgba(1, 1, 1, 0.5);
+    padding: 0.2rem;
+    margin: 0.2rem;
 }
 
 @media screen and (max-width: 500px) {
-  .horizontal-layout {
-    display: flex;
-    flex-direction: column;
-  }
+    .horizontal-layout {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .centered-div {
-    min-width: 100%;
-  }
+    .centered-div {
+        min-width: 100%;
+    }
 
-  .container {
-    /* padding: 0.3125rem; */
-    margin: 0.5rem;
-    min-width: 0rem;
-  }
+    .container {
+        /* padding: 0.3125rem; */
+        margin: 0.5rem;
+        min-width: 0rem;
+    }
 }

@@ -1,6 +1,7 @@
 import "../../style sheets/renderPage.css";
 
 import { useState } from "react";
+import { useParams } from "react-router";
 
 import BackHeader from "../BackHeader";
 import Image from "../Image";
@@ -8,9 +9,11 @@ import PhotosModal from "../PhotosModal";
 import RenderList from "../../assets/database/RenderList";
 import FourOhFour from "./FourOhFour";
 
-const RenderPage = ({ renderStr }) => {
+const RenderPage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentModalIndex, setCurrentModelIndex] = useState(0);
+
+  let { renderStr } = useParams();
 
   if (!(renderStr in RenderList)) {
     return <FourOhFour />;
