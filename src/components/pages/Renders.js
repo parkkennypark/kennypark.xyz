@@ -2,7 +2,7 @@ import "../../style sheets/projectList.css";
 
 import BackHeader from "../BackHeader";
 import RenderPreview from "../RenderPreview";
-import LinkButton from "../LinkButton";
+// import LinkButton from "../LinkButton";
 
 import RenderList from "../../assets/database/RenderList";
 

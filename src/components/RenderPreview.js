@@ -1,9 +1,9 @@
 import "../style sheets/projectPreview.css";
 
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const RenderPreview = ({ name, year, previewImage, link }) => {
-  let match = useRouteMatch();
+  // let match = useRouteMatch();
   return (
     <Link to={"renders/" + link} className="render-preview">
       <div className="vertical-layout text-div">

@@ -2,7 +2,7 @@ import "../../style sheets/projectList.css";
 
 import BackHeader from "../BackHeader";
 import GamePreview from "../GamePreview";
-import LinkButton from "../LinkButton";
+// import LinkButton from "../LinkButton";
 
 import GameList from "../../assets/database/GameList";
 

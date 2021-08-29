@@ -1,0 +1,17 @@
+.unity-window {
+    aspect-ratio: 12/9;
+    /* height: 40rem; */
+    /* height: 40rem; */
+    height: 40rem;
+    max-height: 80rem;
+    /* width: auto; */
+}
+
+@media screen and (max-width: 500px) {
+    .unity-window {
+        aspect-ratio: 9/16;
+        /* height: 40rem; */
+        /* height: auto; */
+        /* max-height: 40rem; */
+    }
+}

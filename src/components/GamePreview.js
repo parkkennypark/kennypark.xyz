@@ -1,9 +1,9 @@
 import "../style sheets/projectPreview.css";
 
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const GamePreview = ({ name, tagline, icon, link }) => {
-  let match = useRouteMatch();
+  // let match = useRouteMatch();
   return (
     <Link to={"games/" + link} className="project-preview">
       <div className="vertical-layout text-div">
