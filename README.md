@@ -1,4 +1,4 @@
-﻿# parkkennypark.com
+﻿# kennypark.xyz
 
 This is the full source code to my personal website.
 
