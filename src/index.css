@@ -1,5 +1,5 @@
 :root {
-    --accent: #da575c;
+    --accent: #db3d42;
     --max-width: 25rem;
 }
 
@@ -176,14 +176,17 @@ h3 {
     background: white;
     border: 0.2rem solid black;
 
+    /* display: table-cell; */
     display: flex;
     flex-direction: column;
     /* flex-grow: 1; */
 
     /* box-sizing: border-box; */
     max-width: 44rem;
-    /* min-width: 44rem; */
+    min-width: 25rem;
     height: fit-content;
+
+    /* min-height: 40rem; */
 
     padding: 1rem;
     margin: 1rem;

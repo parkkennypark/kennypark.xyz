@@ -1,38 +1,44 @@
 .project-header {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .project-icon {
-  width: 12rem;
-  margin: auto;
+    width: 12rem;
+    margin: auto;
 }
 
 .project-short-description-div {
-  margin: 1rem;
+    margin: 1rem;
 }
 
 .screenshot-div {
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  overflow: auto;
+    position: relative;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    overflow: auto;
+    height: 18rem;
 
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent) rgb(214, 214, 214);
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) rgb(214, 214, 214);
 }
 
 .section-buttons-div {
-  display: flex;
+    display: flex;
 }
 
 @media screen and (max-width: 500px) {
-  .project-icon {
-    width: 60%;
-  }
+    .project-icon {
+        width: 60%;
+    }
 
-  .project-short-description-div {
-    margin: 0rem;
-  }
+    .project-short-description-div {
+        margin: 0rem;
+    }
+
+    .screenshot-div {
+        height: 13rem;
+    }
 }

@@ -9,7 +9,8 @@ import Timeline from "./components/pages/Timeline";
 import SiteInfo from "./components/pages/SiteInfo";
 import GamePage from "./components/pages/GamePage";
 import RenderPage from "./components/pages/RenderPage";
-import KasaAvatar from "./components/pages/KasaAvatar";
+import KasaAvatarPage from "./components/pages/KasaAvatarPage";
+import TechnicalDocuments from "./components/pages/TechnicalDocuments";
 import FourOhFour from "./components/pages/FourOhFour";
 
 // const versionNum = "0.5.3";
@@ -32,10 +33,16 @@ function App() {
                         path="/renders/:renderStr"
                         component={RenderPage}
                     />
+                    <Route exact path="/other" component={OtherProjects} />
                     <Route
                         exact
-                        path="/other-projects"
-                        component={OtherProjects}
+                        path="/other/:projectStr"
+                        component={GamePage}
+                    />
+                    <Route
+                        exact
+                        path="/technical-documents"
+                        component={TechnicalDocuments}
                     />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/timeline" component={Timeline} />
@@ -43,7 +50,7 @@ function App() {
                     <Route
                         exact
                         path="/kasa-avatar-maker"
-                        component={KasaAvatar}
+                        component={KasaAvatarPage}
                     />
                     <Route component={FourOhFour} />
                 </Switch>

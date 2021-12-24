@@ -1,30 +1,66 @@
 .link-btn {
-  background: white;
-  color: black;
-  border: 0.2rem solid black;
+    background: white;
+    color: black;
+    border: 0.2rem solid black;
 
-  /* margin: 0.75rem; */
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  height: 5rem;
+    /* margin: 0.75rem; */
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: 5rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  font-size: 1.2rem;
-  letter-spacing: 0.125rem;
-  text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
 }
-
 .link-btn:hover {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
+}
+.link-btn:active {
+    background: rgb(116, 116, 116);
+    color: white;
 }
 
-.link-btn:active {
-  background: rgb(116, 116, 116);
-  color: white;
+.link-btn-focus {
+    background: white;
+    color: black;
+    border: 0.2rem solid #db3d42;
+
+    /* margin: 0.75rem; */
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+}
+.link-btn-focus:hover {
+    background: black;
+    color: white;
+}
+.link-btn-focus:active {
+    background: rgb(116, 116, 116);
+    color: white;
+}
+
+.link-btn-text {
+    text-align: center;
+}
+
+.link-btn-text-focus {
+    text-align: center;
+    color: #db3d42;
 }
