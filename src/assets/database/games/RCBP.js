@@ -29,12 +29,13 @@ const shortDescription = (
 );
 const body = (
     <div>
-        <ProjectProperty property="Release Date" value="July 2017" />
-        <ProjectProperty property="Development Time" value="One week" />
+        <ProjectProperty property="Role" value="Sole developer" />
         <ProjectProperty
             property="Programs"
             value="Unity 3D, Adobe Illustrator"
         />
+        <ProjectProperty property="Release Date" value="July 2017" />
+        <ProjectProperty property="Development Time" value="One week" />
         <ProjectProperty
             property="Platforms"
             value={
@@ -45,7 +46,6 @@ const body = (
                 </>
             }
         />
-
         <pre>
             {"\n"}This was my first time participating in a game jam, and I'm
             really happy with the end result. The jam was completely open ended

@@ -118,6 +118,21 @@ h3 {
     font-weight: normal;
 }
 
+ul {
+    /* list-style-type: circle; */
+    padding-left: 1rem;
+}
+
+li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+li span {
+    display: block;
+    margin-left: -0.8rem;
+    color: #000; /* black text */
+}
+
 .p1 {
     font-size: 1rem;
     font-weight: normal;

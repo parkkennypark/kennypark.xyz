@@ -25,6 +25,10 @@ const shortDescription = (
 const body = (
     <div>
         {/* <ProjectProperty property="Development" value="August 2017" /> */}
+        <ProjectProperty
+            property="Roles"
+            value="Programmer, Integrator, UI designer"
+        />
         <ProjectProperty property="Programs" value="Unity" />
         <ProjectProperty
             property="Development Time"

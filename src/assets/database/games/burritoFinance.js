@@ -30,12 +30,11 @@ const shortDescription = (
 );
 const body = (
     <div>
+        <ProjectProperty property="Role" value="Sole developer" />
+        <ProjectProperty property="Programs" value="Unity, Adobe Illustrator" />
         <ProjectProperty property="Release Date" value="August 2019" />
         <ProjectProperty property="Development Time" value="One week" />
-        <ProjectProperty
-            property="Programs"
-            value="Unity 3D, Adobe Illustrator"
-        />
+
         <ProjectProperty
             property="Platforms"
             value={

@@ -30,6 +30,16 @@ const shortDescription = (
 );
 const body = (
     <div>
+        <ProjectProperty property="Role" value="Sole developer" />
+        <ProjectProperty
+            property="Platforms"
+            value={
+                <>
+                    <ExternalLink link={androidLink} text="Android" />,{" "}
+                    <ExternalLink link={iOSLink} text="iOS" />,{" "}
+                </>
+            }
+        />
         <ProjectProperty property="Release Date" value="August 2017" />
         <ProjectProperty
             property="Development Time"
@@ -39,15 +49,6 @@ const body = (
             property="Programs"
             value="Unity, Adobe Illustrator,
     Blender"
-        />
-        <ProjectProperty
-            property="Platforms"
-            value={
-                <>
-                    <ExternalLink link={androidLink} text="Android" />,{" "}
-                    <ExternalLink link={iOSLink} text="iOS" />,{" "}
-                </>
-            }
         />
 
         <pre>
@@ -63,7 +64,42 @@ const body = (
             {"\n\n"}Amazingly, this game amassed over one million downloads. I
             still get emails from players asking for more levels or a second
             game, which always makes me smile. Maybe some day.
+            {"\n\n"}
         </pre>
+
+        <p className="text-red">Takeaways</p>
+        <ul>
+            <li>
+                <span>
+                    (Production) Find a workflow that allows content generation
+                    to be fun rather than tedious
+                </span>
+            </li>
+            <li>
+                <span>
+                    (Design) Moments that subvert expectations are the most
+                    memorable
+                </span>
+            </li>
+            <li>
+                <span>
+                    (Design) Difficulty should come in more forms than just
+                    increasing hp
+                </span>
+            </li>
+            <li>
+                <span>
+                    (Dev Habits) You should probably stop making backups by
+                    uploading entire archives of the game's files to a Google
+                    Drive
+                </span>
+            </li>
+        </ul>
+
+        {/* <embed
+            src="http://www.example.com"
+            style="width:500px; height: 300px;"
+        ></embed> */}
     </div>
 );
 

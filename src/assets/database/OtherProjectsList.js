@@ -7,7 +7,7 @@ import BlockTurtle from "./games/BlockTurtle";
 
 let OtherProjectsList = {
     // ggqfb: GGQFB,
-    "kasa-avatar": KasaAvatar,
+    // "kasa-avatar": KasaAvatar,
     // "void-chat": voidChat,
     // "no-monkey-business": NoMonkeyBusiness,
     "vr-ducks": VRDucks,

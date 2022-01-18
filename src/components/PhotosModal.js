@@ -38,7 +38,7 @@ const PhotosModal = ({
                 <video
                     className={"modal-image"}
                     onClick={handleChildClick}
-                    // autoPlay
+                    autoPlay
                     // loop
                     controls
                     disableRemotePlayback

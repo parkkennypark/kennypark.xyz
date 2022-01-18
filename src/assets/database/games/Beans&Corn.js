@@ -21,14 +21,14 @@ const shortDescription = (
 const body = (
     <div>
         <ProjectProperty property="Release Date" value="September 2021" />
+        <ProjectProperty property="Role" value="Designer, Programmer" />
+        <ProjectProperty property="Programs" value="Unity" />
         <ProjectProperty
             property="Development Time"
             value="48 hours, plus
       post-jam work"
         />
-        <ProjectProperty property="Programs" value="Unity" />
         {/* <ProjectProperty property="Team Size" value="Two" /> */}
-        <ProjectProperty property="Role" value="Designer, Programmer" />
         <ProjectProperty
             property="Platforms"
             value={
@@ -46,7 +46,22 @@ const body = (
             gave me a lot more space to breath and think, and I think the end
             result benefitted immensely because of it. I'm really happy with how
             it came out!
+            {"\n\n"}
         </pre>
+        <p className="text-red">Takeaways</p>
+        <ul>
+            <li>
+                <span>
+                    (Architecture) Game jams probably aren't the place for
+                    well-structured and optimized code
+                </span>
+            </li>
+            <li>
+                <span>
+                    (Art) Working with a dedicated artist is the bee's knees
+                </span>
+            </li>
+        </ul>
     </div>
 );
 

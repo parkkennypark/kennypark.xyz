@@ -33,16 +33,17 @@ const shortDescription = (
 );
 const body = (
     <div>
+        <ProjectProperty property="Role" value="Sole developer" />
+        <ProjectProperty
+            property="Programs"
+            value="Unity, Adobe Illustrator,
+      Blender"
+        />
         <ProjectProperty property="Release Date" value="October 2019" />
         <ProjectProperty
             property="Development Time"
             value="24 hours, plus
       post-jam work"
-        />
-        <ProjectProperty
-            property="Programs"
-            value="Unity, Adobe Illustrator,
-      Blender"
         />
         <ProjectProperty
             property="Platforms"
@@ -55,7 +56,6 @@ const body = (
                 </>
             }
         />
-
         <pre>
             {"\n"}I made this game as my submission for a 24-hour game jam
             hosted by a game development club at Purdue university. The theme
@@ -66,7 +66,20 @@ const body = (
             the game as well as to add achievements and an endless mode before
             porting it to mobile. I tried my best to maintain the game's
             graphical fidelity while still handling well on mobile devices.
+            {"\n\n"}
         </pre>
+        <p className="text-red">Takeaways</p>
+        <ul>
+            <li>
+                <span>
+                    (Optimization) Lights can be easily faked with transparent
+                    billboard textures
+                </span>
+            </li>
+            <li>
+                <span>(Art) Post-processing is cool! (In moderation)</span>
+            </li>
+        </ul>
     </div>
 );
 

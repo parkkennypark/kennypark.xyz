@@ -12,7 +12,7 @@ const screenshots = [
     "Spawn UI.jpg",
     "Old Map.jpg",
 ];
-const tagline = "Prototype FPS";
+const tagline = "FPS Prototype";
 const shortDescription = (
     <pre>
         A casual, fast-paced first person shooter I developed to play with my
@@ -23,15 +23,15 @@ const shortDescription = (
 );
 const body = (
     <div>
+        <ProjectProperty property="Role" value="Sole developer" />
+        <ProjectProperty
+            property="Programs"
+            value="Unity, ProBuilder, Blender, Adobe Illustrator"
+        />{" "}
         <ProjectProperty
             property="Development Time"
             value="March 2020 - September 2020"
         />
-        <ProjectProperty
-            property="Programs"
-            value="Unity, ProBuilder, Blender, Adobe Illustrator"
-        />
-
         <pre>
             {"\n"}This project started as a lighthearted game I could goof
             around on with my friends. It was meant to be a frantic multiplayer
@@ -53,7 +53,37 @@ const body = (
             interweaving systems. I'm still incredibly proud of this game, and I
             guarantee the monkeys will make a reappearance in some form or
             another.
+            {"\n\n"}
         </pre>
+        <p className="text-red">Takeaways</p>
+        <ul>
+            <li>
+                <span>
+                    (Architecture) Netcode can get very tangled very fast if not
+                    properly designed
+                </span>
+            </li>
+            <li>
+                <span>
+                    (Production) Working around a theme does wonders for
+                    ideation
+                </span>
+            </li>
+            <li>
+                <span>
+                    (Art) Things don't have to match - maps don't need to be
+                    toon-shaded just because your characters are
+                </span>
+            </li>
+
+            <li>
+                <span>
+                    (Dev Habits) Working on the details is important and fun,
+                    but don't get too consumed trying to iron out the little
+                    things
+                </span>
+            </li>
+        </ul>
     </div>
 );
 

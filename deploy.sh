@@ -45,4 +45,5 @@ echo \
 # Sync build to server
 rsync -av --delete build/ parkkennypark_kennypark@ssh.phx.nearlyfreespeech.net:/home/public \
 # rsync -av --delete --size-only --ignore-times --exclude '*.mp4' build/ parkkennypark_kennypark@ssh.phx.nearlyfreespeech.net:/home/public \
-  && echo "Build synced successfully"
+
+echo "Build synced successfully"

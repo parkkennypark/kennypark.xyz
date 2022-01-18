@@ -41,10 +41,10 @@ const body = (
             }
             text="Google Doc"
         />
+        <ProjectProperty property="Roles" value="Lead Programmer, VFX artist" />
+        <ProjectProperty property="Programs" value="Godot, Blender" />
         <ProjectProperty property="Release Date" value="October 2021" />
         <ProjectProperty property="Development Time" value="Six months" />
-        <ProjectProperty property="Programs" value="Godot, Blender" />
-        <ProjectProperty property="Roles" value="Lead Programmer, VFX artist" />
         <ProjectProperty
             property="Platforms"
             value={<ExternalLink link={browserLink} text="PC, Mac, Linux" />}
@@ -73,7 +73,30 @@ const body = (
             {/* {"\n\n"}There were a lot of firsts with this project. For one, Godot
             as well as its dynamically-typed language GDScript were both new to
             me, which took some getting used to from my Unity and C# background. */}
+            {"\n\n"}
         </pre>
+
+        <p className="text-red">Takeaways</p>
+        <ul>
+            <li>
+                <span>
+                    (Architecture) Signals are crucial to decouple systems,
+                    especially when working in a team
+                </span>
+            </li>
+            <li>
+                <span>(Architecture) Gosh, state machines are super neat</span>
+            </li>
+            <li>
+                <span>(Design) Focus on the fun</span>
+            </li>
+            <li>
+                <span>
+                    (Production) Take burn-out and menial tasks into account
+                    when scoping out a game
+                </span>
+            </li>
+        </ul>
     </div>
 );
 

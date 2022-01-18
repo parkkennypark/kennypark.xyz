@@ -12,16 +12,9 @@ import RCBP from "./games/RCBP";
 // import BlockTurtle from "./games/BlockTurtle";
 
 let GameList = {
-    ggqfb: GGQFB,
-    // "virtual-labs": VirtualLabs,
-    "be-not-afraid": BeNotAfraid,
-    // "beans-and-corn": BeansAndCorn,
-    // "void-chat": voidChat,
-    "no-monkey-business": NoMonkeyBusiness,
-    // "wreck-the-halls": WreckTheHalls,
-    // "burrito-finance": burritoFinance,
-    "duck-warfare": DuckWarfare,
-    // rcbp: RCBP,
+    "beans-and-corn": BeansAndCorn,
+    "wreck-the-halls": WreckTheHalls,
+    rcbp: RCBP,
     // "vr-ducks": VRDucks,
     // "block-turtle": BlockTurtle,
 };
