@@ -65,7 +65,7 @@ const Home = ({ showDocs }) => {
                 <div id="bottom-links">
                     {/* Left side */}
                     <label className="float-left">
-                        <Link to="/about">about/contact</Link>
+                        <Link to="/about">about</Link>
                         {" | "}
                         <Link to="/timeline">timeline</Link>
                         {" | "}
@@ -76,17 +76,17 @@ const Home = ({ showDocs }) => {
                     <div className="float-right">
                         <ExternalLinkImage
                             link={"https://github.com/" + githubUsername}
-                            image="images/Github Icon.png"
+                            image="images/icons/Github Icon.png"
                             alt="github"
                         />
                         <ExternalLinkImage
                             link={"https://twitter.com/" + twitterHandle}
-                            image="images/Twitter Icon.png"
+                            image="images/icons/Twitter Icon.png"
                             alt="twitter"
                         />
                         <ExternalLinkImage
                             link={"https://instagram.com/" + instagramHandle}
-                            image="images/Instagram Icon.png"
+                            image="images/icons/Instagram Icon.png"
                             alt="instagram"
                         />
                     </div>

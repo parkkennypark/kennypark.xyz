@@ -60,8 +60,9 @@ const body = (
         <ul>
             <li>
                 <span>
-                    (Architecture) The composition pattern as well as code
-                    modularity is crucial to reuse and eliminating redundancy
+                    (Architecture) The composition pattern as well as function
+                    modularity is crucial for code reuse and redundancy
+                    elimination
                 </span>
             </li>
             <li>

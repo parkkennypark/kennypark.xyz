@@ -28,7 +28,7 @@ const OtherProjects = () => {
             <div className="container">
                 <BackHeader link="/" />
                 <div className="">
-                    <h2 className="page-title">OTHER PROJECTS</h2>
+                    <h2 className="page-title">Other Projects</h2>
                 </div>
                 <div className="game-grid-container">{getGames()}</div>
                 {/* <LinkButton text="Virtual Labs" link="/virtual-labs" /> */}

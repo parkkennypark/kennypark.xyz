@@ -11,7 +11,7 @@ const TechnicalDocuments = () => {
         <div className="centered-div">
             <div className="container">
                 <BackHeader link="/" />
-                <h2 className="page-title">TECHNICAL DOCUMENTS</h2>
+                <h2 className="page-title">Technical Documents</h2>
                 <div>
                     <p className="text-red">Gawr Gura: Quest For Bread</p>
                     <div style={{ flexDirection: "row" }}>

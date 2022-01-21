@@ -11,7 +11,7 @@ const SiteInfo = () => {
         <div className="centered-div">
             <div className="container" style={{ maxWidth: "30rem" }}>
                 <BackHeader link="/" />
-                <h2 className="page-title">SITE INFO</h2>
+                <h2 className="page-title">Site Info</h2>
                 <div>
                     <p>
                         This site was made by me with{" "}

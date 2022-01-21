@@ -28,17 +28,17 @@ const Games = () => {
             <div className="container">
                 <BackHeader link="/" />
                 <div className="">
-                    <h2 className="page-title">GAMES</h2>
+                    <h2 className="page-title">Games</h2>
                 </div>
                 <div className="game-grid-container">{getGames(GameList)}</div>
                 <div className="">
-                    <h2 className="page-title">JAM GAMES</h2>
+                    <h2 className="page-title">Jam Games</h2>
                 </div>
                 <div className="game-grid-container">
                     {getGames(JamGameList)}
                 </div>
                 <div className="">
-                    <h2 className="page-title">APPLICATIONS</h2>
+                    <h2 className="page-title">Applications</h2>
                 </div>
                 <div className="game-grid-container">
                     {getGames(ApplicationList)}
