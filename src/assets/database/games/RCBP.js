@@ -19,7 +19,7 @@ const screenshots = [
     "iPhone 5.5 2020-01-19_14-15-22.png",
     "iPhone 5.5 2020-01-19_14-16-21.png",
 ];
-const tagline = "Game Jam Entry";
+const tagline = "Short Puzzle Game";
 const shortDescription = (
     <pre>
         A simple puzzle game about controlling boxes with your mind.

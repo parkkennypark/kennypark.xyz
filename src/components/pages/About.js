@@ -12,10 +12,8 @@ const About = () => {
                     {/* Body */}
                     <div>
                         <p>
-                            I'm an undergraduate student at Purdue University
-                            studying game development and design. I'm passionate
-                            about creating cohesive projects and implementing
-                            cool ideas as a{" "}
+                            I'm passionate about creating cohesive projects and
+                            implementing cool ideas as a{" "}
                             <span className="text-red">
                                 gameplay programmer
                             </span>

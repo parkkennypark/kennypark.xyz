@@ -1,52 +1,60 @@
 .project-preview {
-  width: 10rem;
-  display: flex;
-  margin: 0.5rem;
-  cursor: pointer;
-  text-decoration: none;
-  height: min-content;
-  line-height: 0.5rem;
+    width: 10rem;
+    display: flex;
+    margin: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    height: min-content;
+    line-height: 0.5rem;
+    position: relative;
 }
 
 .project-list-icon {
-  width: 90%;
-  width: 90%;
-  /* padding: 0.625rem; */
-  margin: auto;
+    width: 90%;
+    width: 90%;
+    /* padding: 0.625rem; */
+    margin: auto;
+    filter: drop-shadow(0px 0px 0.5px #000);
 }
 
 .render-preview {
-  width: 98%;
-  /* width: 22rem; */
-  /* margin: 0.25rem; */
-  /* height: 50%; */
-  /* margin-right: 0.5rem; */
-  text-decoration: none;
-  margin-bottom: 0.5rem;
+    width: 98%;
+    /* width: 22rem; */
+    /* margin: 0.25rem; */
+    /* height: 50%; */
+    /* margin-right: 0.5rem; */
+    text-decoration: none;
+    margin-bottom: 0.5rem;
 }
 
 .render-preview-image {
-  width: 100%;
-  height: 100%;
-  /* height: auto; */
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+}
+
+.star {
+    position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
 }
 
 .text-name {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  line-height: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
 .text-tagline {
-  font-size: 0.75rem;
+    font-size: 0.75rem;
 }
 
 @media screen and (max-width: 500px) {
-  .project-preview {
-    width: 10rem;
-  }
+    .project-preview {
+        width: 10rem;
+    }
 
-  .render-preview {
-    /* width: 13rem; */
-  }
+    .render-preview {
+        /* width: 13rem; */
+    }
 }

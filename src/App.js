@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React from "react";
 import Home from "./components/pages/Home";
+import HomeNew from "./components/pages/Home - New";
 import Games from "./components/pages/Games";
 import Renders from "./components/pages/Renders";
 import OtherProjects from "./components/pages/OtherProjects";
@@ -24,7 +25,8 @@ function App() {
             >
                 {/* <p id="version-text">{"ver " + versionNum}</p> */}
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={HomeNew} />
+                    {/* <Route exact path="/home-new" component={HomeNew} /> */}
                     <Route exact path="/games" component={Games} />
                     <Route exact path="/games/:gameStr" component={GamePage} />
                     <Route exact path="/renders" component={Renders} />

@@ -19,8 +19,8 @@ const SiteInfo = () => {
                         NearlyFreeSpeech.
                     </p>
                     <p className="p2">
-                        Brother Park gave me a lot of help since this was my
-                        first site.
+                        Tim Park gave me a lot of help since this was my first
+                        site.
                     </p>
                     <br />
                     <p>
@@ -46,9 +46,9 @@ const SiteInfo = () => {
                         My siblings are also very creative people with their own
                         websites.
                         {<br />}
-                        <ExternalLink link={sisterLink} text="Sister Park" />
+                        <ExternalLink link={sisterLink} text="Lauren Park" />
                         {" | "}
-                        <ExternalLink link={brotherLink} text="Brother Park" />
+                        <ExternalLink link={brotherLink} text="Tim Park" />
                     </p>
                     <br />
                 </div>

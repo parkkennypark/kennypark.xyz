@@ -1,5 +1,5 @@
 // import GGQFB from "./games/GGQFB";
-import KasaAvatar from "./other/KasaAvatar";
+// import KasaAvatar from "./other/KasaAvatar";
 // import voidChat from "./games/voidChat";
 // import NoMonkeyBusiness from "./games/NoMonkeyBusiness";
 import VRDucks from "./games/VRDucks";

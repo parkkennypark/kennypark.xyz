@@ -25,8 +25,7 @@ const shortDescription = (
         A small, surreal action platformer about an angel trying to escape
         limbo.
         {"\n\n"}
-        Made for a class project in a team of eight students using the Godot
-        engine.
+        Made with eight friends using the Godot engine.
     </pre>
 );
 const body = (
@@ -51,9 +50,8 @@ const body = (
         />
 
         <pre>
-            {"\n"}Starting out as a final project for a game dev course, this is
-            a game I worked on with seven other students. You play as an unnamed
-            being who must defeat other angels in order to escape limbo.
+            {"\n"}In this game, you play as an unnamed being who must defeat
+            other angels in order to escape limbo.
             {"\n\n"}As the lead programmer, I was responsible for coding many of
             the main systems, including movement, interactions, dialogue, and
             boss behavior. Because they were both new to most of us, I also led

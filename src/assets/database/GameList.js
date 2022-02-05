@@ -1,13 +1,13 @@
 import GGQFB from "./games/GGQFB";
-import VirtualLabs from "./games/VirtualLabs";
+// import VirtualLabs from "./games/VirtualLabs";
 import BeNotAfraid from "./games/BeNotAfraid";
-import BeansAndCorn from "./games/Beans&Corn";
-import voidChat from "./games/voidChat";
+// import BeansAndCorn from "./games/Beans&Corn";
+// import voidChat from "./games/voidChat";
 import NoMonkeyBusiness from "./games/NoMonkeyBusiness";
-import WreckTheHalls from "./games/WreckTheHalls";
-import burritoFinance from "./games/burritoFinance";
+// import WreckTheHalls from "./games/WreckTheHalls";
+// import burritoFinance from "./games/burritoFinance";
 import DuckWarfare from "./games/DuckWarfare";
-import RCBP from "./games/RCBP";
+// import RCBP from "./games/RCBP";
 // import VRDucks from "./games/VRDucks";
 // import BlockTurtle from "./games/BlockTurtle";
 

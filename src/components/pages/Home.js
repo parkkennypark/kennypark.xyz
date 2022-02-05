@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import LinkButton from "../LinkButton";
 import Head from "../../components/Head";
-import ExternalLink from "../ExternalLink";
 import ExternalLinkImage from "../ExternalLinkImage";
 
 const twitterHandle = "kennyparkpark";
@@ -55,7 +54,7 @@ const Home = ({ showDocs }) => {
                         className="link-btn"
                     />
                     <LinkButton
-                        text="TECHNICAL DOCUMENTS"
+                        text="DOCUMENTS"
                         link="/technical-documents"
                         className="link-btn"
                     />

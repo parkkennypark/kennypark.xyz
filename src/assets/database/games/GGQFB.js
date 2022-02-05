@@ -1,6 +1,7 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
-import ExternalLink from "../../../components/ExternalLink";
+import BannerLink from "../../../components/BannerLink";
+// import ExternalLink from "../../../components/ExternalLink";
 
 const docLink =
     "https://docs.google.com/document/d/18T5FZ8AJpwSW50QfMg56hI3y-6UL4rvLyymAA8fkJH4/edit?usp=sharing";
@@ -10,6 +11,7 @@ const link = "/ggqfb";
 const projPath = "/images/games/GGQFB";
 const icon = "GGQFB icon 256x256.png";
 const screenshots = [
+    "video.mp4",
     "scrn 2.png",
     "scrn 3.png",
     "scrn 4.png",
@@ -27,12 +29,19 @@ const shortDescription = (
 );
 const body = (
     <div>
+        <BannerLink
+            link={docLink}
+            image="/images/games/GGQFB/Systems Documentation Banner.png"
+            alt="Systems Documentation Banner"
+        />
+        <p className="text-tagline">Click me! ^</p>
+        <br />
         <ProjectProperty property="Status" value="In Development" />
         <ProjectProperty property="Planned Release" value="Summer 2022" />
-        <ProjectProperty
+        {/* <ProjectProperty
             property="Documentation"
             value={<ExternalLink link={docLink} text="Google Doc" />}
-        />
+        /> */}
         <ProjectProperty property="Role" value="Sole developer" />
         <ProjectProperty
             property="Programs"
@@ -45,10 +54,10 @@ const body = (
             fitting for them to have their own game - thus this project was
             born.
             {"\n\n"}So far, I've been working on getting underlying systems up
-            and running. This includes a fleshed out dialogue system with a
-            custom syntax and parser, a cut-scene system, entity state machines,
-            and combat. I've also established an efficient model/texture
-            creation workflow.
+            and running. This includes a smooth movement system, a fleshed out
+            dialogue system with a custom syntax/parser, a cut-scene system,
+            entity state machines, and combat. I've also established an
+            efficient model/texture creation workflow.
             {"\n\n"}I've already learned a lot working on this project. From
             designing decoupled systems, to asset creation, to overall cohesive
             game design, this project is proving to be the culmination of all
@@ -61,8 +70,7 @@ const body = (
             <li>
                 <span>
                     (Architecture) The composition pattern as well as function
-                    modularity is crucial for code reuse and redundancy
-                    elimination
+                    modularity is crucial for code reuse and reducing redundancy
                 </span>
             </li>
             <li>
@@ -121,5 +129,6 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    true
 );

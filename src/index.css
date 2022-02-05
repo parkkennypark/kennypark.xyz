@@ -158,7 +158,7 @@ li span {
 }
 
 .page-title {
-    margin: 1rem;
+    margin: 0.8rem;
     text-align: center;
 }
 
@@ -178,8 +178,11 @@ li span {
 
 .centered-div {
     /* padding: 1rem; */
-    margin-top: auto;
+    margin-top: 0;
     margin-bottom: auto;
+    transform-origin: top center;
+    transform: scale(0.95);
+
     /* scrollbar-width: thin; */
     /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
     /* scrollbar-color: rgb(158, 158, 158) white; */
@@ -193,6 +196,7 @@ li span {
 
     /* display: table-cell; */
     display: flex;
+    flex-grow: max-width;
     flex-direction: column;
     /* flex-grow: 1; */
 
@@ -205,6 +209,8 @@ li span {
 
     padding: 1rem;
     margin: 1rem;
+
+    /* transform: scale(0.95); */
 }
 
 .section {
@@ -230,6 +236,7 @@ li span {
 
     .centered-div {
         min-width: 100%;
+        transform: scale(1);
     }
 
     .container {

@@ -11,31 +11,50 @@ const TechnicalDocuments = () => {
         <div className="centered-div">
             <div className="container">
                 <BackHeader link="/" />
-                <h2 className="page-title">Technical Documents</h2>
+                <h2 className="page-title">Documents</h2>
                 <div>
                     <p className="text-red">Gawr Gura: Quest For Bread</p>
                     <div style={{ flexDirection: "row" }}>
-                        <ExternalLink
+                        {/* <ExternalLink
                             link={ggqfbDocs}
                             text="Systems Documentation"
-                        />
+                        /> */}
+                        <a href={ggqfbDocs} target="_blank" rel="noreferrer">
+                            <img
+                                src="/images/games/GGQFB/Systems Documentation Banner.png"
+                                alt="Systems Documentation Banner"
+                                style={{ width: "100%" }}
+                            />
+                        </a>
                     </div>
                 </div>
                 <pre> </pre>
                 <div>
                     <p className="text-red">Be Not Afraid</p>
                     <div>
-                        <p>
+                        {/* <p>
                             <ExternalLink
                                 link={bnaGDD}
                                 text="Game Design Document"
                             />
-                        </p>
+                        </p> */}
+                        <a href={bnaGDD} target="_blank" rel="noreferrer">
+                            <img
+                                src="/images/games/Be Not Afraid/GDD Banner.png"
+                                alt="Systems Documentation Banner"
+                                style={{ width: "100%" }}
+                            />
+                        </a>
                         <p>
-                            <ExternalLink link={bnaTaskList} text="Task List" />
+                            <ExternalLink
+                                link={bnaTaskList}
+                                text="Project Management Sheet"
+                            />
                         </p>
                     </div>
                 </div>
+                <pre> </pre>
+                <a href="Park_Kenny_Resume.pdf">Resume</a>
             </div>
         </div>
     );
