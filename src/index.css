@@ -178,10 +178,9 @@ li span {
 
 .centered-div {
     /* padding: 1rem; */
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-bottom: auto;
-    transform-origin: top center;
-    transform: scale(0.95);
+    display: grid;
 
     /* scrollbar-width: thin; */
     /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
@@ -210,7 +209,8 @@ li span {
     padding: 1rem;
     margin: 1rem;
 
-    /* transform: scale(0.95); */
+    transform-origin: top center;
+    transform: scale(0.95);
 }
 
 .section {

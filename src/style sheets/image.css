@@ -7,15 +7,16 @@
     position: relative;
     height: 100% !important;
     width: auto;
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
     cursor: pointer;
     color: black;
+    box-sizing: border-box;
 }
 
 .render-image {
     width: 100%;
     height: auto;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     cursor: pointer;
 }
 
@@ -23,10 +24,12 @@
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.466);
     position: absolute;
-    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    transform: translate(0%, -103%);
-    right: 0.5rem;
+    width: 100%;
 
     pointer-events: none;
 }
@@ -42,9 +45,18 @@
 
 .video-div {
     position: relative;
-    /* height: 18rem !important; */
-    width: fit-content;
-    height: 100%;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin: 0.25rem;
+    /* max-height: min-content; */
+    height: auto;
+}
+
+.img-div {
+    position: relative;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin: 0.25rem;
 }
 
 @media screen and (max-width: 500px) {

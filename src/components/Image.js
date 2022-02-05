@@ -27,13 +27,15 @@ const Image = ({ className, src, alt, onClick }) => {
         );
 
     return (
-        <img
-            className={className}
-            loading="lazy"
-            src={src}
-            alt={alt}
-            onClick={onClick}
-        />
+        <div class="img-div">
+            <img
+                className={className}
+                loading="lazy"
+                src={src}
+                alt={alt}
+                onClick={onClick}
+            />
+        </div>
     );
 };
 
