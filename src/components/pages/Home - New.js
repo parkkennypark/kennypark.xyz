@@ -7,6 +7,7 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import Head from "../../components/Head";
 import ExternalLinkImage from "../ExternalLinkImage";
 
+import HighlightsTab from "../HighlightsTab";
 import GamesTab from "../GamesTab";
 import RendersTab from "../RendersTab";
 import OtherTab from "../OtherTab";
@@ -25,6 +26,14 @@ const Home = ({ showDocs }) => {
                     {/* Left side */}
                     <label className="float-left">
                         <Link to="/about">about</Link>
+                        {" | "}
+                        <a
+                            href="Park_Kenny_Resume.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            resume
+                        </a>
                         {" | "}
                         <Link to="/timeline">timeline</Link>
                         {" | "}
@@ -74,11 +83,15 @@ const Home = ({ showDocs }) => {
 
                 <Tabs>
                     <TabList>
+                        <Tab>THE HIGHLIGHTS</Tab>
                         <Tab>GAMES / APPS</Tab>
                         <Tab>RENDERS</Tab>
                         <Tab>OTHER</Tab>
                         <Tab>DOCUMENTS</Tab>
                     </TabList>
+                    <TabPanel>
+                        <HighlightsTab />
+                    </TabPanel>
                     <TabPanel>
                         <GamesTab />
                     </TabPanel>

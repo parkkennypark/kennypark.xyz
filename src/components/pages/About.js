@@ -85,7 +85,13 @@ const About = () => {
                         </p>
                         <br />
                         <div className="float-left">
-                            <a href="Park_Kenny_Resume.pdf">resume</a>
+                            <a
+                                href="Park_Kenny_Resume.pdf"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                resume
+                            </a>
                         </div>
                         <div className="float-right">
                             <a href="favorites.txt">my favorite stuff</a>

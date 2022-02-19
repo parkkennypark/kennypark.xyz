@@ -25,17 +25,11 @@ const GamesTab = () => {
     }
     return (
         <div>
-            <div className="">
-                <h2 className="page-title">Games</h2>
-            </div>
+            <h2 className="page-title">Games</h2>
             <div className="game-grid-container">{getGames(GameList)}</div>
-            <div className="">
-                <h2 className="page-title">Jam Games</h2>
-            </div>
+            <h2 className="page-title">Jam Games</h2>
             <div className="game-grid-container">{getGames(JamGameList)}</div>
-            <div className="">
-                <h2 className="page-title">Applications</h2>
-            </div>
+            <h2 className="page-title">Applications</h2>
             <div className="game-grid-container">
                 {getGames(ApplicationList)}
             </div>

@@ -64,6 +64,5 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body,
-    true
+    body
 );
