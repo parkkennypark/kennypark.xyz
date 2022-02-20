@@ -1,9 +1,15 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
+import {
+    slopedRoofData,
+    slopedRoofInspection,
+    slopedRoofDroneChain,
+} from "../CodeBlocks";
+import CodeComponent from "../../../components/CodeComponent";
 
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
-const name = "XR Roofing Research";
+const name = "XR Sloped Roof";
 const link = "/sloped-roof";
 const projPath = "/images/games/Sloped Roof";
 const icon = "icon 256x256.png";
@@ -16,7 +22,7 @@ const screenshots = [
     // "Screenshot - 3rd person 05.PNG",
     // "Screenshot - 3rd person 06.PNG",
 ];
-const tagline = "Purdue Lab Simulations";
+const tagline = "Research Project";
 const shortDescription = (
     <pre>
         A mixed reality program I developed for a research project using the
@@ -59,6 +65,7 @@ const body = (
                     logging, and UI design.
                 </pre>
             </TabPanel>
+            {/* XR SETUP */}
             <TabPanel>
                 <pre>
                     This is the physical roof setup. The headset's marker-based
@@ -73,6 +80,7 @@ const body = (
                     be mapped to what body part.
                 </pre>
             </TabPanel>
+            {/* ANIMATIONS */}
             <TabPanel>
                 Animations were recorded using the OptiTrack Motive motion
                 capture setup at the Envision Center. After the animations were
@@ -80,23 +88,34 @@ const body = (
                 implementation. I used a simple state machine in conjunction
                 with Unity's animation events to drive the worker's behavior.
             </TabPanel>
+            {/* DRONE */}
             <TabPanel>
                 A drone is used in the scene to investigate how participants
                 respond to non-human instruction while working. The drone has
                 three main states - inactivity, inspection, and conveyance -
                 which are driven through sequences of coroutines.
-                <img
-                    style={{ width: "100%" }}
-                    src="/images/games/Sloped Roof/screenshots/Code Sample.png"
-                ></img>
+                <CodeComponent
+                    caption={"Drone.cs"}
+                    code={slopedRoofInspection}
+                />
+                These states are then chained together to perform predetermined
+                behavior.
+                <CodeComponent
+                    caption={"Drone.cs"}
+                    code={slopedRoofDroneChain}
+                />
             </TabPanel>
-
+            {/* DATA LOGGING */}
             <TabPanel>
                 Various data points needed to be recorded during the experiment
                 to be analyzed by the researchers. I set up a DataManagement
                 script that takes data from the other management scripts at a
                 set interval and writes it to a .csv file. Here is a sample data
                 log.
+                <CodeComponent
+                    caption={"DataLogger.cs"}
+                    code={slopedRoofData}
+                />
             </TabPanel>
         </Tabs>
     </div>

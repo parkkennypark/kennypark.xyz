@@ -9,6 +9,12 @@
     src: url("/src/assets/fonts/TYPO_DODAMM.TTF");
 }
 
+@font-face {
+    font-family: firoCode;
+    font-weight: normal;
+    src: url("/src/assets/fonts/FiraCode-VariableFont_wght.ttf");
+}
+
 * {
     font-family: typoDodamM;
     line-height: 1.4;
@@ -158,7 +164,7 @@ li span {
 }
 
 .page-title {
-    margin: 0.8rem;
+    margin: 0.4rem;
     text-align: center;
 }
 
@@ -200,7 +206,7 @@ li span {
     /* flex-grow: 1; */
 
     /* box-sizing: border-box; */
-    max-width: 44rem;
+    max-width: 50rem;
     min-width: 25rem;
     height: fit-content;
 
@@ -209,8 +215,8 @@ li span {
     padding: 1rem;
     margin: 1rem;
 
-    transform-origin: top center;
-    transform: scale(0.95);
+    /* transform-origin: top center; */
+    /* transform: scale(0.95); */
 }
 
 .section {

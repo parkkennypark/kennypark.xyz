@@ -19,7 +19,7 @@
     margin-bottom: 1rem;
     display: flex;
     overflow: auto;
-    height: 18rem;
+    height: 25rem;
 
     scrollbar-width: thin;
     scrollbar-color: var(--accent) rgb(214, 214, 214);

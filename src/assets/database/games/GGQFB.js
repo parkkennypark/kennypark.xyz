@@ -1,7 +1,10 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 import BannerLink from "../../../components/BannerLink";
-// import ExternalLink from "../../../components/ExternalLink";
+import {} from "../CodeBlocks";
+import CodeComponent from "../../../components/CodeComponent";
+
+import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
 const docLink =
     "https://docs.google.com/document/d/18T5FZ8AJpwSW50QfMg56hI3y-6UL4rvLyymAA8fkJH4/edit?usp=sharing";
@@ -47,77 +50,95 @@ const body = (
             property="Programs"
             value="Godot, Blender, Illustrator, Figma"
         />
-        <pre>
-            {"\n"}I spent a lot of my quarantine watching a particular set of
-            virtual streamers and their daily antics. I felt such a connection
-            to a couple of the characters that I thought it would be incredibly
-            fitting for them to have their own game - thus this project was
-            born.
-            {"\n\n"}So far, I've been working on getting underlying systems up
-            and running. This includes a smooth movement system, a fleshed out
-            dialogue system with a custom syntax/parser, a cut-scene system,
-            entity state machines, and combat. I've also established an
-            efficient model/texture creation workflow.
-            {"\n\n"}I've already learned a lot working on this project. From
-            designing decoupled systems, to asset creation, to overall cohesive
-            game design, this project is proving to be the culmination of all
-            the skills I've gained working on games over the years.
-            {"\n\n"}
-        </pre>
+        <br />
+        <Tabs>
+            <TabList>
+                <Tab style={{ width: "16.2%" }}>OVERVIEW</Tab>
+                <Tab style={{ width: "16.2%" }}>MECHANICS</Tab>
+                <Tab style={{ width: "16.2%" }}>ENEMY BEHAVIOR</Tab>
+                <Tab style={{ width: "16.2%" }}>CAMERA SYSTEM</Tab>
+                <Tab style={{ width: "16.2%" }}>DIALOGUE SYSTEM</Tab>
+                <Tab style={{ width: "16.2%" }}>ART BREAKDOWN</Tab>
+            </TabList>
+            <TabPanel>
+                <pre>
+                    I spent a lot of my quarantine watching a particular set of
+                    virtual streamers and their daily antics. I felt such a
+                    connection to a couple of the characters that I thought it
+                    would be incredibly fitting for them to have their own game
+                    - thus this project was born.
+                    {"\n\n"}So far, I've been working on getting underlying
+                    systems up and running. This includes a smooth movement
+                    system, a fleshed out dialogue system with a custom
+                    syntax/parser, a cut-scene system, entity state machines,
+                    and combat. I've also established an efficient model/texture
+                    creation workflow.
+                    {"\n\n"}I've already learned a lot working on this project.
+                    From designing decoupled systems, to asset creation, to
+                    overall cohesive game design, this project is proving to be
+                    the culmination of all the skills I've gained working on
+                    games over the years.
+                    {"\n\n"}
+                </pre>
 
-        <p className="text-red">Takeaways</p>
-        <ul>
-            <li>
-                <span>
-                    (Architecture) The composition pattern as well as function
-                    modularity is crucial for code reuse and reducing redundancy
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Architecture) State machines and state inheritance makes
-                    entity behavior creation a breeze
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Architecture) Well designed systems are important, but a
-                    functional system that has some issues is better than one
-                    perpetually stuck in the design phase
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Design) Small things can make the biggest differences in
-                    game-feel: screen shake, slow motion, and particles may seem
-                    superficial but are important aspects of gameplay feedback
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Art) Combining/manipulating different types of noise is an
-                    easy way to make solid looking textures
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Art) Textures and colors are the biggest factors in
-                    solidifying a game's visual identity
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Production) Establishing an efficient asset creation
-                    pipeline early does wonders for development
-                </span>
-            </li>
-            <li>
-                <span>
-                    (Production) Sprinkle smaller, fun tasks in with the bigger
-                    ones to avoid burn-out
-                </span>
-            </li>
-        </ul>
+                <p className="text-red">Takeaways</p>
+                <ul>
+                    <li>
+                        <span>
+                            (Architecture) The composition pattern as well as
+                            function modularity is crucial for code reuse and
+                            reducing redundancy
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Architecture) State machines and state inheritance
+                            makes entity behavior creation a breeze
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Architecture) Well designed systems are important,
+                            but a functional system that has some issues is
+                            better than one perpetually stuck in the design
+                            phase
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Design) Small things can make the biggest
+                            differences in game-feel: screen shake, slow motion,
+                            and particles may seem superficial but are important
+                            aspects of gameplay feedback
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Art) Combining/manipulating different types of
+                            noise is an easy way to make solid looking textures
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Art) Textures and colors are the biggest factors in
+                            solidifying a game's visual identity
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Production) Establishing an efficient asset
+                            creation pipeline early does wonders for development
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            (Production) Sprinkle smaller, fun tasks in with the
+                            bigger ones to avoid burn-out
+                        </span>
+                    </li>
+                </ul>
+            </TabPanel>
+        </Tabs>
     </div>
 );
 

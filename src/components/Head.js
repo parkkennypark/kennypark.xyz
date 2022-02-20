@@ -12,45 +12,45 @@ import { NoToneMapping } from "three";
 extend({ OrbitControls });
 
 const CameraControls = () => {
-  const {
-    camera,
-    gl: { domElement },
-  } = useThree();
-  const controls = useRef();
-  useFrame((state) => controls.current.update());
-  return (
-    <orbitControls
-      ref={controls}
-      args={[camera, domElement]}
-      enableZoom={false}
-      enablePan={false}
-      enableDamping={true}
-      dampingFactor={0.1}
-      autoRotate={true}
-      autoRotateSpeed={2}
-      rotateSpeed={0.6}
-    />
-  );
+    const {
+        camera,
+        gl: { domElement },
+    } = useThree();
+    const controls = useRef();
+    useFrame((state) => controls.current.update());
+    return (
+        <orbitControls
+            ref={controls}
+            args={[camera, domElement]}
+            enableZoom={false}
+            enablePan={false}
+            enableDamping={true}
+            dampingFactor={0.1}
+            autoRotate={true}
+            autoRotateSpeed={2}
+            rotateSpeed={0.6}
+        />
+    );
 };
 
 const Head = () => {
-  return (
-    <Canvas
-      id="head"
-      colorManagement
-      camera={{ position: [0, 0, -19], fov: 20 }}
-      // style={canvasStyle}
-      onCreated={({ gl, scene }) => {
-        gl.toneMapping = NoToneMapping;
-      }}
-    >
-      <Suspense fallback={head}>
-        <CameraControls />
-        {/* <OrbitControls enableZoom="false" /> */}
-        <HeadModel />
-      </Suspense>
-    </Canvas>
-  );
+    return (
+        <Canvas
+            id="head"
+            colorManagement
+            camera={{ position: [0, 0, -19], fov: 20 }}
+            // style={canvasStyle}
+            onCreated={({ gl, scene }) => {
+                gl.toneMapping = NoToneMapping;
+            }}
+        >
+            <Suspense fallback={head}>
+                <CameraControls />
+                {/* <OrbitControls enableZoom="false" /> */}
+                <HeadModel />
+            </Suspense>
+        </Canvas>
+    );
 };
 
 export default Head;
