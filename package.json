@@ -63,6 +63,7 @@
     "react-modal": "^3.14.2",
     "react-refresh": "^0.8.3",
     "react-router-dom": "^5.2.0",
+    "react-syntax-highlighter": "^15.4.5",
     "react-tabs": "^3.2.3",
     "react-unity-webgl": "^8.4.10",
     "resolve": "1.18.1",
