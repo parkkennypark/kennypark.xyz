@@ -58,30 +58,20 @@ const body = (
         <p className="text-red">Takeaways</p>
         <ul>
             <li>
-                <span>
-                    (Architecture) Netcode can get very tangled very fast if not
-                    properly designed
-                </span>
+                (Architecture) Netcode can get very tangled very fast if not
+                properly designed
             </li>
             <li>
-                <span>
-                    (Production) Working around a theme does wonders for
-                    ideation
-                </span>
+                (Production) Working around a theme does wonders for ideation
             </li>
             <li>
-                <span>
-                    (Art) Things don't have to match - maps don't need to be
-                    toon-shaded just because your characters are
-                </span>
+                (Art) Things don't have to match - maps don't need to be
+                toon-shaded just because your characters are
             </li>
 
             <li>
-                <span>
-                    (Dev Habits) Working on the details is important and fun,
-                    but don't get too consumed trying to iron out the little
-                    things
-                </span>
+                (Dev Habits) Working on the details is important and fun, but
+                don't get too consumed trying to iron out the little things
             </li>
         </ul>
     </div>

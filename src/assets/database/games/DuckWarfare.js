@@ -70,29 +70,20 @@ const body = (
         <p className="text-red">Takeaways</p>
         <ul>
             <li>
-                <span>
-                    (Production) Find a workflow that allows content generation
-                    to be fun rather than tedious
-                </span>
+                (Production) Find a workflow that allows content generation to
+                be fun rather than tedious
             </li>
             <li>
-                <span>
-                    (Design) Moments that subvert expectations are the most
-                    memorable
-                </span>
+                (Design) Moments that subvert expectations are the most
+                memorable
             </li>
             <li>
-                <span>
-                    (Design) Difficulty should come in more forms than just
-                    increasing hp
-                </span>
+                (Design) Difficulty should come in more forms than just
+                increasing hp
             </li>
             <li>
-                <span>
-                    (Dev Habits) You should probably stop making backups by
-                    uploading entire archives of the game's files to a Google
-                    Drive
-                </span>
+                (Dev Habits) You should probably stop making backups by
+                uploading entire archives of the game's files to a Google Drive
             </li>
         </ul>
 

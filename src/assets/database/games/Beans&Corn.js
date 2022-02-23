@@ -51,16 +51,10 @@ const body = (
         <p className="text-red">Takeaways</p>
         <ul>
             <li>
-                <span>
-                    (Architecture) Game jams probably aren't the place for
-                    well-structured and optimized code
-                </span>
+                (Architecture) Game jams probably aren't the place for
+                well-structured and optimized code
             </li>
-            <li>
-                <span>
-                    (Art) Working with a dedicated artist is the bee's knees
-                </span>
-            </li>
+            <li>(Art) Working with a dedicated artist is the bee's knees</li>
         </ul>
     </div>
 );

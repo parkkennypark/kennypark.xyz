@@ -50,9 +50,7 @@ const body = (
         </pre>
         <p className="text-red">Takeaways</p>
         <ul>
-            <li>
-                <span>(Random) I think I enjoy teaching</span>
-            </li>
+            <li>(Random) I think I enjoy teaching</li>
         </ul>
     </div>
 );

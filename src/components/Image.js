@@ -1,6 +1,6 @@
 import "../style sheets/image.css";
 
-const Image = ({ className, src, alt, onClick }) => {
+const Image = ({ className, src, alt, onClick, autoVideo }) => {
     if (!src) return <></>;
 
     const fileType = src.split(".").pop();
@@ -10,19 +10,23 @@ const Image = ({ className, src, alt, onClick }) => {
                 <video
                     className={className}
                     onClick={onClick}
-                    // autoPlay
-                    // loop
+                    autoPlay={autoVideo ? "true" : "false"}
+                    loop={autoVideo ? "true" : "false"}
                     // disableRemotePlayback
                 >
                     <source src={src} type="video/mp4" />
                 </video>
-                <div className="overlay">
-                    <img
-                        src="/images/video overlay.png"
-                        className="overlay-image"
-                        alt="video button"
-                    />
-                </div>
+                {autoVideo ? (
+                    <></>
+                ) : (
+                    <div className="overlay">
+                        <img
+                            src="/images/video overlay.png"
+                            className="overlay-image"
+                            alt="video button"
+                        />
+                    </div>
+                )}
             </div>
         );
 

@@ -14,17 +14,14 @@ const About = () => {
                         <p>
                             I'm passionate about creating cohesive projects and
                             implementing cool ideas as a{" "}
-                            <span className="text-red">
-                                gameplay programmer
-                            </span>
-                            .
+                            <font color="#db3d42">gameplay programmer</font>.
                         </p>
                         <br />
                         <p>
                             I've been thinking up games since elementary school,
                             back when a friend and I put all our lucrative
                             project ideas in a red folder we labeled "
-                            <span className="text-red">TOP SECRET</span>" with a
+                            <font color="#db3d42">TOP SECRET</font>" with a
                             cheap black marker. Since then, I've been working
                             tirelessly to improve my skills with every idea,
                             prototype, and project I've worked on. That red

@@ -15,7 +15,7 @@ const SiteInfo = () => {
                 <div>
                     <p>
                         This site was made by me with{" "}
-                        <span className="text-red">React</span>. It is hosted on
+                        <font color="#db3d42">React</font>. It is hosted on
                         NearlyFreeSpeech.
                     </p>
                     <p className="p2">

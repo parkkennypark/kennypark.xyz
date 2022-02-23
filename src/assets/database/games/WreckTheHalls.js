@@ -71,14 +71,10 @@ const body = (
         <p className="text-red">Takeaways</p>
         <ul>
             <li>
-                <span>
-                    (Optimization) Lights can be easily faked with transparent
-                    billboard textures
-                </span>
+                (Optimization) Lights can be easily faked with transparent
+                billboard textures
             </li>
-            <li>
-                <span>(Art) Post-processing is cool! (In moderation)</span>
-            </li>
+            <li>(Art) Post-processing is cool! (In moderation)</li>
         </ul>
     </div>
 );

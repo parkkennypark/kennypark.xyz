@@ -18,11 +18,7 @@
 }
 
 .render-preview {
-    width: 98%;
-    /* width: 22rem; */
-    /* margin: 0.25rem; */
-    /* height: 50%; */
-    /* margin-right: 0.5rem; */
+    width: 95%;
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
@@ -56,5 +52,6 @@
 
     .render-preview {
         /* width: 13rem; */
+        width: 100%;
     }
 }

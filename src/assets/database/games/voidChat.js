@@ -48,10 +48,8 @@ const body = (
         <p className="text-red">Takeaways</p>
         <ul>
             <li>
-                <span>
-                    (Design) Style code should be contained in its own
-                    class(es), separate from content
-                </span>
+                (Design) Style code should be contained in its own class(es),
+                separate from content
             </li>
         </ul>
     </div>

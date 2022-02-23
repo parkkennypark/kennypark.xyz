@@ -7,7 +7,7 @@ const RenderPreview = ({ name, year, previewImage, link }) => {
     return (
         <Link to={"renders/" + link} className="render-preview">
             <p className="p1">
-                <span className="text-red">{name}</span> ({year})
+                <font color="#db3d42">{name}</font> ({year})
             </p>
             <div className="vertical-layout text-div">
                 <img

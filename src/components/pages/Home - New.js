@@ -65,8 +65,7 @@ const Home = ({ showDocs }) => {
                     <Head />
                     <div id="header-text">
                         <h1>
-                            Hi! I'm <span className="text-red">Kenny Park</span>
-                            .
+                            Hi! I'm <font color="#db3d42">Kenny Park</font>.
                         </h1>
                         <p className="p1">
                             I’m a 21 year old game developer, programmer,
@@ -83,15 +82,15 @@ const Home = ({ showDocs }) => {
 
                 <Tabs>
                     <TabList>
-                        {/* <Tab>THE HIGHLIGHTS</Tab> */}
+                        <Tab>THE HIGHLIGHTS</Tab>
                         <Tab>GAMES / APPS</Tab>
                         <Tab>RENDERS</Tab>
                         <Tab>OTHER</Tab>
                         <Tab>DOCUMENTS</Tab>
                     </TabList>
-                    {/* <TabPanel>
+                    <TabPanel>
                         <HighlightsTab />
-                    </TabPanel> */}
+                    </TabPanel>
                     <TabPanel>
                         <GamesTab />
                     </TabPanel>

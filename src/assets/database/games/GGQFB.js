@@ -84,57 +84,40 @@ const body = (
                 <p className="text-red">Takeaways</p>
                 <ul>
                     <li>
-                        <span>
-                            (Architecture) The composition pattern as well as
-                            function modularity is crucial for code reuse and
-                            reducing redundancy
-                        </span>
+                        (Architecture) The composition pattern as well as
+                        function modularity is crucial for code reuse and
+                        reducing redundancy
                     </li>
                     <li>
-                        <span>
-                            (Architecture) State machines and state inheritance
-                            makes entity behavior creation a breeze
-                        </span>
+                        (Architecture) State machines and state inheritance
+                        makes entity behavior creation a breeze
                     </li>
                     <li>
-                        <span>
-                            (Architecture) Well designed systems are important,
-                            but a functional system that has some issues is
-                            better than one perpetually stuck in the design
-                            phase
-                        </span>
+                        (Architecture) Well designed systems are important, but
+                        a functional system that has some issues is better than
+                        one perpetually stuck in the design phase
                     </li>
                     <li>
-                        <span>
-                            (Design) Small things can make the biggest
-                            differences in game-feel: screen shake, slow motion,
-                            and particles may seem superficial but are important
-                            aspects of gameplay feedback
-                        </span>
+                        (Design) Small things can make the biggest differences
+                        in game-feel: screen shake, slow motion, and particles
+                        may seem superficial but are important aspects of
+                        gameplay feedback
                     </li>
                     <li>
-                        <span>
-                            (Art) Combining/manipulating different types of
-                            noise is an easy way to make solid looking textures
-                        </span>
+                        (Art) Combining/manipulating different types of noise is
+                        an easy way to make solid looking textures
                     </li>
                     <li>
-                        <span>
-                            (Art) Textures and colors are the biggest factors in
-                            solidifying a game's visual identity
-                        </span>
+                        (Art) Textures and colors are the biggest factors in
+                        solidifying a game's visual identity
                     </li>
                     <li>
-                        <span>
-                            (Production) Establishing an efficient asset
-                            creation pipeline early does wonders for development
-                        </span>
+                        (Production) Establishing an efficient asset creation
+                        pipeline early does wonders for development
                     </li>
                     <li>
-                        <span>
-                            (Production) Sprinkle smaller, fun tasks in with the
-                            bigger ones to avoid burn-out
-                        </span>
+                        (Production) Sprinkle smaller, fun tasks in with the
+                        bigger ones to avoid burn-out
                     </li>
                 </ul>
             </TabPanel>

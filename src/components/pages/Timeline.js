@@ -12,7 +12,7 @@ const Timeline = () => {
                 <div key={index} className="timeline-container">
                     <h3 className="text-center">
                         {event.date}{" "}
-                        <span className="text-red">{timelineYear.year}</span>
+                        <font color="#db3d42">{timelineYear.year}</font>
                     </h3>
                     <div className="horizontal-layout">
                         <Image

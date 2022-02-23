@@ -1,10 +1,7 @@
 const ProjectProperty = ({ property, value }) => {
     return (
         <p>
-            <span style={{ fontFamily: "typoDodamM" }} className="text-red">
-                {property}
-            </span>
-            : {value}
+            <font color="#db3d42">{property}</font>: {value}
         </p>
     );
 };

@@ -5,7 +5,7 @@ span {
 }
 
 code {
-    font-family: firoCode;
+    font-family: firoCode !important;
 }
 
 .code-div {

@@ -77,22 +77,14 @@ const body = (
         <p className="text-red">Takeaways</p>
         <ul>
             <li>
-                <span>
-                    (Architecture) Signals are crucial to decouple systems,
-                    especially when working in a team
-                </span>
+                (Architecture) Signals are crucial to decouple systems,
+                especially when working in a team
             </li>
+            <li>(Architecture) Gosh, state machines are super neat</li>
+            <li>(Design) Focus on the fun</li>
             <li>
-                <span>(Architecture) Gosh, state machines are super neat</span>
-            </li>
-            <li>
-                <span>(Design) Focus on the fun</span>
-            </li>
-            <li>
-                <span>
-                    (Production) Take burn-out and menial tasks into account
-                    when scoping out a game
-                </span>
+                (Production) Take burn-out and menial tasks into account when
+                scoping out a game
             </li>
         </ul>
     </div>

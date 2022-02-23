@@ -7,10 +7,11 @@ const HighlightPreview = ({ name, type, previewImage, link }) => {
     return (
         <Link to={link} className="render-preview">
             <p className="p1">
-                ({type}) <span className="text-red">{name}</span>
+                ({type}) <font color="#db3d42">{name}</font>
             </p>
             <div className="vertical-layout text-div">
                 <img
+                    style={{ aspectRatio: "16/9" }}
                     className="render-preview-image"
                     src={previewImage}
                     alt={previewImage}

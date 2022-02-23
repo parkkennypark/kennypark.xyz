@@ -6,6 +6,7 @@ import {
     slopedRoofDroneChain,
 } from "../CodeBlocks";
 import CodeComponent from "../../../components/CodeComponent";
+import Image from "../../../components/Image";
 
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
@@ -14,7 +15,7 @@ const link = "/sloped-roof";
 const projPath = "/images/games/Sloped Roof";
 const icon = "icon 256x256.png";
 const screenshots = [
-    "Screenshot - 3rd person 04.PNG",
+    "UI Screenshot.png",
     "Screenshot - 1st person.PNG",
     "Screenshot - 3rd person 03.PNG",
     // "Screenshot - 3rd person 01.PNG",
@@ -58,6 +59,11 @@ const body = (
                     install shingles on a physical roof installation, placed in
                     a virtual world with a virtual worker who acts in
                     predetermined ways.
+                    <Image
+                        className="description-img"
+                        src={projPath + "/screenshots/Video.mp4"}
+                        autoVideo="true"
+                    />
                     {"\n\n"}I was responsible with building the entire program
                     while in active communication with the research professor
                     and students. The key things I handled were headset
@@ -72,21 +78,47 @@ const body = (
                     tracking is used to map the physical roof into the virtual
                     world, where a mask is then placed to dictate the
                     passthrough area.
-                    {"\n\n"}Three Vive Trackers were used to get the positions
-                    of the participants' feet and waist to determine the safety
-                    of their actions at any given time, and to trigger fall
+                    {/* {"\n\n"} */}
+                    <Image
+                        className="description-img"
+                        src={projPath + "/screenshots/Roof.jpg"}
+                    />
+                    {"\n"}
+                    Three Vive Trackers were used to get the positions of the
+                    participants' feet and waist to determine the safety of
+                    their actions at any given time, and to trigger fall
                     conditions should they be too close to the edge. I made a
                     simple calibration process to determine what trackers would
                     be mapped to what body part.
+                    <Image
+                        className="description-img"
+                        src={projPath + "/screenshots/Tracker.mp4"}
+                        autoVideo="true"
+                    />
                 </pre>
             </TabPanel>
             {/* ANIMATIONS */}
             <TabPanel>
-                Animations were recorded using the OptiTrack Motive motion
-                capture setup at the Envision Center. After the animations were
-                cleaned up by an artist, they were sent to me for
-                implementation. I used a simple state machine in conjunction
-                with Unity's animation events to drive the worker's behavior.
+                <pre>
+                    Animations were recorded using the OptiTrack Motive motion
+                    capture setup at the Envision Center. After the animations
+                    were cleaned up by an artist, they were sent to me for
+                    implementation. I used a simple state machine in conjunction
+                    with Unity's animation events to drive the worker's
+                    behavior. Animations are dynamic based on the number of
+                    shingles the worker should install per row.
+                    {"\n\n"}
+                    The video is playing at 3x's speed.
+                    <Image
+                        className="description-img"
+                        src={projPath + "/screenshots/Animation.mp4"}
+                        autoVideo="true"
+                    />
+                    <Image
+                        className="description-img"
+                        src={projPath + "/screenshots/Anim States.png"}
+                    />
+                </pre>
             </TabPanel>
             {/* DRONE */}
             <TabPanel>
@@ -94,8 +126,13 @@ const body = (
                 respond to non-human instruction while working. The drone has
                 three main states - inactivity, inspection, and conveyance -
                 which are driven through sequences of coroutines.
+                <Image
+                    className="description-img"
+                    src={projPath + "/screenshots/Drone.mp4"}
+                    autoVideo="true"
+                />
                 <CodeComponent
-                    caption={"Drone.cs"}
+                    caption={"Drone.cs (Inspection)"}
                     code={slopedRoofInspection}
                 />
                 These states are then chained together to perform predetermined
@@ -110,8 +147,8 @@ const body = (
                 Various data points needed to be recorded during the experiment
                 to be analyzed by the researchers. I set up a DataManagement
                 script that takes data from the other management scripts at a
-                set interval and writes it to a .csv file. Here is a sample data
-                log.
+                set interval and writes it to a .csv file. Here is the code that
+                handles data collection.
                 <CodeComponent
                     caption={"DataLogger.cs"}
                     code={slopedRoofData}
