@@ -8,6 +8,7 @@ import BackHeader from "../BackHeader";
 import Image from "../Image";
 import PhotosModal from "../PhotosModal";
 import GameList from "../../assets/database/GameList";
+import HighlightsList from "../../assets/database/HighlightsList";
 import ApplicationList from "../../assets/database/ApplicationList";
 import JamGameList from "../../assets/database/JamGameList";
 import OtherProjectsList from "../../assets/database/OtherProjectsList";
@@ -23,7 +24,10 @@ const GamePage = () => {
 
     var backLink = "";
     var game = "";
-    if (gameStr in GameList) {
+    if (gameStr in HighlightsList) {
+        game = HighlightsList[gameStr];
+        backLink = "/games";
+    } else if (gameStr in GameList) {
         game = GameList[gameStr];
         backLink = "/games";
     } else if (gameStr in JamGameList) {

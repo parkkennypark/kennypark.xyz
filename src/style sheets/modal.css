@@ -13,7 +13,7 @@
 
 .modal-image {
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 48%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -53,8 +53,8 @@
 }
 
 @media screen and (max-width: 500px) {
-    .modal-image {
+    /* .modal-image {
         max-width: 95%;
         max-height: 90%;
-    }
+    } */
 }

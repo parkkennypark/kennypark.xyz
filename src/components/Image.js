@@ -10,22 +10,27 @@ const Image = ({ className, src, alt, onClick, autoVideo }) => {
                 <video
                     className={className}
                     onClick={onClick}
-                    autoPlay={autoVideo ? "true" : "false"}
-                    loop={autoVideo ? "true" : "false"}
+                    // autoPlay={autoVideo ? "true" : "false"}
+                    // loop={autoVideo ? "true" : "false"}
+                    loop
+                    autoPlay
+                    muted
                     // disableRemotePlayback
+                    // controls
                 >
                     <source src={src} type="video/mp4" />
                 </video>
                 {autoVideo ? (
                     <></>
                 ) : (
-                    <div className="overlay">
-                        <img
-                            src="/images/video overlay.png"
-                            className="overlay-image"
-                            alt="video button"
-                        />
-                    </div>
+                    <></>
+                    // <div className="overlay">
+                    //     <img
+                    //         src="/images/video overlay.png"
+                    //         className="overlay-image"
+                    //         alt="video button"
+                    //     />
+                    // </div>
                 )}
             </div>
         );

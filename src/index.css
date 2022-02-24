@@ -186,7 +186,7 @@ li span {
     /* padding: 1rem; */
     /* margin-top: 0; */
     margin-bottom: auto;
-    display: grid;
+    /* display: grid; */
 
     /* scrollbar-width: thin; */
     /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
@@ -199,11 +199,9 @@ li span {
     background: white;
     border: 0.2rem solid black;
 
-    /* display: table-cell; */
     display: flex;
     flex-grow: max-width;
     flex-direction: column;
-    /* flex-grow: 1; */
 
     /* box-sizing: border-box; */
     max-width: 50rem;
@@ -242,7 +240,7 @@ li span {
 
     .centered-div {
         min-width: 100%;
-        transform: scale(1);
+        /* transform: scale(1); */
     }
 
     .container {

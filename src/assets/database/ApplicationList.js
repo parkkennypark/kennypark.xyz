@@ -5,8 +5,8 @@ import voidChat from "./games/voidChat";
 import burritoFinance from "./games/burritoFinance";
 
 let GameList = {
-    "sloped-roof": SlopedRoof,
-    "virtual-labs": VirtualLabs,
+    // "sloped-roof": SlopedRoof,
+    // "virtual-labs": VirtualLabs,
     "kasa-avatar": KasaAvatar,
     "void-chat": voidChat,
     "burrito-finance": burritoFinance,

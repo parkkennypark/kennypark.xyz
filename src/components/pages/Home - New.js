@@ -82,15 +82,15 @@ const Home = ({ showDocs }) => {
 
                 <Tabs>
                     <TabList>
-                        <Tab>THE HIGHLIGHTS</Tab>
+                        {/* <Tab>THE HIGHLIGHTS</Tab> */}
                         <Tab>GAMES / APPS</Tab>
                         <Tab>RENDERS</Tab>
-                        <Tab>OTHER</Tab>
                         <Tab>DOCUMENTS</Tab>
+                        <Tab>OTHER</Tab>
                     </TabList>
-                    <TabPanel>
+                    {/* <TabPanel>
                         <HighlightsTab />
-                    </TabPanel>
+                    </TabPanel> */}
                     <TabPanel>
                         <GamesTab />
                     </TabPanel>
@@ -98,10 +98,10 @@ const Home = ({ showDocs }) => {
                         <RendersTab />
                     </TabPanel>
                     <TabPanel>
-                        <OtherTab />
+                        <DocumentsTab />
                     </TabPanel>
                     <TabPanel>
-                        <DocumentsTab />
+                        <OtherTab />
                     </TabPanel>
                 </Tabs>
             </div>

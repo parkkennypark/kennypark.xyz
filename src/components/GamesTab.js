@@ -2,6 +2,7 @@ import "../style sheets/projectList.css";
 
 import GamePreview from "./GamePreview";
 
+import HighlightsList from "../assets/database/HighlightsList";
 import GameList from "../assets/database/GameList";
 import ApplicationList from "../assets/database/ApplicationList";
 import JamGameList from "../assets/database/JamGameList";
@@ -25,6 +26,10 @@ const GamesTab = () => {
     }
     return (
         <div>
+            <h2 className="page-title">Highlights</h2>
+            <div className="game-grid-container">
+                {getGames(HighlightsList)}
+            </div>
             <h2 className="page-title">Games</h2>
             <div className="game-grid-container">{getGames(GameList)}</div>
             <h2 className="page-title">Jam Games</h2>
