@@ -74,3 +74,20 @@ export var slopedRoofDroneChain = `IEnumerator RunScenarioChainOne()
     StartCoroutine(DoFakeDrones());
     print("Finished scenario chain 1");
 }`;
+
+export var ggqfbDialogue = `# Gupper
+
+? spoken_to_kid=false, has_turnip=true
+Gura: Hi! you wouldn't happen to know where my trident is, would you?
+Gupper: Oh, Pops took your trident, did he?
+Gupper: Lucky for you I'm in my rebellious phase. Gotta get back at him for naming me Gupper somehow.
+Gupper: Well anyway, what you're looking for is in the cave behind me.
+Gupper: Trouble is, I'm feeling a little sluggish. You know how it is. Maybe if I had some food I could muster the strength to move, if you catch my drift.
+Gupper: . . .<br>Do I smell a sea turnip?
+Gura: Wow, you're a strange kid. Yeah, I have a turnip. Care for a trade?
+Gupper: Sure. Cave is all yours.
+Gupper: Smell ya later, loser.
+Gura: <e=angry>Oh - oh yeah? Well I'll... <shake_screen><e=proud><size=s>smell your mom later.
+Gupper: What? That doesn't make any sense. You're weird, and I hate you.
+Gura: <e=proud>I'm not going to take that from a turnip apologist. <e=thinking>Turnips are known tax-evaders, you know.
+> <flag=spoken_to_kid=true>, <flag=opened_cave=true>, <event=E_open_cave>`;

@@ -5,8 +5,8 @@ import SlopedRoof from "./games/SlopedRoof";
 import VirtualLabs from "./games/VirtualLabs";
 
 let HighlightsList = {
-    "sloped-roof": SlopedRoof,
     ggqfb: GGQFB,
+    "sloped-roof": SlopedRoof,
     "virtual-labs": VirtualLabs,
     "be-not-afraid": BeNotAfraid,
 };
