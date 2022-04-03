@@ -13,6 +13,7 @@ import RenderPage from "./components/pages/RenderPage";
 import KasaAvatarPage from "./components/pages/KasaAvatarPage";
 import TechnicalDocuments from "./components/pages/TechnicalDocuments";
 import FourOhFour from "./components/pages/FourOhFour";
+import Waudible from "./components/pages/Waudible";
 
 // const versionNum = "0.5.3";
 
@@ -54,6 +55,7 @@ function App() {
                         path="/kasa-avatar-maker"
                         component={KasaAvatarPage}
                     />
+                    <Route exact path="/Waudible" component={Waudible} />
                     <Route component={FourOhFour} />
                 </Switch>
             </div>
