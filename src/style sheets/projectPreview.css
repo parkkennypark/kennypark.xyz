@@ -31,8 +31,8 @@
 
 .star {
     position: absolute;
-    left: -0.5rem;
-    top: -0.5rem;
+    left: -0.1rem;
+    top: 0.2rem;
 }
 
 .text-name {
@@ -43,6 +43,22 @@
 
 .text-tagline {
     font-size: 0.75rem;
+}
+
+.game-tag {
+    font-family: unset;
+    font-family: firoCode !important;
+
+    position: absolute;
+    right: -0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.2rem;
+    font-size: 0.6rem;
+    min-width: 2rem;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: 2px 2px rgb(59, 59, 59);
 }
 
 @media screen and (max-width: 500px) {

@@ -10,6 +10,8 @@ const projPath = "/images/games/Blades n' Bullets";
 const icon = "icon 256x256.png";
 const screenshots = ["video.mp4", "scrn1.jpg"];
 const tagline = "Chaotic TDS";
+const date = "01/22";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A chaotic top-down shooter where you simultaneously control both a sword
@@ -63,5 +65,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

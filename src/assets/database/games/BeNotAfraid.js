@@ -20,6 +20,8 @@ const screenshots = [
     "Boss Defeat.png",
 ];
 const tagline = "Surreal Action Platformer";
+const date = "10/21";
+const engine = "Godot";
 const shortDescription = (
     <pre>
         A small, surreal action platformer about an angel trying to escape
@@ -98,5 +100,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

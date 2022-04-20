@@ -19,6 +19,7 @@
     margin-bottom: 1rem;
     display: flex;
     overflow: auto;
+    overflow-y: hidden;
     height: 25rem;
 
     scrollbar-width: thin;

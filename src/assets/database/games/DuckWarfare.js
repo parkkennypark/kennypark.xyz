@@ -19,7 +19,9 @@ const screenshots = [
     "scrn 5.png",
     "scrn 6.png",
 ];
-const tagline = "Quirky Tower Defense";
+const tagline = "Quirky Lane Defense";
+const date = "08/17";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A tower-defense-type game featuring a large cast of ducks and
@@ -102,5 +104,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

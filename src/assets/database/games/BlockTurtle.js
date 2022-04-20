@@ -10,6 +10,8 @@ const projPath = "/images/games/Block Turtle";
 const icon = "Block Turtle icon 256x256.png";
 const screenshots = ["Fire.png", "Rocket.png", "Instructions.png"];
 const tagline = "Relic of the Past";
+const date = "2012";
+const engine = "GM8";
 const shortDescription = (
     <pre>
         A prototype I made in fifth grade using Game Maker 8.0 featuring Blocky
@@ -56,5 +58,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

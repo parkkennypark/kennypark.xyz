@@ -19,6 +19,8 @@ const screenshots = [
     "scrn 7.png",
 ];
 const tagline = "Mobile VR Game";
+const date = "04/16";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A carnival/arcade shootout game where you fire ducks from a cannon to
@@ -64,5 +66,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

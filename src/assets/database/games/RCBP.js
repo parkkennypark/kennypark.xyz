@@ -20,6 +20,8 @@ const screenshots = [
     "iPhone 5.5 2020-01-19_14-16-21.png",
 ];
 const tagline = "Short Puzzle Game";
+const date = "07/17";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A simple puzzle game about controlling boxes with your mind.
@@ -65,5 +67,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

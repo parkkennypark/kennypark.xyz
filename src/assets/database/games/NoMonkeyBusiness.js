@@ -13,6 +13,8 @@ const screenshots = [
     "Old Map.jpg",
 ];
 const tagline = "FPS Prototype";
+const date = "09/20";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A casual, fast-paced first person shooter I developed to play with my
@@ -85,5 +87,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

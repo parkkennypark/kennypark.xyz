@@ -19,6 +19,8 @@ const GamesTab = () => {
                     icon={game.projPath + "/" + game.icon}
                     link={link}
                     isStarred={game.isStarred}
+                    date={game.date}
+                    engine={game.engine}
                 />
             );
         }

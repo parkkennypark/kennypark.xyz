@@ -15,7 +15,7 @@
     src: url("/src/assets/fonts/FiraCode-VariableFont_wght.ttf");
 }
 
-* {
+html * {
     font-family: typoDodamM;
     line-height: 1.4;
     /* box-sizing: border-box; */

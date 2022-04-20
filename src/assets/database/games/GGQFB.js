@@ -24,6 +24,8 @@ const screenshots = [
     "scrn 3.png",
 ];
 const tagline = "WIP Action-Adventure";
+const date = "WIP";
+const engine = "Godot";
 const shortDescription = (
     <pre>
         Full name: Gawr Gura: Quest for Bread.
@@ -276,5 +278,7 @@ export default new Game(
     tagline,
     shortDescription,
     body,
+    date,
+    engine,
     true
 );

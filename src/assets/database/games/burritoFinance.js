@@ -19,6 +19,8 @@ const screenshots = [
     "screenshot 5.jpg",
 ];
 const tagline = "Personal Finance";
+const date = "08/19";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A simple personal spending tracker that tells you how much you’ve spent
@@ -68,5 +70,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

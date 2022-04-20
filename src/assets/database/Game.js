@@ -8,6 +8,8 @@ export default class Game {
         tagline,
         shortDescription,
         body,
+        date,
+        engine,
         isStarred = false
     ) {
         this.name = name;
@@ -18,6 +20,8 @@ export default class Game {
         this.tagline = tagline;
         this.shortDescription = shortDescription;
         this.body = body;
+        this.date = date;
+        this.engine = engine;
         this.isStarred = isStarred;
     }
 }

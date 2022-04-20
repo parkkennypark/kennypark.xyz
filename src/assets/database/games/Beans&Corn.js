@@ -10,6 +10,8 @@ const projPath = "/images/games/Beans And Corn";
 const icon = "icon 256x256.png";
 const screenshots = ["scrn 01.png", "scrn 02.png", "scrn 03.png"];
 const tagline = "Farm Micro-Manager";
+const date = "09/21";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A farm-themed micro manager with beans and corn.
@@ -67,5 +69,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

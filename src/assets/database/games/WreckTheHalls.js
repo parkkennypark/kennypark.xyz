@@ -22,6 +22,8 @@ const screenshots = [
     "iPhone 5.52020-01-10_14-23-10.png",
 ];
 const tagline = "Twin-Stick Shooter";
+const date = "10/19";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A Christmas (or Halloween?) themed twin-stick shooter about stopping the
@@ -87,5 +89,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

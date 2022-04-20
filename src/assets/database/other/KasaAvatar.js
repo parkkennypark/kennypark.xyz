@@ -10,6 +10,8 @@ const projPath = "/images/other/kasa-avatar";
 const icon = "KASA icon alt 256x256.png";
 const screenshots = ["physical card.png", "landing.png", "editor.png"];
 const tagline = "Custom ID Cards";
+const date = "09/21";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         An avatar maker I made for Purdue's Korean American Student Association
@@ -59,5 +61,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

@@ -10,7 +10,7 @@ import Image from "../../../components/Image";
 
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
-const name = "XR Sloped Roof";
+const name = "Sloped Roof";
 const link = "/sloped-roof";
 const projPath = "/images/games/Sloped Roof";
 const icon = "icon 256x256.png";
@@ -23,7 +23,9 @@ const screenshots = [
     // "Screenshot - 3rd person 05.PNG",
     // "Screenshot - 3rd person 06.PNG",
 ];
-const tagline = "Research Project";
+const tagline = "XR Research Project";
+const date = "04/22";
+const engine = "Unity";
 const shortDescription = (
     <pre>
         A mixed reality program I developed for a research project using the
@@ -168,5 +170,7 @@ export default new Game(
     tagline,
     shortDescription,
     body,
+    date,
+    engine,
     true
 );

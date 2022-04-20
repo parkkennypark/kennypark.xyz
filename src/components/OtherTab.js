@@ -16,6 +16,8 @@ const OtherTab = () => {
                     tagline={game.tagline}
                     icon={game.projPath + "/" + game.icon}
                     link={link}
+                    date={game.date}
+                    engine={game.engine}
                 />
             );
         }

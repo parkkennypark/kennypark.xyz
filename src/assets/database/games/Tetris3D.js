@@ -1,10 +1,10 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 
-const name = "EC Virtual Labs";
-const link = "/virtual-labs";
-const projPath = "/images/games/Virtual Labs";
-const icon = "icon 256x256.png";
+const name = "3D Block Game";
+const link = "/tetris-3D";
+const projPath = "/images/games/Tetris 3D";
+const icon = "icon.png";
 const screenshots = [
     "Virtual Labs Video.mp4",
     "paper chromatography.png",
@@ -13,8 +13,8 @@ const screenshots = [
     "stress concentration.png",
     "stress concentration FE.png",
 ];
-const tagline = "Purdue Lab Simulations";
-const date = "Various";
+const tagline = "Tetris Prototype";
+const date = "04/22";
 const engine = "Unity";
 const shortDescription = (
     <pre>

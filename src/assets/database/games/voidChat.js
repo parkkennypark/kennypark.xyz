@@ -10,6 +10,8 @@ const projPath = "/images/games/void chat";
 const icon = "void chat icon 256x256.png";
 const screenshots = ["landing menu.png", "signup menu.png", "main menu.png"];
 const tagline = "Forum Program";
+const date = "05/21";
+const engine = "Java";
 const shortDescription = (
     <pre>
         A forum app made with Java Swing that runs on a dedicated server.
@@ -63,5 +65,7 @@ export default new Game(
     screenshots,
     tagline,
     shortDescription,
-    body
+    body,
+    date,
+    engine
 );

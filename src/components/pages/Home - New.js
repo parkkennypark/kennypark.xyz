@@ -21,7 +21,7 @@ const Home = ({ showDocs }) => {
     return (
         <div className="centered-div">
             <div className="container">
-                {/* Bottom Links */}
+                {/* Top Links */}
                 <div id="bottom-links">
                     {/* Left side */}
                     <label className="float-left">
@@ -86,7 +86,7 @@ const Home = ({ showDocs }) => {
                         <Tab>GAMES / APPS</Tab>
                         <Tab>RENDERS</Tab>
                         <Tab>DOCUMENTS</Tab>
-                        <Tab>OTHER</Tab>
+                        <Tab>OTHER / ARCHIVED</Tab>
                     </TabList>
                     {/* <TabPanel>
                         <HighlightsTab />
