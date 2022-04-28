@@ -9,9 +9,9 @@ import DuckWarfare from "./games/DuckWarfare";
 let HighlightsList = {
     ggqfb: GGQFB,
     "sloped-roof": SlopedRoof,
+    clown: CLOWN,
     "virtual-labs": VirtualLabs,
-    // clown: CLOWN,
-    "duck-warfare": DuckWarfare,
+    // "duck-warfare": DuckWarfare,
     // "be-not-afraid": BeNotAfraid,
 };
 

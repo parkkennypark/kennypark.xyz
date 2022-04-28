@@ -2,13 +2,22 @@ import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 import ExternalLink from "../../../components/ExternalLink";
 
+import Image from "../../../components/Image";
+
 const browserLink = "https://kennypark.itch.io/ggj2022";
 
 const name = "CLOWN";
 const link = "/clown";
 const projPath = "/images/games/CLOWN";
 const icon = "Icon.png";
-const screenshots = ["menu.png"];
+const screenshots = [
+    "video.mp4",
+    "area 1.png",
+    "area 2.jpg",
+    "area 3.jpg",
+    "area 4.jpg",
+    "upgrades.jpg",
+];
 const tagline = "Procedural Shooter";
 const date = "WIP";
 const engine = "Godot";
@@ -40,19 +49,24 @@ const body = (
 
         <pre>
             {"\n"}This game really took off with the idea of harvesting "clown
-            tears," which I thought was in iteself a funny concept. From there
-            we expanded to a very simple gameplay loop: kill clowns, collect
-            tears, and buy upgrades. The game has no end, opting instead for a
-            looping system much like Nuclear Throne or Risk of Rain.
+            tears," which I thought was in itself a funny concept. From there we
+            expanded to a very simple gameplay loop: kill clowns, collect tears,
+            and buy upgrades. The game has no end, opting instead for a looping
+            system much like Nuclear Throne or Risk of Rain.
             {"\n\n"}Levels are procedurally generated using a grid system.
             Pre-made rooms are spawned at random to fill sections of the grid,
             with doorways added between them afterwards. I also worked on the
-            minimap, which ended up being much needed.
-            {"\n\n"}In addition to the level generation and enemy behavior, I
-            also took the lead on the visual design of the game. I knew we
-            didn't have a lot of time to spend on art, so I opted for a look
-            that uses simple geometry and heavy post processing to sell a
-            foreboding aesthetic.
+            minimap, to help avoid getting lost.
+            <Image
+                className="description-img"
+                src={projPath + "/screenshots/room gen.mp4"}
+                autoVideo="true"
+            />
+            {"\n"}In addition to the level generation and enemy behavior, I also
+            took the lead on the visual design of the game. I knew we didn't
+            have a lot of time to spend on art, so I opted for a look that uses
+            simple geometry and heavy post processing to sell a foreboding
+            aesthetic.
             {"\n\n"}Despite the short time frame, we were able to manage a
             surprising amount of fun mechanics and gameplay into the game, and I
             had a blast working on it.

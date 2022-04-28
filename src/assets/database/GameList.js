@@ -7,11 +7,11 @@ import DuckWarfare from "./games/DuckWarfare";
 
 let GameList = {
     // ggqfb: GGQFB,
-    CLOWN: CLOWN,
+    // CLOWN: CLOWN,
     "be-not-afraid": BeNotAfraid,
     // "Tetris 3D": Tetris3D,
     "no-monkey-business": NoMonkeyBusiness,
-    // "duck-warfare": DuckWarfare,
+    "duck-warfare": DuckWarfare,
 };
 
 export default GameList;
