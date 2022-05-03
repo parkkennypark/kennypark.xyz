@@ -134,7 +134,6 @@ const body = (
                     autoVideo="true"
                 />
                 <CodeComponent
-                    language="markdown"
                     caption={"Drone.cs (Inspection)"}
                     code={slopedRoofInspection}
                 />

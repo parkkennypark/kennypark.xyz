@@ -3,13 +3,14 @@
     --max-width: 25rem;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:regular,bold,italic&subset=latin,latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:regular,bold,italic&subset=latin,latin-ext");
 /* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:regular,bold,italic&subset=latin,latin-ext'); */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:regular,bold,italic&subset=latin,latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,semi-bold,bold,italic&subset=latin,latin-ext");
 
 @font-face {
     font-family: typoDodamM;
@@ -25,13 +26,14 @@
 
 html * {
     font-family: typoDodamM;
-    /* font-family: 'Noto Sans JP'; */
-    /* font-family: 'Roboto'; */
+    /* font-family: Roboto; */
+    /* font-weight: regular !important; */
+    /* font-family: "Noto Sans JP"; */
+    /* font-family: "Roboto"; */
     /* font-family: 'Roboto Mono'; */
 
     /* font-weight: bold !important; */
-    /* font-family: 'Roboto Mono';  */
-    /* font-family: 'Roboto Slab'; */
+    /* font-family: "Roboto Slab"; */
     line-height: 1.4;
     /* font-weight: bold !important; */
     /* box-sizing: border-box; */
@@ -87,6 +89,7 @@ pre {
     white-space: -pre-wrap; /* Opera 4-6 */
     white-space: -o-pre-wrap; /* Opera 7 */
     word-wrap: break-word; /* Internet Explorer 5.5+ */
+    font-size: 0.9rem;
 }
 
 .disable-select {
@@ -226,7 +229,7 @@ li span {
     flex-direction: column;
 
     /* box-sizing: border-box; */
-    max-width: 52rem;
+    max-width: 50rem;
     min-width: 25rem;
     height: fit-content;
 

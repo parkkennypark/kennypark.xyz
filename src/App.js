@@ -27,7 +27,7 @@ function App() {
                 {/* <p id="version-text">{"ver " + versionNum}</p> */}
                 <Switch>
                     <Route exact path="/" component={HomeNew} />
-                    {/* <Route exact path="/home-new" component={HomeNew} /> */}
+                    <Route exact path="/home" component={Home} />
                     <Route exact path="/games" component={Games} />
                     <Route exact path="/games/:gameStr" component={GamePage} />
                     <Route exact path="/renders" component={Renders} />

@@ -3,7 +3,16 @@
     height: auto;
 }
 
+.main-screenshot {
+    cursor: pointer;
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 30rem;
+}
+
 .screenshot {
+    /* width: 100%; */
     position: relative;
     height: 100% !important;
     width: auto;
@@ -64,8 +73,7 @@
         margin: auto;
     }
 
-    /* .screenshot { */
-    /* height: 14rem !important; */
-    /* height: 13rem !important; */
-    /* } */
+    /* .screenshot {
+        height: 5rem !important;
+    } */
 }

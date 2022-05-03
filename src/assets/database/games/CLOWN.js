@@ -23,7 +23,7 @@ const date = "WIP";
 const engine = "Godot";
 const shortDescription = (
     <pre>
-        A procedurally generated shooter where you fight for you life against
+        A procedurally generated shooter where you fight for your life against
         killer clowns.
         {"\n\n"}
         Made in a team of three within a short turnaround time.
@@ -56,7 +56,7 @@ const body = (
             {"\n\n"}Levels are procedurally generated using a grid system.
             Pre-made rooms are spawned at random to fill sections of the grid,
             with doorways added between them afterwards. I also worked on the
-            minimap, to help avoid getting lost.
+            minimap, to help avoid players from getting lost.
             <Image
                 className="description-img"
                 src={projPath + "/screenshots/room gen.mp4"}
@@ -67,9 +67,12 @@ const body = (
             have a lot of time to spend on art, so I opted for a look that uses
             simple geometry and heavy post processing to sell a foreboding
             aesthetic.
-            {"\n\n"}Despite the short time frame, we were able to manage a
-            surprising amount of fun mechanics and gameplay into the game, and I
-            had a blast working on it.
+            <Image
+                className="description-img"
+                src={projPath + "/screenshots/post processing.png"}
+            />
+            Here you can see the post-processing in action. I'm simply using
+            depth fog and color mapping.
             {/* {"\n\n"} */}
         </pre>
         {/* <p className="text-red">Takeaways</p>

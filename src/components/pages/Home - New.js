@@ -16,6 +16,7 @@ import DocumentsTab from "../DocumentsTab";
 const twitterHandle = "kennyparkpark";
 const instagramHandle = "kennypark.png";
 const githubUsername = "parkkennypark";
+const linkedinUsername = "kenneth-park-581509163";
 
 const Home = ({ showDocs }) => {
     return (
@@ -52,10 +53,15 @@ const Home = ({ showDocs }) => {
                             image="images/icons/Twitter Icon.png"
                             alt="twitter"
                         />
-                        <ExternalLinkImage
+                        {/* <ExternalLinkImage
                             link={"https://instagram.com/" + instagramHandle}
                             image="images/icons/Instagram Icon.png"
                             alt="instagram"
+                        /> */}
+                        <ExternalLinkImage
+                            link={"https://linkedin.com/in/" + linkedinUsername}
+                            image="images/icons/Linkedin Icon.png"
+                            alt="linkedin"
                         />
                     </div>
                 </div>

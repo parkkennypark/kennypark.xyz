@@ -14,6 +14,21 @@ import JamGameList from "../../assets/database/JamGameList";
 import OtherProjectsList from "../../assets/database/OtherProjectsList";
 import FourOhFour from "./FourOhFour";
 
+const images = [
+    {
+        original: "https://picsum.photos/id/1018/1000/600/",
+        thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+        original: "https://picsum.photos/id/1015/1000/600/",
+        thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+        original: "https://picsum.photos/id/1019/1000/600/",
+        thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+];
+
 const GamePage = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [currentModalIndex, setCurrentModelIndex] = useState(0);
@@ -78,19 +93,29 @@ const GamePage = () => {
                     </div>
                 </div>
 
+                <Image
+                    className="main-screenshot"
+                    src={game.projPath + "/screenshots/" + game.screenshots[0]}
+                    alt="uh oh"
+                    onClick={() => openModal(true, 0)}
+                />
+
                 {/* Screenshots */}
                 <div className="screenshot-div">
-                    {game.screenshots.map((imgPath, index) => (
-                        <Image
-                            key={index}
-                            className="screenshot"
-                            src={game.projPath + "/screenshots/" + imgPath}
-                            alt="uh oh"
-                            onClick={() => openModal(true, index)}
-                        />
-                    ))}
+                    {game.screenshots.map((imgPath, index) =>
+                        index == 0 ? (
+                            <></>
+                        ) : (
+                            <Image
+                                key={index}
+                                className="screenshot"
+                                src={game.projPath + "/screenshots/" + imgPath}
+                                alt="uh oh"
+                                onClick={() => openModal(true, index)}
+                            />
+                        )
+                    )}
                 </div>
-
                 {game.body}
             </div>
 

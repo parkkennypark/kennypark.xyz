@@ -61,8 +61,8 @@
 
 @media screen and (max-width: 500px) {
     .react-tabs__tab {
-        width: 98.5% !important;
-        border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
+        width: 98.2% !important;
+        border-width: 0.18rem 0.18rem 0.18rem 0.18rem;
         margin-top: -2rem;
         padding-top: -1rem;
     }
