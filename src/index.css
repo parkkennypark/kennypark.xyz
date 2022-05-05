@@ -9,8 +9,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold,italic&subset=latin,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:regular,bold,italic&subset=latin,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:regular,bold,italic&subset=latin,latin-ext");
-/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:regular,bold,italic&subset=latin,latin-ext'); */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,medium,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:regular,medium,semi-bold,bold,italic&subset=latin,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Wingdings:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Asap:regular,semi-bold,bold,italic&subset=latin,latin-ext");
 
 @font-face {
     font-family: typoDodamM;
@@ -25,12 +30,17 @@
 }
 
 html * {
-    font-family: typoDodamM;
+    /* font-family: typoDodamM; */
     /* font-family: Roboto; */
     /* font-weight: regular !important; */
     /* font-family: "Noto Sans JP"; */
     /* font-family: "Roboto"; */
-    /* font-family: 'Roboto Mono'; */
+    /* font-family: "Libre Barcode 128"; */
+    /* font-family: "Wingdings"; */
+    font-family: "Inter";
+    /* font-family: "Asap"; */
+    font-weight: 500;
+    /* font-family: Arial, Helvetica, sans-serif; */
 
     /* font-weight: bold !important; */
     /* font-family: "Roboto Slab"; */
@@ -42,6 +52,11 @@ html * {
 
     /* Disables mobile blue highlight for buttons */
     -webkit-tap-highlight-color: transparent;
+}
+
+font {
+    font-family: unset;
+    font-weight: unset;
 }
 
 ::-webkit-scrollbar {
@@ -129,21 +144,27 @@ pre {
 }
 
 h1 {
+    font-family: "Inter";
     font-size: 1.5rem;
     /* font-family: 'Josefin Sans'; */
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 600 !important;
 }
 
 h2 {
+    font-family: "Inter";
     font-size: 1.3rem;
     /* font-family: 'Josefin Sans'; */
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 600 !important;
 }
 
 h3 {
+    font-family: "Inter";
     font-size: 1.1rem;
     /* font-family: 'Josefin Sans'; */
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 600 !important;
 }
 
 ul {
@@ -163,25 +184,32 @@ li span {
 
 .p1 {
     font-size: 0.9rem;
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 500;
+
     /* font-family: 'Josefin Sans'; */
 }
 
 .p2 {
     font-size: 0.8rem;
     font-weight: normal;
+    font-weight: 500;
+
     /* font-family: 'Josefin Sans'; */
 }
 
 .text-pp-header {
     font-size: 1.3rem;
     font-weight: normal;
+    font-weight: 500;
+
     /* font-family: 'Josefin Sans'; */
 }
 
 .text-pp-normal {
     font-size: 0.8rem;
     font-weight: normal;
+    font-weight: 500;
 }
 
 .text-red {
