@@ -11,28 +11,44 @@ const GamePreview = ({
     isStarred,
     date,
     engine,
+    hasCode,
 }) => {
     // let match = useRouteMatch();
     return (
         <Link to={"games/" + link} className="project-preview">
             <div className="vertical-layout text-div">
                 <img className="project-list-icon" src={icon} alt={name} />
-                {isStarred ? (
-                    <img className="star" src="/images/Star.png" alt="star" />
-                ) : (
-                    <></>
-                )}
+                <div className="tags">
+                    {isStarred ? (
+                        <img
+                            className="tag-icon"
+                            src="/images/Star.png"
+                            alt="star"
+                        />
+                    ) : (
+                        <></>
+                    )}
+                    {hasCode ? (
+                        <img
+                            className="tag-icon"
+                            src="/images/Code Snippets.png"
+                            alt="code snippet"
+                        />
+                    ) : (
+                        <></>
+                    )}
+                </div>
                 <GameTag
                     text={date}
                     bgColor="black"
                     textColor="white"
-                    position="0.2rem"
+                    position="-0.3rem"
                 />
                 <GameTag
                     text={engine}
                     bgColor="white"
                     textColor="black"
-                    position="1.3rem"
+                    position="0.8rem"
                 />
                 <p className="text-name text-red text-center">{name}</p>
                 <p className="text-tagline text-center">{tagline}</p>

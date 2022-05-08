@@ -91,3 +91,23 @@ Gura: <e=angry>Oh - oh yeah? Well I'll... <shake_screen><e=proud><size=s>smell y
 Gupper: What? That doesn't make any sense. You're weird, and I hate you.
 Gura: <e=proud>I'm not going to take that from a turnip apologist. <e=thinking>Turnips are known tax-evaders, you know.
 > <flag=spoken_to_kid=true>, <flag=opened_cave=true>, <event=E_open_cave>`;
+
+export var clownPath = `func path_to_exit_exists(room, checked_rooms : Array = []) -> bool:
+    # If the current room has an exit, return true.
+    if room.has_exit:
+        return true
+
+    checked_rooms.append(room)
+
+    # If we've checked all the rooms, return false.
+    if checked_rooms.size() == rooms_spawned:
+        print("Checked all the rooms.")
+        return false
+
+    # Run recursively on any connected rooms that haven't been checked yet 
+    for adj_room in room.adjacent_rooms:
+        if !checked_rooms.has(adj_room):
+            if path_to_exit_exists(adj_room, checked_rooms):
+                return true
+
+    return false`;

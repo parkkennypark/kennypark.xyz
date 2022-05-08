@@ -29,10 +29,18 @@
     /* height: auto; */
 }
 
-.star {
+.tags {
     position: absolute;
     left: -0.2rem;
     top: -0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-icon {
+    width: 2.4rem;
+    height: auto;
+    margin-bottom: 0rem;
 }
 
 .text-name {

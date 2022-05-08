@@ -24,7 +24,7 @@ const screenshots = [
     // "Screenshot - 3rd person 06.PNG",
 ];
 const tagline = "XR Research Project";
-const date = "04/22";
+const date = "WIP";
 const engine = "Unity";
 const shortDescription = (
     <pre>
@@ -47,11 +47,11 @@ const body = (
         <br />
         <Tabs>
             <TabList>
-                <Tab style={{ width: "19.5%" }}>OVERVIEW</Tab>
-                <Tab style={{ width: "19.5%" }}>XR SETUP</Tab>
-                <Tab style={{ width: "19.5%" }}>ANIMATION BLENDING</Tab>
-                <Tab style={{ width: "19.5%" }}>DRONE BEHAVIOR</Tab>
-                <Tab style={{ width: "19.5%" }}>DATA LOGGING</Tab>
+                <Tab>OVERVIEW</Tab>
+                <Tab>XR SETUP</Tab>
+                <Tab>ANIMATION BLENDING</Tab>
+                <Tab>DRONE BEHAVIOR</Tab>
+                <Tab>DATA LOGGING</Tab>
             </TabList>
             <TabPanel>
                 <pre>
@@ -171,5 +171,6 @@ export default new Game(
     body,
     date,
     engine,
+    false,
     true
 );

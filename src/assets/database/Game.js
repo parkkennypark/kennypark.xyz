@@ -10,7 +10,8 @@ export default class Game {
         body,
         date,
         engine,
-        isStarred = false
+        isStarred = false,
+        hasCode = false
     ) {
         this.name = name;
         this.link = link;
@@ -23,5 +24,6 @@ export default class Game {
         this.date = date;
         this.engine = engine;
         this.isStarred = isStarred;
+        this.hasCode = hasCode;
     }
 }

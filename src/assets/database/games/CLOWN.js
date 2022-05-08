@@ -1,7 +1,8 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 import ExternalLink from "../../../components/ExternalLink";
-
+import { clownPath } from "../CodeBlocks";
+import CodeComponent from "../../../components/CodeComponent";
 import Image from "../../../components/Image";
 
 const browserLink = "https://kennypark.itch.io/ggj2022";
@@ -19,7 +20,7 @@ const screenshots = [
     "upgrades.jpg",
 ];
 const tagline = "Procedural Shooter";
-const date = "WIP";
+const date = "05/22";
 const engine = "Godot";
 const shortDescription = (
     <pre>
@@ -34,7 +35,7 @@ const body = (
         <ProjectProperty property="Release Date" value="May 2022" />
         <ProjectProperty
             property="Role"
-            value="Designer, Programmer, Artist, UI Design"
+            value="Designer, Programmer, Artist, UI Designer"
         />
         <ProjectProperty property="Programs" value="Godot, Blender" />
         <ProjectProperty property="Development Time" value="5 Weeks" />
@@ -61,6 +62,11 @@ const body = (
                 className="description-img"
                 src={projPath + "/screenshots/room gen.mp4"}
                 autoVideo="true"
+            />
+            <CodeComponent
+                language={"python"}
+                caption={"Room Builder.cs"}
+                code={clownPath}
             />
             {"\n"}In addition to the level generation and enemy behavior, I also
             took the lead on the visual design of the game. I knew we didn't
@@ -92,5 +98,7 @@ export default new Game(
     shortDescription,
     body,
     date,
-    engine
+    engine,
+    true,
+    true
 );

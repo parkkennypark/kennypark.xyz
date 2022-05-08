@@ -56,12 +56,12 @@ const body = (
         <br />
         <Tabs>
             <TabList>
-                <Tab style={{ width: "16.2%" }}>OVERVIEW</Tab>
-                <Tab style={{ width: "16.3%" }}>GAMEPLAY</Tab>
-                <Tab style={{ width: "16.2%" }}>ENEMY BEHAVIOR</Tab>
-                <Tab style={{ width: "16.2%" }}>DIALOGUE SYSTEM</Tab>
-                <Tab style={{ width: "16.2%" }}>CAMERA SYSTEM</Tab>
-                <Tab style={{ width: "16.2%" }}>ART BREAKDOWN</Tab>
+                <Tab>OVERVIEW</Tab>
+                <Tab>GAMEPLAY</Tab>
+                <Tab>ENEMY BEHAVIOR</Tab>
+                <Tab>DIALOGUE SYSTEM</Tab>
+                <Tab>CAMERA SYSTEM</Tab>
+                <Tab>ART BREAKDOWN</Tab>
             </TabList>
             {/* Overview */}
             <TabPanel>
@@ -191,8 +191,9 @@ const body = (
                         autoVideo="true"
                     />
                     This moveset is done in the following state chain: Walk
-                    (Move) -> Crouch (Move) -> Jump (Move) -> Land (Attack) ->
-                    Walk (Move)
+                    {
+                        "(Move) -> Crouch (Move) -> Jump (Move) -> Land (Attack) -> Walk (Move)"
+                    }
                     {"\n\n"}
                     As a bonus, because entities are not bound to enemy/player
                     classifications, I can easily make enemies turn against each
@@ -280,5 +281,6 @@ export default new Game(
     body,
     date,
     engine,
+    true,
     true
 );
