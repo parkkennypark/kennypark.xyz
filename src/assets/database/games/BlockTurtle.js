@@ -60,5 +60,6 @@ export default new Game(
     shortDescription,
     body,
     date,
-    engine
+    engine,
+    true
 );

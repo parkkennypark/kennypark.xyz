@@ -75,6 +75,39 @@ const GamePage = () => {
         setCurrentModelIndex(newIndex);
     }
 
+    function ScreenshotElements() {
+        if (game.screenshots.length === 0) {
+            return <></>;
+        }
+
+        return (
+            <div>
+                <Image
+                    className="main-screenshot"
+                    src={game.projPath + "/screenshots/" + game.screenshots[0]}
+                    alt="uh oh"
+                    onClick={() => openModal(true, 0)}
+                />
+
+                <div className="screenshot-div">
+                    {game.screenshots.map((imgPath, index) =>
+                        index === 0 ? (
+                            <></>
+                        ) : (
+                            <Image
+                                key={index}
+                                className="screenshot"
+                                src={game.projPath + "/screenshots/" + imgPath}
+                                alt="uh oh"
+                                onClick={() => openModal(true, index)}
+                            />
+                        )
+                    )}
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="centered-div">
             <div className="container">
@@ -92,30 +125,7 @@ const GamePage = () => {
                         {game.shortDescription}
                     </div>
                 </div>
-
-                <Image
-                    className="main-screenshot"
-                    src={game.projPath + "/screenshots/" + game.screenshots[0]}
-                    alt="uh oh"
-                    onClick={() => openModal(true, 0)}
-                />
-
-                {/* Screenshots */}
-                <div className="screenshot-div">
-                    {game.screenshots.map((imgPath, index) =>
-                        index == 0 ? (
-                            <></>
-                        ) : (
-                            <Image
-                                key={index}
-                                className="screenshot"
-                                src={game.projPath + "/screenshots/" + imgPath}
-                                alt="uh oh"
-                                onClick={() => openModal(true, index)}
-                            />
-                        )
-                    )}
-                </div>
+                {ScreenshotElements()}
                 {game.body}
             </div>
 

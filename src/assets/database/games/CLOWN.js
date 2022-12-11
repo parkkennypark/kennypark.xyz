@@ -77,8 +77,8 @@ const body = (
                 className="description-img"
                 src={projPath + "/screenshots/post processing.png"}
             />
-            Here you can see the post-processing in action. I'm simply using
-            depth fog and color mapping.
+            Here you can see the post-processing in action - the left image is
+            without any effects. I'm simply using depth fog and color mapping.
             {/* {"\n\n"} */}
         </pre>
         {/* <p className="text-red">Takeaways</p>

@@ -18,6 +18,7 @@ const OtherTab = () => {
                     link={link}
                     date={game.date}
                     engine={game.engine}
+                    isStarred={game.isStarred}
                 />
             );
         }

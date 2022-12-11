@@ -1,3 +1,4 @@
+import UnityPrototypes from "./games/UnityPrototypes";
 import GGQFB from "./games/GGQFB";
 import CLOWN from "./games/CLOWN";
 // import VirtualLabs from "./games/VirtualLabs";
@@ -7,6 +8,7 @@ import VirtualLabs from "./games/VirtualLabs";
 import DuckWarfare from "./games/DuckWarfare";
 
 let HighlightsList = {
+    "unity-prototypes": UnityPrototypes,
     ggqfb: GGQFB,
     "sloped-roof": SlopedRoof,
     clown: CLOWN,

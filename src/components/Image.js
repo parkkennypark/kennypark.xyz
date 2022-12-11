@@ -13,10 +13,10 @@ const Image = ({ className, src, alt, onClick, autoVideo }) => {
                     // autoPlay={autoVideo ? "true" : "false"}
                     // loop={autoVideo ? "true" : "false"}
                     loop
-                    autoPlay
+                    // autoPlay
                     muted
                     // disableRemotePlayback
-                    // controls
+                    controls
                 >
                     <source src={src} type="video/mp4" />
                 </video>
