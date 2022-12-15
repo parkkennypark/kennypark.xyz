@@ -35,8 +35,6 @@ const GamePage = () => {
 
     let { gameStr } = useParams();
 
-    console.log(gameStr);
-
     var backLink = "";
     var game = "";
     if (gameStr in HighlightsList) {
