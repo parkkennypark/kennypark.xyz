@@ -24,7 +24,7 @@ const screenshots = [
     // "Screenshot - 3rd person 06.PNG",
 ];
 const tagline = "XR Research Project";
-const date = "WIP";
+const date = "09/22";
 const engine = "Unity";
 const shortDescription = (
     <pre>

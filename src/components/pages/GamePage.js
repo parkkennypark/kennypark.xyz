@@ -73,35 +73,40 @@ const GamePage = () => {
         setCurrentModelIndex(newIndex);
     }
 
-    function ScreenshotElements() {
+    function mainScreenshot() {
         if (game.screenshots.length === 0) {
             return <></>;
         }
 
         return (
-            <div>
-                <Image
-                    className="main-screenshot"
-                    src={game.projPath + "/screenshots/" + game.screenshots[0]}
-                    alt="uh oh"
-                    onClick={() => openModal(true, 0)}
-                />
+            <Image
+                className="main-screenshot"
+                src={game.projPath + "/screenshots/" + game.screenshots[0]}
+                alt="uh oh"
+                onClick={() => openModal(true, 0)}
+            />
+        );
+    }
 
-                <div className="screenshot-div">
-                    {game.screenshots.map((imgPath, index) =>
-                        index === 0 ? (
-                            <></>
-                        ) : (
-                            <Image
-                                key={index}
-                                className="screenshot"
-                                src={game.projPath + "/screenshots/" + imgPath}
-                                alt="uh oh"
-                                onClick={() => openModal(true, index)}
-                            />
-                        )
-                    )}
-                </div>
+    function screenshotGallery() {
+        if (game.screenshots.length < 2) {
+            return <></>;
+        }
+        return (
+            <div className="screenshot-div">
+                {game.screenshots.map((imgPath, index) =>
+                    index === 0 ? (
+                        <></>
+                    ) : (
+                        <Image
+                            key={index}
+                            className="screenshot"
+                            src={game.projPath + "/screenshots/" + imgPath}
+                            alt="uh oh"
+                            onClick={() => openModal(true, index)}
+                        />
+                    )
+                )}
             </div>
         );
     }
@@ -123,7 +128,8 @@ const GamePage = () => {
                         {game.shortDescription}
                     </div>
                 </div>
-                {ScreenshotElements()}
+                {mainScreenshot()}
+                {screenshotGallery()}
                 {game.body}
             </div>
 

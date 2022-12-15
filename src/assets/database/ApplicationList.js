@@ -7,8 +7,8 @@ import burritoFinance from "./games/burritoFinance";
 
 let GameList = {
     judgeme: JudgeMe,
-    // "sloped-roof": SlopedRoof,
-    // "virtual-labs": VirtualLabs,
+    "sloped-roof": SlopedRoof,
+    "virtual-labs": VirtualLabs,
     "kasa-avatar": KasaAvatar,
     "void-chat": voidChat,
     "burrito-finance": burritoFinance,

@@ -76,12 +76,14 @@ font {
 ::-webkit-scrollbar-thumb {
     background-color: var(--accent);
     width: 0.2rem;
-    border: 0.125rem solid #ffffff;
+    /* border: 0.125rem solid #ffffff; */
+    border: 0.125rem solid rgb(255, 203, 203);
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 0.625rem;
-    background-color: #ffffff;
+    /* border-radius: 0.625rem; */
+    /* background-color: #ffffff; */
+    background-color: rgb(255, 203, 203);
 }
 
 a {

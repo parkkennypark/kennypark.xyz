@@ -18,7 +18,7 @@ const GamePreview = ({
         <Link to={"games/" + link} className="project-preview">
             <div className="vertical-layout text-div">
                 <img className="project-list-icon" src={icon} alt={name} />
-                <div className="tags">
+                {/* <div className="tags">
                     {isStarred ? (
                         <img
                             className="tag-icon"
@@ -37,7 +37,7 @@ const GamePreview = ({
                     ) : (
                         <></>
                     )}
-                </div>
+                </div> */}
                 <GameTag
                     text={date}
                     bgColor="black"

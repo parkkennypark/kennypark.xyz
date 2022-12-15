@@ -10,7 +10,7 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 const docLink =
     "https://docs.google.com/document/d/18T5FZ8AJpwSW50QfMg56hI3y-6UL4rvLyymAA8fkJH4/edit?usp=sharing";
 
-const name = "GGQFB";
+const name = "GG: Quest for Bread";
 const link = "/ggqfb";
 const projPath = "/images/games/GGQFB";
 const icon = "GGQFB icon 256x256.png";
@@ -23,7 +23,7 @@ const screenshots = [
     "scrn 5.png",
     "scrn 3.png",
 ];
-const tagline = "WIP Action-Adventure";
+const tagline = "Action-Adventure";
 const date = "WIP";
 const engine = "Godot";
 const shortDescription = (

@@ -8,9 +8,9 @@ import VirtualLabs from "./games/VirtualLabs";
 import DuckWarfare from "./games/DuckWarfare";
 
 let HighlightsList = {
-    "unity-prototypes": UnityPrototypes,
     ggqfb: GGQFB,
     "sloped-roof": SlopedRoof,
+    "unity-prototypes": UnityPrototypes,
     clown: CLOWN,
     "virtual-labs": VirtualLabs,
     // "duck-warfare": DuckWarfare,

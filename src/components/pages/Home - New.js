@@ -7,6 +7,8 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import Head from "../../components/Head";
 import ExternalLinkImage from "../ExternalLinkImage";
 
+import Image from "../../components/Image";
+
 import HighlightsTab from "../HighlightsTab";
 import GamesTab from "../GamesTab";
 import RendersTab from "../RendersTab";
@@ -85,14 +87,18 @@ const Home = ({ showDocs }) => {
                         </p>
                     </div>
                 </div>
-
+                {/* <Image
+                    className="description-img"
+                    src="/images/games/GGQFB/screenshots/gameplay.mp4"
+                    autoVideo="true"
+                /> */}
                 <Tabs>
                     <TabList>
                         {/* <Tab>THE HIGHLIGHTS</Tab> */}
                         <Tab>GAMES / APPS</Tab>
                         <Tab>RENDERS</Tab>
-                        <Tab>DOCUMENTS</Tab>
-                        <Tab>OTHER / ARCHIVED</Tab>
+                        <Tab>DOCUMENTATION</Tab>
+                        {/* <Tab>OTHER / ARCHIVED</Tab> */}
                     </TabList>
                     {/* <TabPanel>
                         <HighlightsTab />
@@ -106,10 +112,22 @@ const Home = ({ showDocs }) => {
                     <TabPanel>
                         <DocumentsTab />
                     </TabPanel>
-                    <TabPanel>
+
+                    {/* <TabPanel>
                         <OtherTab />
-                    </TabPanel>
+                    </TabPanel> */}
                 </Tabs>
+
+                {/* <br />
+                <h2 className="page-title">Renders</h2>
+                <div style={{ border: "solid 0.2rem rgb(255, 203, 203)" }}>
+                    <RendersTab />
+                </div>
+                <br />
+                <h2 className="page-title">Documentation</h2>
+                <div style={{ border: "solid 0.2rem rgb(255, 203, 203)" }}>
+                    <DocumentsTab />
+                </div> */}
             </div>
         </div>
     );

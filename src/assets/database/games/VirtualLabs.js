@@ -13,7 +13,7 @@ const screenshots = [
     "stress concentration.png",
     "stress concentration FE.png",
 ];
-const tagline = "Purdue Lab Simulations";
+const tagline = "Purdue Lab Sims";
 const date = "Various";
 const engine = "Unity";
 const shortDescription = (

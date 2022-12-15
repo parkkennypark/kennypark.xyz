@@ -29,14 +29,16 @@ const GamesTab = () => {
     }
     return (
         <div>
-            <h2 className="page-title">Highlights</h2>
+            {/* <h2 className="page-title">Highlights</h2>
             <div className="game-grid-container">
                 {getGames(HighlightsList)}
-            </div>
-            <h2 className="page-title">Games</h2>
+            </div> */}
+            <h2 className="page-title">Major Projects</h2>
             <div className="game-grid-container">{getGames(GameList)}</div>
-            <h2 className="page-title">Jam Games</h2>
+            <br />
+            <h2 className="page-title">Jam Games and Prototypes</h2>
             <div className="game-grid-container">{getGames(JamGameList)}</div>
+            <br />
             <h2 className="page-title">Applications</h2>
             <div className="game-grid-container">
                 {getGames(ApplicationList)}

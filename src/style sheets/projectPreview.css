@@ -1,5 +1,6 @@
 .project-preview {
-    width: 10rem;
+    width: 8rem;
+    min-width: 8rem;
     display: flex;
     margin: 0.5rem;
     cursor: pointer;
@@ -7,6 +8,8 @@
     height: min-content;
     line-height: 0.5rem;
     position: relative;
+    box-sizing: border-box;
+
 }
 
 .project-list-icon {
@@ -45,7 +48,7 @@
 
 .text-name {
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.80rem;
     line-height: 1rem;
 }
 
@@ -70,9 +73,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    .project-preview {
-        width: 10rem;
-    }
+    /* .project-preview {
+        width: 3rem;
+        max-width: 3rem;
+    } */
 
     .render-preview {
         /* width: 13rem; */

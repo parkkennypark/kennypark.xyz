@@ -103,7 +103,9 @@ const body = (
                         src={projPath + "/screenshots/Genshin.mp4"}
                         autoVideo="true"
                     />
-                    {"\n"}
+                    I downloaded a free VFX pack from the asset store to make
+                    the impacts more interesting.
+                    {"\n\n"}
                     The main implementation for this prototype revolves around
                     reading from a spreadsheet to determine reactions. The below
                     spreadsheet is read from a file and placed into a 2D array.
