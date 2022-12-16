@@ -6,22 +6,22 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const mesh = useRef();
-  const { nodes, materials } = useGLTF("/head.glb");
+    const mesh = useRef();
+    const { nodes, materials } = useGLTF("/head.glb");
 
-  // useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.005));
+    // useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y += 0.005));
 
-  return (
-    <group ref={mesh} {...props} dispose={null}>
-      <mesh
-        geometry={nodes.Head.geometry}
-        material={materials.HEAD}
-        scale={[1, 1, 1]}
-        rotation={[0.25, 3.1415, 0]}
-        // rotation={getTransform.rotation}
-      />
-    </group>
-  );
+    return (
+        <group ref={mesh} {...props} dispose={null}>
+            <mesh
+                geometry={nodes.Head.geometry}
+                material={materials.HEAD}
+                scale={[1, 1, 1]}
+                rotation={[0.15, 3.1415, 0]}
+                // rotation={getTransform.rotation}
+            />
+        </group>
+    );
 }
 
 useGLTF.preload("/head.glb");
