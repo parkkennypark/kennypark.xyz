@@ -13,8 +13,11 @@
     "@react-three/fiber": "^8.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.6.1",
     "react-router-dom": "^6.6.1",
+    "react-syntax-highlighter": "^15.5.0",
     "react-tabs": "^6.0.0",
+    "react-unity-webgl": "8.4.10",
     "three": "^0.148.0"
   },
   "devDependencies": {

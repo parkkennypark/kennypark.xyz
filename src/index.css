@@ -1,16 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:regular,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:regular,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:regular,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:regular,bold,italic&subset=latin,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,medium,semi-bold,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:regular,medium,semi-bold,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,semi-bold,bold,italic&subset=latin,latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca:regular,semi-bold,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,semi-bold,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Wingdings:regular,semi-bold,bold,italic&subset=latin,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Asap:regular,semi-bold,bold,italic&subset=latin,latin-ext");
 
 :root {
     --accent: #db3d42;
@@ -18,13 +7,7 @@
 }
 
 @font-face {
-    font-family: typoDodamM;
-    font-weight: normal;
-    src: url("/src/assets/fonts/TYPO_DODAMM.TTF");
-}
-
-@font-face {
-    font-family: firoCode;
+    font-family: firaCode;
     font-weight: normal;
     src: url("/src/assets/fonts/FiraCode-VariableFont_wght.ttf");
 }
@@ -59,32 +42,6 @@ font {
     font-weight: unset;
 }
 
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 0rem;
-    height: 0.8rem;
-}
-
-::-webkit-scrollbar:vertical {
-    /* width: 0.5rem; */
-}
-
-::-webkit-scrollbar:horizontal {
-    width: 1rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--accent);
-    width: 0.2rem;
-    /* border: 0.125rem solid #ffffff; */
-    border: 0.125rem solid rgb(255, 203, 203);
-}
-
-::-webkit-scrollbar-track {
-    /* border-radius: 0.625rem; */
-    /* background-color: #ffffff; */
-    background-color: rgb(255, 203, 203);
-}
 
 a {
     color: black;
@@ -147,7 +104,7 @@ pre {
 
 h1 {
     font-family: "Inter";
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     /* font-family: 'Josefin Sans'; */
     /* font-weight: normal; */
     font-weight: 600 !important;
@@ -186,7 +143,7 @@ li span {
 }
 
 .p1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     /* font-weight: normal; */
     font-weight: 500;
 
@@ -221,7 +178,10 @@ li span {
 
 .page-title {
     margin: 0.4rem;
-    text-align: center;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    text-align: left;
+    font-size: 1.8rem;
 }
 
 .background {
@@ -260,7 +220,7 @@ li span {
     flex-direction: column;
 
     /* box-sizing: border-box; */
-    max-width: 50rem;
+    max-width: 55rem;
     min-width: 25rem;
     height: fit-content;
 

@@ -1,17 +1,18 @@
 .game-grid-container {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
     /* grid-template-columns: repeat(auto-fill, minmax(min(150px,100%), 1fr)); */
     /* display: flex; */
     /* padding-top: 0.8rem; */
-    display: flex;
-    overflow: auto;
+    /* display: flex; */
+    /* overflow: auto; */
     /* background-color:#ffe1e3; */
     /* border: 0.2rem solid rgb(255, 203, 203); */
     border-bottom: 0;
+    /* margin-bottom: 1rem; */
     /* flex-direction: column; */
     /* justify-content: space-evenly;
-    justify-items: center;
     align-content: space-evenly; */
     /* align-items: center; */
 }

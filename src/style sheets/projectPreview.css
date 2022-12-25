@@ -1,9 +1,11 @@
 .project-preview {
-    width: 8.5rem;
-    min-width: 8.5rem;
+    /* width: 8.5rem; */
+    width: 12rem;
+    /* min-width: 10rem; */
     /* padding-left: 1rem; */
     display: flex;
     margin: 0.5rem;
+    margin-bottom: 1.5rem;
     cursor: pointer;
     text-decoration: none;
     height: min-content;
@@ -14,8 +16,12 @@
 }
 
 .project-list-icon {
-    width: 90%;
-    width: 90%;
+    /* width: 90%; */
+    width: 100%;
+    aspect-ratio: 630 / 500;
+
+    object-fit: cover;
+
     /* padding: 0.625rem; */
     margin: auto;
     filter: drop-shadow(0px 0px 1px #000);
@@ -49,17 +55,18 @@
 
 .text-name {
     margin-top: 0.5rem;
-    font-size: 0.80rem;
+    font-size: 1rem;
     line-height: 1rem;
+    /* text-align: left; */
 }
 
 .text-tagline {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 .game-tag {
     font-family: unset;
-    font-family: firoCode !important;
+    font-family: firaCode !important;
 
     position: absolute;
     right: -0.2rem;

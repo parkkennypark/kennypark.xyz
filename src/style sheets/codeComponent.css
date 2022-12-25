@@ -1,15 +1,15 @@
 span {
     font-family: unset;
     font-weight: normal !important;
-    font-family: firoCode;
+    font-family: firaCode;
 }
 
 code {
-    font-family: firoCode !important;
+    font-family: firaCode !important;
 }
 
 .code-div {
-    font-family: firoCode !important;
+    font-family: firaCode !important;
     font-weight: unset;
     font-size: smaller;
     padding-top: 0.8rem;

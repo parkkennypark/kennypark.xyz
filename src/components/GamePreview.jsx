@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 import GameTag from "./GameTag";
 
 const GamePreview = ({
-    name,
-    tagline,
-    icon,
-    link,
-    isStarred,
-    date,
-    engine,
-    hasCode,
+   name,
+   tagline,
+   icon,
+   link,
+   isStarred,
+   date,
+   engine,
+   hasCode,
 }) => {
-    // let match = useRouteMatch();
-    return (
-        <Link to={"games/" + link} className="project-preview">
-            <div className="vertical-layout text-div">
-                <img className="project-list-icon" src={icon} alt={name} />
-                {/* <div className="tags">
+   // let match = useRouteMatch();
+   return (
+      <Link to={"games/" + link} className="project-preview">
+         <div className="vertical-layout text-div">
+            <img className="project-list-icon" src={icon} alt={name} />
+            {/* <div className="tags">
                     {isStarred ? (
                         <img
                             className="tag-icon"
@@ -38,23 +38,23 @@ const GamePreview = ({
                         <></>
                     )}
                 </div> */}
-                <GameTag
-                    text={date}
-                    bgColor="black"
-                    textColor="white"
-                    position="-0.3rem"
-                />
-                <GameTag
-                    text={engine}
-                    bgColor="white"
-                    textColor="black"
-                    position="0.8rem"
-                />
-                <p className="text-name text-red text-center">{name}</p>
-                <p className="text-tagline text-center">{tagline}</p>
-            </div>
-        </Link>
-    );
+            <GameTag
+               text={date}
+               bgColor="black"
+               textColor="white"
+               position="-0.3rem"
+            />
+            <GameTag
+               text={engine}
+               bgColor="white"
+               textColor="black"
+               position="0.8rem"
+            />
+            <p className="text-name text-red">{name}</p>
+            <p className="text-tagline ">{tagline}</p>
+         </div>
+      </Link>
+   );
 };
 
 export default GamePreview;
