@@ -1,0 +1,17 @@
+span {
+    font-family: unset;
+    font-weight: normal !important;
+    font-family: firoCode;
+}
+
+code {
+    font-family: firoCode !important;
+}
+
+.code-div {
+    font-family: firoCode !important;
+    font-weight: unset;
+    font-size: smaller;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}

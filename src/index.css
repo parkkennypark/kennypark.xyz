@@ -1,70 +1,307 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+    --accent: #db3d42;
+    --max-width: 25rem;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:regular,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,medium,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:regular,medium,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Wingdings:regular,semi-bold,bold,italic&subset=latin,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Asap:regular,semi-bold,bold,italic&subset=latin,latin-ext");
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@font-face {
+    font-family: typoDodamM;
+    font-weight: normal;
+    src: url("/src/assets/fonts/TYPO_DODAMM.TTF");
+}
+
+@font-face {
+    font-family: firoCode;
+    font-weight: normal;
+    src: url("/src/assets/fonts/FiraCode-VariableFont_wght.ttf");
+}
+
+html * {
+    /* font-family: typoDodamM; */
+    /* font-family: Roboto; */
+    /* font-weight: regular !important; */
+    /* font-family: "Noto Sans JP"; */
+    /* font-family: "Roboto"; */
+    /* font-family: "Libre Barcode 128"; */
+    /* font-family: "Wingdings"; */
+    font-family: "Inter";
+    /* font-family: "Asap"; */
+    font-weight: 500;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
+    /* font-weight: bold !important; */
+    /* font-family: "Roboto Slab"; */
+    line-height: 1.4;
+    /* font-weight: bold !important; */
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+
+    /* Disables mobile blue highlight for buttons */
+    -webkit-tap-highlight-color: transparent;
+}
+
+font {
+    font-family: unset;
+    font-weight: unset;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0rem;
+    height: 0.8rem;
+}
+
+::-webkit-scrollbar:vertical {
+    /* width: 0.5rem; */
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    width: 0.2rem;
+    /* border: 0.125rem solid #ffffff; */
+    border: 0.125rem solid rgb(255, 203, 203);
+}
+
+::-webkit-scrollbar-track {
+    /* border-radius: 0.625rem; */
+    /* background-color: #ffffff; */
+    background-color: rgb(255, 203, 203);
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+    color: black;
+    text-decoration-thickness: 0.125rem;
+    /* font-size: 1rem; */
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+pre {
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+    font-size: 0.9rem;
+}
+
+.disable-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.horizontal-layout {
+    display: flex;
+    /* flex: 1; */
+    /* flex-wrap: wrap; */
+}
+
+.vertical-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.float-left {
+    /* position: relative; */
+    float: left;
+}
+
+.float-right {
+    /* position: relative; */
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+    /* margin: auto; */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-family: "Inter";
+    font-size: 1.5rem;
+    /* font-family: 'Josefin Sans'; */
+    /* font-weight: normal; */
+    font-weight: 600 !important;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+    font-family: "Inter";
+    font-size: 1.3rem;
+    /* font-family: 'Josefin Sans'; */
+    /* font-weight: normal; */
+    font-weight: 600 !important;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h3 {
+    font-family: "Inter";
+    font-size: 1.1rem;
+    /* font-family: 'Josefin Sans'; */
+    /* font-weight: normal; */
+    font-weight: 600 !important;
+}
+
+ul {
+    /* list-style-type: circle; */
+    padding-left: 1rem;
+}
+
+li {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+li span {
+    display: block;
+    margin-left: -0.8rem;
+    color: #000; /* black text */
+}
+
+.p1 {
+    font-size: 0.9rem;
+    /* font-weight: normal; */
+    font-weight: 500;
+
+    /* font-family: 'Josefin Sans'; */
+}
+
+.p2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-weight: 500;
+
+    /* font-family: 'Josefin Sans'; */
+}
+
+.text-pp-header {
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-weight: 500;
+
+    /* font-family: 'Josefin Sans'; */
+}
+
+.text-pp-normal {
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-weight: 500;
+}
+
+.text-red {
+    color: var(--accent);
+}
+
+.page-title {
+    margin: 0.4rem;
+    text-align: center;
+}
+
+.background {
+    background-image: url("/src/assets/images/Repeating_Tile_Lighter.png");
+    background-size: 8rem;
+    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+
+    overflow: auto;
+
+    /* overflow: hidden; */
+}
+
+.centered-div {
+    /* padding: 1rem; */
+    /* margin-top: 0; */
+    margin-bottom: auto;
+    /* display: grid; */
+
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: var(--accent) rgb(214, 214, 214); */
+    /* scrollbar-color: rgb(158, 158, 158) white; */
+}
+
+.container {
+    justify-content: center;
+
+    background: white;
+    border: 0.18rem solid black;
+
+    display: flex;
+    flex-grow: max-width;
+    flex-direction: column;
+
+    /* box-sizing: border-box; */
+    max-width: 50rem;
+    min-width: 25rem;
+    height: fit-content;
+
+    /* min-height: 40rem; */
+
+    padding: 1rem;
+    margin: 1rem;
+
+    /* transform-origin: top center; */
+    /* transform: scale(0.95); */
+}
+
+.section {
+    margin-top: 1.25rem;
+}
+
+#version-text {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 0.6rem;
+    color: white;
+    background-color: rgba(1, 1, 1, 0.5);
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .horizontal-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centered-div {
+        min-width: 100%;
+        /* transform: scale(1); */
+    }
+
+    .container {
+        /* padding: 0.3125rem; */
+        margin: 0.5rem;
+        min-width: 0rem;
+    }
 }

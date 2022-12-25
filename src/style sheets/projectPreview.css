@@ -1,0 +1,86 @@
+.project-preview {
+    width: 8.5rem;
+    min-width: 8.5rem;
+    /* padding-left: 1rem; */
+    display: flex;
+    margin: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    height: min-content;
+    line-height: 0.5rem;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.project-list-icon {
+    width: 90%;
+    width: 90%;
+    /* padding: 0.625rem; */
+    margin: auto;
+    filter: drop-shadow(0px 0px 1px #000);
+}
+
+.render-preview {
+    width: 95%;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.render-preview-image {
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+}
+
+.tags {
+    position: absolute;
+    left: -0.2rem;
+    top: -0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-icon {
+    width: 2.4rem;
+    height: auto;
+    margin-bottom: 0rem;
+}
+
+.text-name {
+    margin-top: 0.5rem;
+    font-size: 0.80rem;
+    line-height: 1rem;
+}
+
+.text-tagline {
+    font-size: 0.75rem;
+}
+
+.game-tag {
+    font-family: unset;
+    font-family: firoCode !important;
+
+    position: absolute;
+    right: -0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.2rem;
+    font-size: 0.6rem;
+    min-width: 2rem;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: 2px 2px rgb(59, 59, 59);
+}
+
+@media screen and (max-width: 500px) {
+    /* .project-preview {
+        width: 3rem;
+        max-width: 3rem;
+    } */
+
+    .render-preview {
+        /* width: 13rem; */
+        width: 100%;
+    }
+}

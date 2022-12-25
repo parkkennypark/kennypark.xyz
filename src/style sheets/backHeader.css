@@ -1,0 +1,27 @@
+#back-header-div {
+  /* margin-bottom: 1rem; */
+}
+
+#back-button {
+  /* margin-bottom: 20px; */
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  cursor: pointer;
+  width: fit-content;
+  float: left;
+}
+
+#home-button {
+  /* margin-bottom: 20px; */
+  text-decoration: underline;
+  text-decoration-thickness: 0.125rem;
+  cursor: pointer;
+  width: fit-content;
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  #back-header-div {
+    /* padding: 0.5rem; */
+  }
+}

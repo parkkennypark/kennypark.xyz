@@ -1,34 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+// import Home from "./components/pages/Home";
+import HomeNew from "./components/pages/Home - New";
+// import Games from "./components/pages/Games";
+// import Renders from "./components/pages/Renders";
+// import OtherProjects from "./components/pages/OtherProjects";
+// import About from "./components/pages/About";
+// import Timeline from "./components/pages/Timeline";
+// import SiteInfo from "./components/pages/SiteInfo";
+// import GamePage from "./components/pages/GamePage";
+// import RenderPage from "./components/pages/RenderPage";
+// import KasaAvatarPage from "./components/pages/KasaAvatarPage";
+// import TechnicalDocuments from "./components/pages/TechnicalDocuments";
+// import FourOhFour from "./components/pages/FourOhFour";
+// import Waudible from "./components/pages/Waudible";
+
+// const versionNum = "0.5.3";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    return (
+        <Router>
+            <div
+                className="background"
+                style={{ display: "flex", justifyContent: "center" }}
+            >
+                {/* <p id="version-text">{"ver " + versionNum}</p> */}
+                <Routes>
+                    <Route exact path="/" element={<HomeNew/>} />
+                    {/* <Route exact path="/home" component={Home} />
+                    <Route exact path="/games" component={Games} />
+                    <Route exact path="/games/:gameStr" component={GamePage} />
+                    <Route exact path="/renders" component={Renders} />
+                    <Route
+                        exact
+                        path="/renders/:renderStr"
+                        component={RenderPage}
+                    />
+                    <Route exact path="/other" component={OtherProjects} />
+                    <Route
+                        exact
+                        path="/other/:projectStr"
+                        component={GamePage}
+                    />
+                    <Route
+                        exact
+                        path="/technical-documents"
+                        component={TechnicalDocuments}
+                    />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/timeline" component={Timeline} />
+                    <Route exact path="/site-info" component={SiteInfo} />
+                    <Route
+                        exact
+                        path="/kasa-avatar-maker"
+                        component={KasaAvatarPage}
+                    />
+                    <Route exact path="/Waudible" component={Waudible} />
+                    <Route component={FourOhFour} /> */}
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;

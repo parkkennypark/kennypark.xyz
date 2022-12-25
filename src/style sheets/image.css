@@ -1,0 +1,83 @@
+.timeline-image {
+    width: 10rem !important;
+    height: auto;
+}
+
+.main-screenshot {
+    cursor: pointer;
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 30rem;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screenshot {
+    /* width: 100%; */
+    position: relative;
+    height: 100% !important;
+    width: auto;
+    /* margin-right: 0.5rem; */
+    cursor: pointer;
+    color: black;
+    box-sizing: border-box;
+}
+
+.render-image {
+    width: 100%;
+    height: auto;
+    /* margin-top: 0.5rem; */
+    cursor: pointer;
+}
+
+.overlay {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+    pointer-events: none;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.video-div {
+    position: relative;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin: 0.25rem;
+    /* max-height: min-content; */
+    height: auto;
+}
+
+.img-div {
+    position: relative;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin: 0.25rem;
+}
+
+@media screen and (max-width: 500px) {
+    .timeline-image {
+        margin: auto;
+    }
+
+    /* .screenshot {
+        height: 5rem !important;
+    } */
+}
