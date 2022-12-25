@@ -2,7 +2,7 @@ import "../../style sheets/home.css";
 import "../../style sheets/react-tabs.css";
 
 import { Link } from "react-router-dom";
-// import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
+import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
 import Head from "../../components/Head";
 import ExternalLinkImage from "../ExternalLinkImage";
@@ -88,22 +88,16 @@ const Home = ({ showDocs }) => {
                     src="/images/games/GGQFB/screenshots/gameplay.mp4"
                     autoVideo="true"
                 /> */}
-                {/* <Tabs>
+                <Tabs>
                     <TabList>
                         <Tab>GAMES / APPS</Tab>
                         <Tab>RENDERS</Tab>
                         <Tab>DOCUMENTATION</Tab>
                     </TabList>
-                    <TabPanel>
-                        <GamesTab />
-                    </TabPanel>
-                    <TabPanel>
-                        <RendersTab />
-                    </TabPanel>
-                    <TabPanel>
-                        <DocumentsTab />
-                    </TabPanel>
-                </Tabs> */}
+                    <TabPanel>{/* <GamesTab /> */}</TabPanel>
+                    <TabPanel>{/* <RendersTab /> */}</TabPanel>
+                    <TabPanel>{/* <DocumentsTab /> */}</TabPanel>
+                </Tabs>
 
                 {/* <br />
                 <h2 className="page-title">Renders</h2>
