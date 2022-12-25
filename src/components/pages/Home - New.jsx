@@ -4,9 +4,8 @@ import "../../style sheets/react-tabs.css";
 import { Link } from "react-router-dom";
 // import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
-// import Head from "../../components/Head";
+import Head from "../../components/Head";
 import ExternalLinkImage from "../ExternalLinkImage";
-
 
 // import GamesTab from "../GamesTab";
 // import RendersTab from "../RendersTab";
@@ -67,7 +66,7 @@ const Home = ({ showDocs }) => {
                 {/* Head and text */}
                 <div id="header" className="horizontal-layout">
                     {/* <img id="head" src={head} alt="HEAD" /> */}
-                    {/* <Head /> */}
+                    <Head />
                     <div id="header-text">
                         <h1>
                             Hi! I'm <font color="#db3d42">Kenny Park</font>.
