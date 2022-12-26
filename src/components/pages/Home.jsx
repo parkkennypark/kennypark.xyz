@@ -6,6 +6,7 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
 import Head from "../Head";
 import ExternalLinkImage from "../ExternalLinkImage";
+import Image from "../Image";
 
 import GamesTab from "../GamesTab";
 import RendersTab from "../RendersTab";
@@ -73,21 +74,21 @@ const Home = ({ showDocs }) => {
                   </h1>
                   <p className="p1">
                      I’m a 22 year old game developer, programmer, artist, and
-                     all around cool guy - though that last point is up for
-                     debate.
+                     fried tofu enthusiast.
                   </p>
-                  <br />
+                  {/* <p className="p1">Game developer, programmer, artist.</p> */}
+                  {/* <br />
                   <p className="p1">
                      This website is a collection of my games, art, and other
                      creative projects.
-                  </p>
+                  </p> */}
                </div>
             </div>
             {/* <Image
-                    className="description-img"
-                    src="/images/games/GGQFB/screenshots/gameplay.mp4"
-                    autoVideo="true"
-                /> */}
+               className="description-img"
+               src="/images/games/GGQFB/screenshots/gameplay.mp4"
+               autoVideo="true"
+            /> */}
             <Tabs>
                <TabList>
                   <Tab>GAMES / APPS</Tab>

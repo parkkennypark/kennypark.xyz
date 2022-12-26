@@ -21,19 +21,21 @@
     /* height: 70%; */
     /* width: 70%; */
     /* height: 230px !important; */
-    height: 10rem !important;
-    width: 16rem !important;
+    height: 12rem !important;
+    width: 36rem !important;
     /* width: 80% !important; */
     /* margin-left: 5px; */
     /* margin-right: 5px; */
     /* padding: 0.625rem; */
     margin: auto;
+    /* padding: 0; */
 }
 
 #header-text {
     margin: auto;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    width: 100%;
 }
 
 @media screen and (max-width: 500px) {

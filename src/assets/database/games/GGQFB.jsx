@@ -10,11 +10,11 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 const docLink =
    "https://docs.google.com/document/d/18T5FZ8AJpwSW50QfMg56hI3y-6UL4rvLyymAA8fkJH4/edit?usp=sharing";
 
-const name = "GG: Quest for Bread";
+const name = "Gawr Gura: Quest for Bread";
 const link = "/ggqfb";
 const projPath = "/images/games/GGQFB";
 // const icon = "GGQFB icon 256x256.png";
-const icon = "ggqfb_icon_630x500.png";
+const icon = "GGQFB_logo_new_256x256.png";
 const screenshots = [
    "videoo.mp4",
    "22.03.16 Water.png",

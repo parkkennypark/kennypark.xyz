@@ -37,8 +37,9 @@ const Head = () => {
    return (
       <Canvas
          id="head"
-         legacy="true"
+         legacy="false"
          camera={{ position: [0, 0, -19], fov: 20 }}
+         colorManagement
          // style={canvasStyle}
          onCreated={({ gl, scene }) => {
             gl.toneMapping = NoToneMapping;

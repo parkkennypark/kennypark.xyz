@@ -42,6 +42,32 @@ font {
     font-weight: unset;
 }
 
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0rem;
+    height: 0.8rem;
+}
+
+::-webkit-scrollbar:vertical {
+    /* width: 0.5rem; */
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(100, 100, 100);
+    width: 0.2rem;
+    /* border: 0.125rem solid #ffffff; */
+    border: 0.125rem solid rgb(218, 218, 218);
+}
+
+::-webkit-scrollbar-track {
+    /* border-radius: 0.625rem; */
+    /* background-color: #ffffff; */
+    background-color: rgb(218, 218, 218);
+}
 
 a {
     color: black;
@@ -63,7 +89,7 @@ pre {
     white-space: -pre-wrap; /* Opera 4-6 */
     white-space: -o-pre-wrap; /* Opera 7 */
     word-wrap: break-word; /* Internet Explorer 5.5+ */
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .disable-select {
@@ -132,7 +158,7 @@ ul {
 }
 
 li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -167,7 +193,7 @@ li span {
 }
 
 .text-pp-normal {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: normal;
     font-weight: 500;
 }
@@ -220,7 +246,8 @@ li span {
     flex-direction: column;
 
     /* box-sizing: border-box; */
-    max-width: 55rem;
+    max-width: 50rem;
+    /* max-width: 100%; */
     min-width: 25rem;
     height: fit-content;
 

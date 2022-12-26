@@ -4,7 +4,8 @@ import ProjectProperty from "../../../components/ProjectProperty";
 const name = "No Monkey Business";
 const link = "/no-monkey-business";
 const projPath = "/images/games/No Monkey Business";
-const icon = "no_monkey_business_icon_630x500.png";
+// const icon = "no_monkey_business_icon_630x500.png";
+const icon = "No Monkey Business icon 256x256.png";
 const screenshots = [
    "NMB Video.mp4",
    "Screenshot 1.png",

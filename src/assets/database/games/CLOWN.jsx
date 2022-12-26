@@ -10,7 +10,8 @@ const browserLink = "https://kennypark.itch.io/ggj2022";
 const name = "CLOWN";
 const link = "/clown";
 const projPath = "/images/games/CLOWN";
-const icon = "clown_icon_630x500.png";
+// const icon = "clown_icon_630x500.png";
+const icon = "Icon.png";
 const screenshots = [
    "video.mp4",
    "area 1.png",
