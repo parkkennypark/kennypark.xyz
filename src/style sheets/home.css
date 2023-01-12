@@ -39,14 +39,13 @@
 }
 
 @media screen and (max-width: 500px) {
-    /* #head {
-    width: 60%;
-  } */
+    #head {
+    width: 100% !important;
+  }
 
     #header {
         margin-left: -0.5rem;
         margin-right: -0.5rem;
-        /* margin-top: 0.3125rem; */
         margin-bottom: 1rem;
     }
 

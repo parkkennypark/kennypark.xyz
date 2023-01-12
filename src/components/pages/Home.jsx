@@ -28,7 +28,7 @@ const Home = ({ showDocs }) => {
                   <Link to="/about">about</Link>
                   {" | "}
                   <a
-                     href="Park_Kenny_Resume.pdf"
+                     href="kenny_park_resume.pdf"
                      target="_blank"
                      rel="noreferrer"
                   >
