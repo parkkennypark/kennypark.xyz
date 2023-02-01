@@ -1,6 +1,7 @@
 import Game from "../Game";
 import ProjectProperty from "../../../components/ProjectProperty";
 import BannerLink from "../../../components/BannerLink";
+import ExternalLink from "../../../components/ExternalLink";
 import { ggqfbDialogue } from "../CodeBlocks";
 import CodeComponent from "../../../components/CodeComponent";
 import Image from "../../../components/Image";
@@ -10,45 +11,55 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 const docLink =
    "https://docs.google.com/document/d/18T5FZ8AJpwSW50QfMg56hI3y-6UL4rvLyymAA8fkJH4/edit?usp=sharing";
 
+const devlogLink = "https://docs.google.com/spreadsheets/d/1smRao1Fk5e-9sHRedbKjFikVLewfdanEYXUXHBQXzHo/edit?usp=sharings";
+
 const name = "Gawr Gura: Quest for Bread";
 const link = "/ggqfb";
 const projPath = "/images/games/GGQFB";
 // const icon = "GGQFB icon 256x256.png";
 const icon = "GGQFB_logo_new_256x256.png";
 const screenshots = [
-   "videoo.mp4",
-   "22.03.16 Water.png",
-   "22.03.16 Grass.png",
-   "fortress.png",
+   "GGQFB Promo.mp4",
+   "fish_town.png",
+   "watson_industries.png",
+   "mountain.png",
+   "fortress_new.png",
+   "lab.png",
+   // "clocktower.png",
    "scrn 4.png",
-   "scrn 5.png",
-   "scrn 3.png",
+
 ];
 const tagline = "Action-Adventure";
 const date = "WIP";
 const engine = "Godot";
 const shortDescription = (
    <pre>
-      Full name: Gawr Gura: Quest for Bread.
-      {"\n\n"}A time-traveling, action-platforming adventure fan-game I've been
-      working on in my spare time featuring Hololive's Gawr Gura.
-   </pre>
+   A time-traveling, action-platforming adventure fan-game I've been
+   working on in my spare time featuring Hololive's Gawr Gura.
+   {"\n\n"}This is a passion project I've been working on for almost two
+   years now.
+</pre>
 );
 const body = (
    <div>
-      <BannerLink
+      {/* <BannerLink
          link={docLink}
          image="/images/games/GGQFB/Systems Documentation Banner.png"
          alt="Systems Documentation Banner"
-      />
-      <p className="text-tagline">Click me! ^</p>
+      /> */}
+      {/* <p className="text-tagline">Click me! ^</p> */}
+      <ProjectProperty
+            property="Documentation"
+            value={<ExternalLink link={docLink} text="Google Doc" />}
+        />
+              <ProjectProperty
+            property="Development Log"
+            value={<ExternalLink link={devlogLink} text="Google Sheet" />}
+        />
       <br />
       <ProjectProperty property="Status" value="In Development" />
       <ProjectProperty property="Planned Release" value="Summer 2022" />
-      {/* <ProjectProperty
-            property="Documentation"
-            value={<ExternalLink link={docLink} text="Google Doc" />}
-        /> */}
+
       <ProjectProperty property="Role" value="Sole developer" />
       <ProjectProperty
          property="Programs"

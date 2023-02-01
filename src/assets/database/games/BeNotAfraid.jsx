@@ -19,7 +19,7 @@ const screenshots = [
    "Israfel Fight.png",
    "Boss Defeat.png",
 ];
-const tagline = "Surreal Action Pltfmr";
+const tagline = "Surreal Action Platformer";
 const date = "10/21";
 const engine = "Godot";
 const shortDescription = (

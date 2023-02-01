@@ -5,7 +5,7 @@ import { clownPath } from "../CodeBlocks";
 import CodeComponent from "../../../components/CodeComponent";
 import Image from "../../../components/Image";
 
-const browserLink = "https://kennypark.itch.io/ggj2022";
+const browserLink = "https://kennypark.itch.io/clown";
 
 const name = "CLOWN";
 const link = "/clown";
@@ -40,14 +40,14 @@ const body = (
       />
       <ProjectProperty property="Programs" value="Godot, Blender" />
       <ProjectProperty property="Development Time" value="5 Weeks" />
-      {/* <ProjectProperty
+      <ProjectProperty
             property="Platforms"
             value={
                 <>
-                    <ExternalLink link={browserLink} text="Browser, Windows" />
+                    <ExternalLink link={browserLink} text="Windows, Linux" />
                 </>
             }
-        /> */}
+        />
 
       <pre>
          {"\n"}This game really took off with the idea of harvesting "clown
